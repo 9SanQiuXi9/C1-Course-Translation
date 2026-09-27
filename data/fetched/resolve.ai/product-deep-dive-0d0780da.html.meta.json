@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://resolve.ai/blog/product-deep-dive",
+  "final_url": "https://resolve.ai/blog/product-deep-dive",
+  "fetched_at": "2026-09-27T00:12:55+08:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 315518,
+  "sha256": "3e40837168ffa3b4d8fbfab8a5e9b32a9a38aedc335895a45aae9a3a6128ffad",
+  "used_branch": null,
+  "archive_path": "archive/resolve.ai/product-deep-dive-0d0780da.html",
+  "server": null,
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:12:54 GMT",
+  "url_path": "/blog/product-deep-dive",
+  "fetched_by": "fetch.py"
+}

@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://graphite.dev/",
+  "final_url": "https://graphite.dev/",
+  "fetched_at": "2026-09-27T00:09:56+08:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 618092,
+  "sha256": "42b8a45ab893c8d65ac584266ebc9d59fb5d8d521e8f7ea38805b0f91d477a30",
+  "used_branch": null,
+  "archive_path": "archive/graphite.dev/index-6ddb92ea.html",
+  "server": "Vercel",
+  "last_modified": "Sat, 26 Sep 2026 08:16:16 GMT",
+  "server_date": "Sat, 26 Sep 2026 16:09:56 GMT",
+  "url_path": "/",
+  "fetched_by": "fetch.py"
+}

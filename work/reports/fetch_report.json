@@ -1,0 +1,2570 @@
+{
+  "generated_by": "fetch.py",
+  "environment_notes": [
+    "raw.githubusercontent.com 可达；github.com HTML 与 api.github.com 不可达，因此 GitHub 只能用「拼 raw 路径直抓文件」的方式，无法列举目录",
+    "网络不稳定，同 URL 可能时通时不通（实测同一 raw 地址一次 20s 超时、下一次 0.9s 成功），已实现重试（2/5/10 秒）并「抓到即落盘」",
+    "本机 Python 的 OpenSSL 默认信任库为空（系统默认路径指向不存在的 msys2 cert.pem），会导致所有 HTTPS 报 CERTIFICATE_VERIFY_FAILED —— 这是证书信任问题，不是网络不可达。脚本已自动寻找可用 CA bundle，避免把它误记成 network_error",
+    "arXiv PDF 超时放宽到 45 秒；同一域名两次请求之间 sleep 1.5 秒，礼貌抓取",
+    "LinkedIn 返回 HTTP 451（因法律原因不可用）—— 既不是 404 也不是被反爬拦截，已在 items 中按 blocked_451 记录并保留原始状态码"
+  ],
+  "run_options": {
+    "mode": "dry_run",
+    "ssl_ca_bundle": null,
+    "timeout_default": 15,
+    "timeout_arxiv": 45,
+    "retry_delays": [
+      2,
+      5,
+      10
+    ],
+    "domain_sleep": 1.5
+  },
+  "inputs": {
+    "all_urls": "data/materials/CS146S_offline/all_urls.txt",
+    "page_map": "data/materials/CS146S_offline/page_map.json",
+    "manifest_mode": "post_fetch",
+    "manifest_known_gaps": 5
+  },
+  "summary": {
+    "total_urls": 120,
+    "already_archived": 29,
+    "fetched_ok": 12,
+    "http_404": 15,
+    "blocked_403": 0,
+    "needs_account": 20,
+    "unreachable_automated": 3,
+    "network_error": 0,
+    "not_attempted": 41,
+    "total_bytes_archived": 0
+  },
+  "items": [
+    {
+      "origin_url": "https://cloud.google.com/discover/what-is-prompt-engineering",
+      "final_url": null,
+      "domain": "cloud.google.com",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/prompt-engineering-overview.html",
+      "bytes": 2005200,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://www.promptingguide.ai/techniques",
+      "final_url": null,
+      "domain": "www.promptingguide.ai",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/prompt-engineering-guide.html",
+      "bytes": 128476,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://stytch.com/blog/model-context-protocol-introduction/",
+      "final_url": null,
+      "domain": "stytch.com",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/mcp-introduction.html",
+      "bytes": 378139,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://developers.cloudflare.com/agents/guides/remote-mcp-server/",
+      "final_url": null,
+      "domain": "developers.cloudflare.com",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/mcp-server-authentication.html",
+      "bytes": 189963,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://www.reillywood.com/blog/apis-dont-make-good-mcp-tools/",
+      "final_url": null,
+      "domain": "www.reillywood.com",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/mcp-food-for-thought.html",
+      "bytes": 55505,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/",
+      "final_url": null,
+      "domain": "blog.modelcontextprotocol.io",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/mcp-registry-preview.html",
+      "bytes": 27301,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://blog.ravi-mehta.com/p/specs-are-the-new-source-code",
+      "final_url": null,
+      "domain": "blog.ravi-mehta.com",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/specs-are-the-new-source-code.html",
+      "bytes": 217592,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html",
+      "final_url": null,
+      "domain": "www.dbreunig.com",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/how-long-contexts-fail.html",
+      "bytes": 19141,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://devin.ai/agents101",
+      "final_url": null,
+      "domain": "devin.ai",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/devin-coding-agents-101.html",
+      "bytes": 42766,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+      "final_url": null,
+      "domain": "www.anthropic.com",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/writing-effective-tools-for-agents.html",
+      "bytes": 203466,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://www.anthropic.com/engineering/claude-code-best-practices",
+      "final_url": null,
+      "domain": "www.anthropic.com",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/claude-code-best-practices.html",
+      "bytes": 832025,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://blog.stockapp.com/good-context-good-code/",
+      "final_url": null,
+      "domain": "blog.stockapp.com",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/good-context-good-code.html",
+      "bytes": 9278,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://www.warp.dev/university/getting-started/warp-vs-claude-code",
+      "final_url": null,
+      "domain": "www.warp.dev",
+      "source_class": "official_site",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/warp-vs-claude-code.html",
+      "bytes": 452468,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://notion.warp.dev/How-Warp-uses-Warp-to-build-Warp-21643263616d81a6b9e3e63fd8a7380c",
+      "final_url": null,
+      "domain": "notion.warp.dev",
+      "source_class": "official_site",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/how-warp-uses-warp.html",
+      "bytes": 15515,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://www.splunk.com/en_us/blog/learn/sast-vs-dast.html",
+      "final_url": null,
+      "domain": "www.splunk.com",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/sast-vs-dast.html",
+      "bytes": 50594,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/",
+      "final_url": null,
+      "domain": "embracethered.com",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/copilot-prompt-injection-rce.html",
+      "bytes": 21637,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://semgrep.dev/blog/2025/finding-vulnerabilities-in-modern-web-apps-using-claude-code-and-openai-codex/",
+      "final_url": null,
+      "domain": "semgrep.dev",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/finding-vulnerabilities-claude-codex.html",
+      "bytes": 114856,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://unit42.paloaltonetworks.com/agentic-ai-threats/",
+      "final_url": null,
+      "domain": "unit42.paloaltonetworks.com",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/agentic-ai-threats.html",
+      "bytes": 392315,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://owasp.org/www-project-top-ten/",
+      "final_url": null,
+      "domain": "owasp.org",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/owasp-top-ten.html",
+      "bytes": 71432,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://research.trychroma.com/context-rot",
+      "final_url": null,
+      "domain": "research.trychroma.com",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/context-rot.html",
+      "bytes": 271776,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://blog.codinghorror.com/code-reviews-just-do-it/",
+      "final_url": null,
+      "domain": "blog.codinghorror.com",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/code-reviews-just-do-it.html",
+      "bytes": 48437,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://github.blog/developer-skills/github/how-to-review-code-effectively-a-github-staff-engineers-philosophy/",
+      "final_url": null,
+      "domain": "github.blog",
+      "source_class": "github",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/how-to-review-code-effectively.html",
+      "bytes": 198143,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://graphite.dev/guides/ai-code-review-implementation-best-practices",
+      "final_url": null,
+      "domain": "graphite.dev",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/ai-code-review-best-practices.html",
+      "bytes": 182519,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://blakesmith.me/2015/02/09/code-review-essentials-for-software-teams.html",
+      "final_url": null,
+      "domain": "blakesmith.me",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/code-review-essentials.html",
+      "bytes": 14972,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://sre.google/sre-book/introduction/",
+      "final_url": null,
+      "domain": "sre.google",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/sre-introduction.html",
+      "bytes": 44520,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://last9.io/blog/traces-spans-observability-basics/",
+      "final_url": null,
+      "domain": "last9.io",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/observability-basics.html",
+      "bytes": 133614,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://resolve.ai/blog/role-of-multi-agent-systems-AI-native-engineering",
+      "final_url": null,
+      "domain": "resolve.ai",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/multi-agent-systems-ai-native.html",
+      "bytes": 169917,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://resolve.ai/blog/Top-5-Benefits",
+      "final_url": null,
+      "domain": "resolve.ai",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/benefits-agentic-ai-oncall.html",
+      "bytes": 142300,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://resolve.ai/blog/kubernetes-troubleshooting-in-resolve-ai",
+      "final_url": null,
+      "domain": "resolve.ai",
+      "source_class": "reading",
+      "status": "already_archived",
+      "http_status": null,
+      "local_path": "materials/CS146S_offline/pages/kubernetes-troubleshooting-ai.html",
+      "bytes": 147708,
+      "sha256": null,
+      "content_type": "text/html",
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": null,
+      "note": "已归档：来自 page_map.json，本环节不重复抓取"
+    },
+    {
+      "origin_url": "https://docs.google.com/presentation/d/11CP26VhsjnZOmi9YFgLlonzdib9BLyAlgc4cEvC5Fps/edit?usp=sharing",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/presentation/d/11CP26VhsjnZOmi9YFgLlonzdib9BLyAlgc4cEvC5Fps/edit?usp=sharing",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://docs.google.com/presentation/d/11pQNCde_mmRnImBat0Zymnp8TCS_cT_1up7zbcj6Sjg/edit?usp=sharing",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/presentation/d/11pQNCde_mmRnImBat0Zymnp8TCS_cT_1up7zbcj6Sjg/edit?usp=sharing",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://docs.google.com/presentation/d/19mgkwAnJDc7JuJy0zhhoY0ZC15DiNpxL8kchPDnRkRQ/edit?usp=sharing",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/presentation/d/19mgkwAnJDc7JuJy0zhhoY0ZC15DiNpxL8kchPDnRkRQ/edit?usp=sharing",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://docs.google.com/presentation/d/1C05bCLasMDigBbkwdWbiz4WrXibzi6ua4hQQbTod_8c/edit?usp=sharing",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/presentation/d/1C05bCLasMDigBbkwdWbiz4WrXibzi6ua4hQQbTod_8c/edit?usp=sharing",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://docs.google.com/presentation/d/1Djd4eBLBbRkma8rFnJAWMT0ptct_UGB8hipmoqFVkxQ/edit?usp=sharing",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/presentation/d/1Djd4eBLBbRkma8rFnJAWMT0ptct_UGB8hipmoqFVkxQ/edit?usp=sharing",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://docs.google.com/presentation/d/1GrVLsfMFIXMiGjIW9D7EJIyLYh_-3ReHHNd_vRfZUoo/edit?usp=sharing",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/presentation/d/1GrVLsfMFIXMiGjIW9D7EJIyLYh_-3ReHHNd_vRfZUoo/edit?usp=sharing",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://docs.google.com/presentation/d/1Jf2aN5zIChd5tT86rZWWqY-iDWbxgR-uynKJxBR7E9E/edit?usp=sharing",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/presentation/d/1Jf2aN5zIChd5tT86rZWWqY-iDWbxgR-uynKJxBR7E9E/edit?usp=sharing",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://docs.google.com/presentation/d/1MIhw8p6TLGdbQ9TcxhXSs5BaPf5d_h77QY70RHNfeGs/edit?usp=drive_link",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/presentation/d/1MIhw8p6TLGdbQ9TcxhXSs5BaPf5d_h77QY70RHNfeGs/edit?usp=drive_link",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://docs.google.com/presentation/d/1Mfe-auWAsg9URCujneKnHr0AbO8O-_U4QXBVOlO4qp0/edit?usp=sharing",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/presentation/d/1Mfe-auWAsg9URCujneKnHr0AbO8O-_U4QXBVOlO4qp0/edit?usp=sharing",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://docs.google.com/presentation/d/1NkPzpuSQt6Esbnr2-EnxM9007TL6ebSPFwITyVY-QxU/edit?usp=sharing",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/presentation/d/1NkPzpuSQt6Esbnr2-EnxM9007TL6ebSPFwITyVY-QxU/edit?usp=sharing",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://docs.google.com/presentation/d/1bv7Zozn6z45CAh-IyX99dMPMyXCHC7zj95UfwErBYQ8/edit?usp=sharing",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/presentation/d/1bv7Zozn6z45CAh-IyX99dMPMyXCHC7zj95UfwErBYQ8/edit?usp=sharing",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://docs.google.com/presentation/d/1i0pRttHf72lgz8C-n7DSegcLBgncYZe_ppU7dB9zhUA/edit?usp=sharing",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/presentation/d/1i0pRttHf72lgz8C-n7DSegcLBgncYZe_ppU7dB9zhUA/edit?usp=sharing",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://docs.google.com/presentation/d/1zSC2ra77XOUrJeyS85houg1DU7z9hq5Y4ebagTch-5o/edit?usp=drive_link",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/presentation/d/1zSC2ra77XOUrJeyS85houg1DU7z9hq5Y4ebagTch-5o/edit?usp=drive_link",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://docs.google.com/presentation/d/1zT2Ofy88cajLTLkd7TcuSM4BCELvF9qQdHmlz33i4t0/edit?usp=sharing",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/presentation/d/1zT2Ofy88cajLTLkd7TcuSM4BCELvF9qQdHmlz33i4t0/edit?usp=sharing",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://docs.google.com/spreadsheets/d/1-485SLHw_zn7A-UXiz88Dgjy_qUGx87Am6HUwQrKsN8/edit?gid=0#gid=0",
+      "final_url": null,
+      "domain": "docs.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://docs.google.com/spreadsheets/d/1-485SLHw_zn7A-UXiz88Dgjy_qUGx87Am6HUwQrKsN8/edit?gid=0#gid=0",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://drive.google.com/file/d/11WnEbMGc9kny_WBpMN10I8oP8XsiQOnM/view?usp=sharing",
+      "final_url": null,
+      "domain": "drive.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://drive.google.com/file/d/11WnEbMGc9kny_WBpMN10I8oP8XsiQOnM/view?usp=sharing",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://drive.google.com/file/d/1J6lgZWcxPzpCpjujJSnW1aAkCYF6Yxv3/view?usp=drive_link",
+      "final_url": null,
+      "domain": "drive.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://drive.google.com/file/d/1J6lgZWcxPzpCpjujJSnW1aAkCYF6Yxv3/view?usp=drive_link",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://drive.google.com/file/d/1MZ0Qx68Vzw4x5x_XcV8XiPLp7fFDe1LJ/view?usp=drive_link",
+      "final_url": null,
+      "domain": "drive.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://drive.google.com/file/d/1MZ0Qx68Vzw4x5x_XcV8XiPLp7fFDe1LJ/view?usp=drive_link",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://drive.google.com/file/d/1YtpKFVG13DHyQ2i3HOtwyVJOV90nWeL2/view?usp=drive_link",
+      "final_url": null,
+      "domain": "drive.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://drive.google.com/file/d/1YtpKFVG13DHyQ2i3HOtwyVJOV90nWeL2/view?usp=drive_link",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://drive.google.com/file/d/1hwF-RIkOJ_OFy17BKhzFyCtxSS7Pcf7p/view?usp=drive_link",
+      "final_url": null,
+      "domain": "drive.google.com",
+      "source_class": "lecture",
+      "status": "needs_account",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://drive.google.com/file/d/1hwF-RIkOJ_OFy17BKhzFyCtxSS7Pcf7p/view?usp=drive_link",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "needs_account"
+        }
+      ],
+      "failure_root_cause": "需 Google 账号登录，无法自动抓取",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+      "final_url": null,
+      "domain": "www.youtube.com",
+      "source_class": "video",
+      "status": "unreachable_automated",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "unreachable_automated"
+        }
+      ],
+      "failure_root_cause": "youtube.com 网络不可达；本地无 yt-dlp/youtube-dl/ffmpeg；第三方字幕站 youtubetotranscript.com 与 glasp.co 均返回 HTTP 403，被 Cloudflare 人机校验拦截。注意：403 属于被拦截，不能判定为内容不存在。",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://www.youtube.com/watch?v=T9aRN5JkmL8",
+      "final_url": null,
+      "domain": "www.youtube.com",
+      "source_class": "video",
+      "status": "unreachable_automated",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.youtube.com/watch?v=T9aRN5JkmL8",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "unreachable_automated"
+        }
+      ],
+      "failure_root_cause": "youtube.com 网络不可达；本地无 yt-dlp/youtube-dl/ffmpeg；第三方字幕站 youtubetotranscript.com 与 glasp.co 均返回 HTTP 403，被 Cloudflare 人机校验拦截。注意：403 属于被拦截，不能判定为内容不存在。",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "https://www.youtube.com/watch?v=TswQeKftnaw",
+      "final_url": null,
+      "domain": "www.youtube.com",
+      "source_class": "video",
+      "status": "unreachable_automated",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.youtube.com/watch?v=TswQeKftnaw",
+          "result": "按设计不发起请求（该域名需账号/不可自动获取）",
+          "kind": "unreachable_automated"
+        }
+      ],
+      "failure_root_cause": "youtube.com 网络不可达；本地无 yt-dlp/youtube-dl/ffmpeg；第三方字幕站 youtubetotranscript.com 与 glasp.co 均返回 HTTP 403，被 Cloudflare 人机校验拦截。注意：403 属于被拦截，不能判定为内容不存在。",
+      "note": "按域名策略直接登记，未发起网络请求"
+    },
+    {
+      "origin_url": "http://www.w3.org/1998/Math/MathML",
+      "final_url": null,
+      "domain": "www.w3.org",
+      "source_class": "supplemental",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": "XML 命名空间声明（如 1998/Math/MathML），是文档内命名空间而非可抓资源",
+      "note": "all_urls.txt 中的非资源行（命名空间声明/混入的标记片段），未发起请求"
+    },
+    {
+      "origin_url": "http://www.w3.org/1999/xhtml",
+      "final_url": null,
+      "domain": "www.w3.org",
+      "source_class": "supplemental",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": "XML 命名空间声明（如 1998/Math/MathML），是文档内命名空间而非可抓资源",
+      "note": "all_urls.txt 中的非资源行（命名空间声明/混入的标记片段），未发起请求"
+    },
+    {
+      "origin_url": "http://www.w3.org/1999/xlink",
+      "final_url": null,
+      "domain": "www.w3.org",
+      "source_class": "supplemental",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": "XML 命名空间声明（如 1998/Math/MathML），是文档内命名空间而非可抓资源",
+      "note": "all_urls.txt 中的非资源行（命名空间声明/混入的标记片段），未发起请求"
+    },
+    {
+      "origin_url": "http://www.w3.org/2000/svg",
+      "final_url": null,
+      "domain": "www.w3.org",
+      "source_class": "supplemental",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": "XML 命名空间声明（如 1998/Math/MathML），是文档内命名空间而非可抓资源",
+      "note": "all_urls.txt 中的非资源行（命名空间声明/混入的标记片段），未发起请求"
+    },
+    {
+      "origin_url": "http://www.w3.org/2000/svg'%3E%3Cpath d='M0.861 25.5C0.735 25.5 0.651 25.416 0.651 25.29V10.548C0.651 10.422 0.735 10.338 0.861 10.338H6.279C9.072 10.338 10.668 11.451 10.668 13.824C10.668 15.819 9.219 16.932 8.001 17.226C7.707 17.268 7.707 17.625 8.022 17.688C9.912 18.108 11.088 19.116 11.088 21.32",
+      "final_url": null,
+      "domain": "www.w3.org",
+      "source_class": "supplemental",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": "疑似抓取时混入的内联 SVG/转义标记片段，不是合法资源 URL",
+      "note": "all_urls.txt 中的非资源行（命名空间声明/混入的标记片段），未发起请求"
+    },
+    {
+      "origin_url": "http://www.w3.org/2000/svg'%3E%3Cpath d='M0.861 25.5C0.735 25.5 0.651 25.416 0.651 25.29V10.548C0.651 10.422 0.735 10.338 0.861 10.338H6.279C9.072 10.338 10.668 11.451 10.668 13.824C10.668 15.819 9.219 16.932 8.001 17.226C7.707 17.268 7.707 17.625 8.022 17.688C9.912 18.108 11.088 19.116 11.088 21.32",
+      "final_url": null,
+      "domain": "www.w3.org",
+      "source_class": "supplemental",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": "疑似抓取时混入的内联 SVG/转义标记片段，不是合法资源 URL",
+      "note": "all_urls.txt 中的非资源行（命名空间声明/混入的标记片段），未发起请求"
+    },
+    {
+      "origin_url": "http://www.w3.org/XML/1998/namespace",
+      "final_url": null,
+      "domain": "www.w3.org",
+      "source_class": "supplemental",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [],
+      "failure_root_cause": "XML 命名空间声明（如 1998/Math/MathML），是文档内命名空间而非可抓资源",
+      "note": "all_urls.txt 中的非资源行（命名空间声明/混入的标记片段），未发起请求"
+    },
+    {
+      "origin_url": "https://a16z.com/",
+      "final_url": "https://a16z.com/",
+      "domain": "a16z.com",
+      "source_class": "reading",
+      "status": "fetched_ok",
+      "http_status": 200,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://a16z.com/",
+          "result": "沿用上一轮已取得的确定性状态码 200（2026-09-27T00:09:01+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": null,
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:01+08:00"
+    },
+    {
+      "origin_url": "https://a16z.com/author/martin-casado/",
+      "final_url": "https://a16z.com/author/martin-casado/",
+      "domain": "a16z.com",
+      "source_class": "reading",
+      "status": "fetched_ok",
+      "http_status": 200,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://a16z.com/author/martin-casado/",
+          "result": "沿用上一轮已取得的确定性状态码 200（2026-09-27T00:09:06+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": null,
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:06+08:00"
+    },
+    {
+      "origin_url": "https://app.kit.com/forms/8349659/subscriptions",
+      "final_url": "https://app.kit.com/forms/8349659/subscriptions",
+      "domain": "app.kit.com",
+      "source_class": "reading",
+      "status": "fetched_ok",
+      "http_status": 200,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://app.kit.com/forms/8349659/subscriptions",
+          "result": "沿用上一轮已取得的确定性状态码 200（2026-09-27T00:09:08+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": null,
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:08+08:00"
+    },
+    {
+      "origin_url": "https://arxiv.org/pdf/2405.13565",
+      "final_url": "https://arxiv.org/pdf/2405.13565",
+      "domain": "arxiv.org",
+      "source_class": "reading",
+      "status": "fetched_ok",
+      "http_status": 200,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://arxiv.org/pdf/2405.13565",
+          "result": "沿用上一轮已取得的确定性状态码 200（2026-09-27T00:09:09+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": null,
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:09+08:00"
+    },
+    {
+      "origin_url": "https://cdn.openai.com/pdf/6a2631dc-783e-479b-b1a4-af0cfbd38630/how-openai-uses-codex.pdf",
+      "final_url": "https://cdn.openai.com/pdf/6a2631dc-783e-479b-b1a4-af0cfbd38630/how-openai-uses-codex.pdf",
+      "domain": "cdn.openai.com",
+      "source_class": "lecture",
+      "status": "fetched_ok",
+      "http_status": 200,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://cdn.openai.com/pdf/6a2631dc-783e-479b-b1a4-af0cfbd38630/how-openai-uses-codex.pdf",
+          "result": "沿用上一轮已取得的确定性状态码 200（2026-09-27T00:09:16+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": null,
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:16+08:00"
+    },
+    {
+      "origin_url": "https://cognition.ai/",
+      "final_url": "https://cognition.ai/",
+      "domain": "cognition.ai",
+      "source_class": "reading",
+      "status": "fetched_ok",
+      "http_status": 200,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://cognition.ai/",
+          "result": "沿用上一轮已取得的确定性状态码 200（2026-09-27T00:09:18+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": null,
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:18+08:00"
+    },
+    {
+      "origin_url": "https://f.convertkit.com/ckjs/ck.5.js",
+      "final_url": "https://f.convertkit.com/ckjs/ck.5.js",
+      "domain": "f.convertkit.com",
+      "source_class": "reading",
+      "status": "fetched_ok",
+      "http_status": 200,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://f.convertkit.com/ckjs/ck.5.js",
+          "result": "沿用上一轮已取得的确定性状态码 200（2026-09-27T00:09:21+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": null,
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:21+08:00"
+    },
+    {
+      "origin_url": "https://github.com/SeanHeelan/o3_finds_cve-2025-37899/blob/master/system_prompt_uafs.prompt",
+      "final_url": "https://raw.githubusercontent.com/SeanHeelan/o3_finds_cve-2025-37899/master/system_prompt_uafs.prompt",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "fetched_ok",
+      "http_status": 200,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/SeanHeelan/o3_finds_cve-2025-37899/master/system_prompt_uafs.prompt",
+          "result": "沿用上一轮已取得的确定性状态码 200（2026-09-27T00:09:22+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": null,
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:22+08:00",
+      "note": "blob 链接直接转为 raw：system_prompt_uafs.prompt",
+      "candidate_summary": "该 GitHub 链接的全部 1 个候选路径均未取到内容：无候选路径"
+    },
+    {
+      "origin_url": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
+      "final_url": "https://raw.githubusercontent.com/SuperClaude-Org/SuperClaude_Framework/master/README.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "fetched_ok",
+      "http_status": 200,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/SuperClaude-Org/SuperClaude_Framework/master/README.md",
+          "result": "沿用上一轮已取得的确定性状态码 200（2026-09-27T00:09:23+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": null,
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:23+08:00",
+      "note": "仓库根链接无法列举目录，尝试 master 分支的 README.md",
+      "candidate_summary": "该 GitHub 链接的全部 2 个候选路径均未取到内容：README.md → 以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查"
+    },
+    {
+      "origin_url": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
+      "final_url": "https://raw.githubusercontent.com/SuperClaude-Org/SuperClaude_Framework/main/README.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "main",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/SuperClaude-Org/SuperClaude_Framework/main/README.md",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null,
+      "note": "仓库根链接无法列举目录，尝试 main 分支的 README.md"
+    },
+    {
+      "origin_url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/ace-fca.md",
+      "final_url": "https://raw.githubusercontent.com/humanlayer/advanced-context-engineering-for-coding-agents/main/ace-fca.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "fetched_ok",
+      "http_status": 200,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "main",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/humanlayer/advanced-context-engineering-for-coding-agents/main/ace-fca.md",
+          "result": "沿用上一轮已取得的确定性状态码 200（2026-09-27T00:09:25+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": null,
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:25+08:00",
+      "note": "blob 链接直接转为 raw：ace-fca.md",
+      "candidate_summary": "该 GitHub 链接的全部 1 个候选路径均未取到内容：无候选路径"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/blob/master/week3/assignment.md",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week3/assignment.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week3/assignment.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:26+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:26+08:00",
+      "note": "blob 链接直接转为 raw：week3/assignment.md",
+      "candidate_summary": "该 GitHub 链接的全部 1 个候选路径均未取到内容：assignment.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/blob/master/week4/assignment.md",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week4/assignment.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week4/assignment.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:28+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:28+08:00",
+      "note": "blob 链接直接转为 raw：week4/assignment.md",
+      "candidate_summary": "该 GitHub 链接的全部 1 个候选路径均未取到内容：assignment.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/blob/master/week6/assignment.md",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week6/assignment.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week6/assignment.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:29+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:29+08:00",
+      "note": "blob 链接直接转为 raw：week6/assignment.md",
+      "candidate_summary": "该 GitHub 链接的全部 1 个候选路径均未取到内容：assignment.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week1",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week1/README.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week1/README.md",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null,
+      "note": "tree 目录无法列举，尝试候选文件 README.md",
+      "candidate_summary": "该 GitHub 链接的全部 3 个候选路径均未取到内容：README.md → 以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查；writeup.md → 以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week1",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week1/assignment.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "fetched_ok",
+      "http_status": 200,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week1/assignment.md",
+          "result": "沿用上一轮已取得的确定性状态码 200（2026-09-27T00:09:32+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": null,
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:32+08:00",
+      "note": "tree 目录无法列举，尝试候选文件 assignment.md"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week1",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week1/writeup.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week1/writeup.md",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null,
+      "note": "tree 目录无法列举，尝试候选文件 writeup.md"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week2",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week2/README.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week2/README.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:34+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:34+08:00",
+      "note": "tree 目录无法列举，尝试候选文件 README.md",
+      "candidate_summary": "该 GitHub 链接的全部 3 个候选路径均未取到内容：README.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败；assignment.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败；writeup.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week2",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week2/assignment.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week2/assignment.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:35+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:35+08:00",
+      "note": "tree 目录无法列举，尝试候选文件 assignment.md"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week2",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week2/writeup.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week2/writeup.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:37+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:37+08:00",
+      "note": "tree 目录无法列举，尝试候选文件 writeup.md"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week5",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week5/README.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week5/README.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:38+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:38+08:00",
+      "note": "tree 目录无法列举，尝试候选文件 README.md",
+      "candidate_summary": "该 GitHub 链接的全部 3 个候选路径均未取到内容：README.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败；assignment.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败；writeup.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week5",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week5/assignment.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week5/assignment.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:40+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:40+08:00",
+      "note": "tree 目录无法列举，尝试候选文件 assignment.md"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week5",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week5/writeup.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week5/writeup.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:41+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:41+08:00",
+      "note": "tree 目录无法列举，尝试候选文件 writeup.md"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week7",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week7/README.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week7/README.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:43+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:43+08:00",
+      "note": "tree 目录无法列举，尝试候选文件 README.md",
+      "candidate_summary": "该 GitHub 链接的全部 3 个候选路径均未取到内容：README.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败；assignment.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败；writeup.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week7",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week7/assignment.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week7/assignment.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:44+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:44+08:00",
+      "note": "tree 目录无法列举，尝试候选文件 assignment.md"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week7",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week7/writeup.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week7/writeup.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:46+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:46+08:00",
+      "note": "tree 目录无法列举，尝试候选文件 writeup.md"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week8",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week8/README.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week8/README.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:47+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:47+08:00",
+      "note": "tree 目录无法列举，尝试候选文件 README.md",
+      "candidate_summary": "该 GitHub 链接的全部 3 个候选路径均未取到内容：README.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败；assignment.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败；writeup.md → HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week8",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week8/assignment.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week8/assignment.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:49+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:49+08:00",
+      "note": "tree 目录无法列举，尝试候选文件 assignment.md"
+    },
+    {
+      "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week8",
+      "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week8/writeup.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "http_404",
+      "http_status": 404,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week8/writeup.md",
+          "result": "沿用上一轮已取得的确定性状态码 404（2026-09-27T00:09:50+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": "HTTP 404：服务器可达且明确返回「不存在」。这是有效信息（文件确认未公开），不是抓取失败",
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:50+08:00",
+      "note": "tree 目录无法列举，尝试候选文件 writeup.md"
+    },
+    {
+      "origin_url": "https://github.com/modelcontextprotocol/servers",
+      "final_url": "https://raw.githubusercontent.com/modelcontextprotocol/servers/master/README.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "fetched_ok",
+      "http_status": 200,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/modelcontextprotocol/servers/master/README.md",
+          "result": "沿用上一轮已取得的确定性状态码 200（2026-09-27T00:09:52+08:00），本轮未重复请求",
+          "kind": "cached_definitive"
+        }
+      ],
+      "failure_root_cause": null,
+      "retried_to_success": null,
+      "observed_at": "2026-09-27T00:09:52+08:00",
+      "note": "仓库根链接无法列举目录，尝试 master 分支的 README.md",
+      "candidate_summary": "该 GitHub 链接的全部 2 个候选路径均未取到内容：README.md → 以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查"
+    },
+    {
+      "origin_url": "https://github.com/modelcontextprotocol/servers",
+      "final_url": "https://raw.githubusercontent.com/modelcontextprotocol/servers/main/README.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "main",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/modelcontextprotocol/servers/main/README.md",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null,
+      "note": "仓库根链接无法列举目录，尝试 main 分支的 README.md"
+    },
+    {
+      "origin_url": "https://github.com/modelcontextprotocol/typescript-sdk/tree/main?tab=readme-ov-file#server",
+      "final_url": "https://raw.githubusercontent.com/modelcontextprotocol/typescript-sdk/main/README.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "main",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/modelcontextprotocol/typescript-sdk/main/README.md",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null,
+      "note": "仓库根目录无法列举，尝试 README.md",
+      "candidate_summary": "该 GitHub 链接的全部 3 个候选路径均未取到内容：README.md → 以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查；assignment.md → 以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查；writeup.md → 以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查"
+    },
+    {
+      "origin_url": "https://github.com/modelcontextprotocol/typescript-sdk/tree/main?tab=readme-ov-file#server",
+      "final_url": "https://raw.githubusercontent.com/modelcontextprotocol/typescript-sdk/main/assignment.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "main",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/modelcontextprotocol/typescript-sdk/main/assignment.md",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null,
+      "note": "仓库根目录无法列举，尝试 assignment.md"
+    },
+    {
+      "origin_url": "https://github.com/modelcontextprotocol/typescript-sdk/tree/main?tab=readme-ov-file#server",
+      "final_url": "https://raw.githubusercontent.com/modelcontextprotocol/typescript-sdk/main/writeup.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "main",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/modelcontextprotocol/typescript-sdk/main/writeup.md",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null,
+      "note": "仓库根目录无法列举，尝试 writeup.md"
+    },
+    {
+      "origin_url": "https://github.com/vijaythecoder/awesome-claude-agents",
+      "final_url": "https://raw.githubusercontent.com/vijaythecoder/awesome-claude-agents/master/README.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "master",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/vijaythecoder/awesome-claude-agents/master/README.md",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null,
+      "note": "仓库根链接无法列举目录，尝试 master 分支的 README.md",
+      "candidate_summary": "该 GitHub 链接的全部 2 个候选路径均未取到内容：README.md → 以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查；README.md → 以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查"
+    },
+    {
+      "origin_url": "https://github.com/vijaythecoder/awesome-claude-agents",
+      "final_url": "https://raw.githubusercontent.com/vijaythecoder/awesome-claude-agents/main/README.md",
+      "domain": "github.com",
+      "source_class": "github",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": "main",
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/vijaythecoder/awesome-claude-agents/main/README.md",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null,
+      "note": "仓库根链接无法列举目录，尝试 main 分支的 README.md"
+    },
+    {
+      "origin_url": "https://graphite.dev/",
+      "final_url": "https://graphite.dev/",
+      "domain": "graphite.dev",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://graphite.dev/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic",
+      "final_url": "https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic",
+      "domain": "kit.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://medium.com/@outsightai/peeking-under-the-hood-of-claude-code-70f5a94a9a62",
+      "final_url": "https://medium.com/@outsightai/peeking-under-the-hood-of-claude-code-70f5a94a9a62",
+      "domain": "medium.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://medium.com/@outsightai/peeking-under-the-hood-of-claude-code-70f5a94a9a62",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://reactjs.org/docs/error-decoder.html?invariant=",
+      "final_url": "https://reactjs.org/docs/error-decoder.html?invariant=",
+      "domain": "reactjs.org",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://reactjs.org/docs/error-decoder.html?invariant=",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://resolve.ai/",
+      "final_url": "https://resolve.ai/",
+      "domain": "resolve.ai",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://resolve.ai/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://resolve.ai/blog/product-deep-dive",
+      "final_url": "https://resolve.ai/blog/product-deep-dive",
+      "domain": "resolve.ai",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://resolve.ai/blog/product-deep-dive",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://semgrep.dev/",
+      "final_url": "https://semgrep.dev/",
+      "domain": "semgrep.dev",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://semgrep.dev/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://vercel.com/",
+      "final_url": "https://vercel.com/",
+      "domain": "vercel.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://vercel.com/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf",
+      "final_url": "https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf",
+      "domain": "www-cdn.anthropic.com",
+      "source_class": "lecture",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.anthropic.com/claude-code",
+      "final_url": "https://www.anthropic.com/claude-code",
+      "domain": "www.anthropic.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.anthropic.com/claude-code",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.figma.com/slides/kwbcmtqTFQMfUhiMH8BiEx/Warp---Stanford--Copy-?node-id=9-116&t=oBWBCk8mjg2l2NR5-1",
+      "final_url": "https://www.figma.com/slides/kwbcmtqTFQMfUhiMH8BiEx/Warp---Stanford--Copy-?node-id=9-116&t=oBWBCk8mjg2l2NR5-1",
+      "domain": "www.figma.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.figma.com/slides/kwbcmtqTFQMfUhiMH8BiEx/Warp---Stanford--Copy-?node-id=9-116&t=oBWBCk8mjg2l2NR5-1",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.linkedin.com/in/bcherny/",
+      "final_url": "https://www.linkedin.com/in/bcherny/",
+      "domain": "www.linkedin.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.linkedin.com/in/bcherny/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.linkedin.com/in/brentju/",
+      "final_url": "https://www.linkedin.com/in/brentju/",
+      "domain": "www.linkedin.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.linkedin.com/in/brentju/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.linkedin.com/in/febielin/",
+      "final_url": "https://www.linkedin.com/in/febielin/",
+      "domain": "www.linkedin.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.linkedin.com/in/febielin/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.linkedin.com/in/gaspargarcia/",
+      "final_url": "https://www.linkedin.com/in/gaspargarcia/",
+      "domain": "www.linkedin.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.linkedin.com/in/gaspargarcia/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.linkedin.com/in/isaacevans/",
+      "final_url": "https://www.linkedin.com/in/isaacevans/",
+      "domain": "www.linkedin.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.linkedin.com/in/isaacevans/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.linkedin.com/in/mayank-ag/",
+      "final_url": "https://www.linkedin.com/in/mayank-ag/",
+      "domain": "www.linkedin.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.linkedin.com/in/mayank-ag/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.linkedin.com/in/mganjoo/",
+      "final_url": "https://www.linkedin.com/in/mganjoo/",
+      "domain": "www.linkedin.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.linkedin.com/in/mganjoo/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.linkedin.com/in/silasalberti/",
+      "final_url": "https://www.linkedin.com/in/silasalberti/",
+      "domain": "www.linkedin.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.linkedin.com/in/silasalberti/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.linkedin.com/in/tomasreimers/",
+      "final_url": "https://www.linkedin.com/in/tomasreimers/",
+      "domain": "www.linkedin.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.linkedin.com/in/tomasreimers/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.linkedin.com/in/zachlloyd/",
+      "final_url": "https://www.linkedin.com/in/zachlloyd/",
+      "domain": "www.linkedin.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.linkedin.com/in/zachlloyd/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.mihaileric.com/",
+      "final_url": "https://www.mihaileric.com/",
+      "domain": "www.mihaileric.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.mihaileric.com/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.warp.dev/",
+      "final_url": "https://www.warp.dev/",
+      "domain": "www.warp.dev",
+      "source_class": "official_site",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.warp.dev/",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://www.warp.dev/university?slug=university",
+      "final_url": "https://www.warp.dev/university?slug=university",
+      "domain": "www.warp.dev",
+      "source_class": "official_site",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://www.warp.dev/university?slug=university",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    },
+    {
+      "origin_url": "https://x.com/rohanpaul_ai/status/1959414096589422619",
+      "final_url": "https://x.com/rohanpaul_ai/status/1959414096589422619",
+      "domain": "x.com",
+      "source_class": "reading",
+      "status": "not_attempted",
+      "http_status": null,
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "content_type": null,
+      "used_branch": null,
+      "attempts": [
+        {
+          "url": "https://x.com/rohanpaul_ai/status/1959414096589422619",
+          "result": "--dry-run 未发起请求",
+          "kind": "not_attempted"
+        }
+      ],
+      "failure_root_cause": "以 --dry-run 运行：本轮按设计未发起网络请求，该条目的真实可达性未核查",
+      "retried_to_success": null,
+      "observed_at": null
+    }
+  ]
+}

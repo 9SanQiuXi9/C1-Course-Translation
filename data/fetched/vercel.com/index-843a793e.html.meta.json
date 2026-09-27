@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://vercel.com/",
+  "final_url": "https://vercel.com/",
+  "fetched_at": "2026-09-27T00:13:03+08:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 630304,
+  "sha256": "d69f20f430e57b4153101031724a2d59e515f967e1b49441f28c4352ac06375b",
+  "used_branch": null,
+  "archive_path": "archive/vercel.com/index-843a793e.html",
+  "server": "Vercel",
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:08:24 GMT",
+  "url_path": "/",
+  "fetched_by": "fetch.py"
+}

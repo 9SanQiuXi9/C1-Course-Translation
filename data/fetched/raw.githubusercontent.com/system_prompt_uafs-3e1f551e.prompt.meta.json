@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://github.com/SeanHeelan/o3_finds_cve-2025-37899/blob/master/system_prompt_uafs.prompt",
+  "final_url": "https://raw.githubusercontent.com/SeanHeelan/o3_finds_cve-2025-37899/master/system_prompt_uafs.prompt",
+  "fetched_at": "2026-09-27T00:09:22+08:00",
+  "http_status": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "bytes": 1948,
+  "sha256": "83d3e855550f2f40c9c842aea133e4912896a2b00e36ac1449f465a28038188a",
+  "used_branch": "master",
+  "archive_path": "archive/raw.githubusercontent.com/system_prompt_uafs-3e1f551e.prompt",
+  "server": null,
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:09:22 GMT",
+  "url_path": "/SeanHeelan/o3_finds_cve-2025-37899/master/system_prompt_uafs.prompt",
+  "fetched_by": "fetch.py"
+}

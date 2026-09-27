@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://reactjs.org/docs/error-decoder.html?invariant=",
+  "final_url": "https://reactjs.org/docs/error-decoder.html?invariant=",
+  "fetched_at": "2026-09-27T00:11:19+08:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 87388,
+  "sha256": "441514060073510b3e60224e66c3fa87412502b6a3b133a4ff574c764297994d",
+  "used_branch": null,
+  "archive_path": "archive/reactjs.org/error-decoder-2ccbc8e1.html",
+  "server": "Vercel",
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:11:19 GMT",
+  "url_path": "/docs/error-decoder.html",
+  "fetched_by": "fetch.py"
+}

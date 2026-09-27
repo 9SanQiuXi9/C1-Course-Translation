@@ -1,0 +1,347 @@
+# 翻译留痕：writing-effective-tools-for-agents
+
+- doc_id：`writing-effective-tools-for-agents`
+- 时间：2026-09-27T17:10:55+08:00
+- 原文：`extracted/writing-effective-tools-for-agents.md`
+- 译文：`translated/writing-effective-tools-for-agents.md`
+- 原文 sha256：`ee71e9365ee76b945b42eb288b945cf574387df32cf6cea2d5a4e42f0c2df2f1`
+- 译文 sha256：`784a8773792212a8d0477c033099658fad2cbb8355e8a72e9f661389c6f136e1`
+- 术语约束条数：21
+
+## 一、本文档涉及的术语清单
+
+| 英文 | 译法 | handling | 出现次数 |
+|---|---|---|---|
+| `tool` | 工具 | `translate` | 86 |
+| `evaluation` | 评估 | `translate` | 29 |
+| `context` | 上下文 | `translate` | 18 |
+| `mcp` | MCP | `acronym` | 14 |
+| `agent` | 智能体 | `translate` | 13 |
+| `prompt` | 提示词 | `translate` | 11 |
+| `token` | token | `keep_en` | 9 |
+| `llm` | LLM | `acronym` | 7 |
+| `api` | API | `acronym` | 6 |
+| `server` | 服务器 | `translate` | 5 |
+| `agentic` | 智能体式 | `translate` | 4 |
+| `training` | 训练 | `translate` | 3 |
+| `non-deterministic` | 非确定性 | `translate` | 3 |
+| `model` | 模型 | `translate` | 2 |
+| `reasoning` | 推理 | `translate` | 2 |
+| `retrieval` | 检索 | `translate` | 2 |
+| `best practices` | 最佳实践 | `translate` | 1 |
+| `tracing` | 链路追踪 | `translate` | 1 |
+| `prompt engineering` | 提示词工程 | `translate` | 1 |
+| `system prompt` | 系统提示词 | `translate` | 1 |
+| `sandbox` | 沙箱 | `translate` | 1 |
+
+## 二、落盘校验结果
+
+```json
+{
+  "non_empty": true,
+  "code_blocks_total": 1,
+  "code_blocks_in_translation": 1,
+  "code_blocks_match": true,
+  "code_blocks_byte_identical": true,
+  "urls_orig": 18,
+  "urls_trans": 18,
+  "urls_all_present": true,
+  "urls_counts_equal": true,
+  "headings_orig": 15,
+  "headings_trans": 15,
+  "headings_match": true,
+  "orig_chars": 21736,
+  "trans_chars": 10110,
+  "length_ratio": 0.4651,
+  "length_ratio_ok": true
+}
+```
+
+## 四、发出的 prompt 全文
+
+```markdown
+(未找到 prompt 导出文件)
+```
+
+## 五、AI 返回的译文全文
+
+```markdown
+[Engineering at Anthropic](/engineering)
+
+发布于 Sep 11, 2025
+
+智能体的效果，取决于我们给它什么工具。我们分享如何编写高质量的工具与评测，以及如何用 Claude 为它自己优化工具来提升性能。
+
+[Model Context Protocol（MCP）可以让 LLM 智能体拥有潜在数百个工具去解决真实世界的任务。但我们如何让这些工具发挥最大效力？](https://modelcontextprotocol.io/docs/getting-started/intro)
+
+在这篇文章中，我们描述在各种智能体式 AI 系统中最有效的性能改进技巧1。
+
+我们先讲如何：
+
+- 构建并测试你的工具原型
+- 用智能体对你的工具创建并运行全面的评测
+- 与 Claude Code 这类智能体协作，自动提升你的工具性能
+
+最后我们总结在此过程中识别出的、编写高质量工具的关键原则：
+
+- 选择该实现（以及不该实现）的工具
+- 用命名空间为工具划定清晰的功能边界
+- 从工具向智能体返回有意义的上下文
+- 让工具响应在 token 效率上最优
+- 对工具的描述与规格做提示词工程
+
+![这张图描绘了工程师可能如何使用 Claude Code 来评估智能体工具的有效性。](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcdc027ad2730e4732168bb198fc9363678544f99-1920x1080.png&w=3840&q=75)
+
+*构建一套评测，让你能系统地衡量工具的性能。你可以用 Claude Code 针对这套评测自动优化你的工具。*
+
+# 什么是工具？
+
+在计算领域，确定性系统在相同输入下每次都产生相同输出，而非确定性系统 —— 例如智能体 —— 即使在同样起始条件下也可能给出多样的响应。
+
+传统上我们写软件时，是在确定性系统之间建立一份契约。例如 `getWeather("NYC")` 这样的函数调用，每次被调用都会以完全相同的方式获取纽约市的天气。
+
+工具是一种新的软件，它体现的是确定性系统与非确定性智能体之间的契约。当用户问「我今天该带伞吗？」，智能体可能会调用天气工具、凭通用知识回答，甚至先问一句想确认地点。偶尔，智能体也可能产生幻觉，或者干脆没搞懂该怎么用某个工具。
+
+这意味着我们要从根本上重新思考为智能体写软件的做法：不再像
+
+[为其他开发者或系统写函数和 API 那样去写工具和 MCP 服务器，而要为智能体来设计它们。](https://modelcontextprotocol.io/)
+
+我们的目标是扩大智能体能有效发挥作用的范围 —— 通过使用工具去尝试各种成功策略，解决广泛的任务。幸运的是，以我们的经验，对智能体最「顺手」的工具，最终往往也出人意料地符合人类的直觉。
+
+## 如何编写工具
+
+本节描述你可以如何与智能体协作，既写出、也改进你交给它的工具。先快速搭起工具原型并在本地测试。接着运行一套全面的评测来衡量后续改动。与智能体并肩工作，你可以重复「评测—改进」这个循环，直到智能体在真实任务上取得强劲表现。
+
+### 构建原型
+
+如果不亲自动手，很难预判哪些工具智能体会觉得顺手、哪些不会。先快速搭起你的工具原型。如果你用
+
+[Claude Code 来写这些工具（可能一次成型），那么给 Claude 提供你的工具所依赖的任何软件库、API 或 SDK（包括可能的](https://www.anthropic.com/claude-code)
+
+[MCP SDK）的文档会有帮助。对 LLM 友好的文档通常可以在官方文档站点上的扁平 llms.txt 文件里找到（这是我们的](https://modelcontextprotocol.io/docs/sdk)
+
+[API 的）。](https://docs.anthropic.com/llms.txt)
+
+把你的工具包进一个
+
+[本地 MCP 服务器或](https://modelcontextprotocol.io/docs/develop/connect-local-servers)
+
+[桌面扩展（DXT），就能让你在 Claude Code 或 Claude 桌面应用里连接并测试这些工具。](https://www.anthropic.com/engineering/desktop-extensions)
+
+要把本地 MCP 服务器连接到 Claude Code，运行 `claude mcp add <name> <command> [args...]`。
+
+要把本地 MCP 服务器或 DXT 连接到 Claude 桌面应用，分别前往「设置 > 开发者」或「设置 > 扩展」。
+
+工具也可以直接传入
+
+[Anthropic API 调用，用于程序化测试。](https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/overview)
+
+你自己动手测试这些工具，找出粗糙之处。从你的用户那里收集反馈，从而对预期这些工具要支撑的用例与提示词建立直觉。
+
+### 运行评测
+
+接下来，你需要通过运行一套评测来衡量 Claude 使用你工具的表现。先基于真实世界用法生成大量评测任务。我们建议与智能体协作，让它帮你分析结果并确定如何改进工具。这个流程的端到端演示见我们的
+
+[工具评测 cookbook。](https://platform.claude.com/cookbook/tool-evaluation-tool-evaluation)
+
+![这张图衡量了人写的与 Claude 优化过的 Slack MCP 服务器在测试集上的准确率。](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F6e810aee67f3f3c955832fb7bf9033ffb0102000-1920x1080.png&w=3840&q=75)
+
+*我们的内部 Slack 工具在留出测试集上的表现*
+
+生成评测任务
+
+有了早期原型，Claude Code 可以快速探索你的工具，并创建几十组提示词与响应对。提示词应当受真实世界用例启发，并基于真实的数据源与服务（例如内部知识库与微服务）。我们建议避免过于简单或肤浅的「沙盒」环境，它们无法以足够的复杂度对你的工具施加压力测试。强评测任务可能需要多次工具调用 —— 可能几十次。
+
+以下是一些强任务的示例：
+
+- 安排下周与 Jane 开会，讨论我们最新的 Acme Corp 项目。附上我们上次项目规划会议的记录，并预订一间会议室。
+- 客户 ID 9182 报告称，一次购买尝试被扣了三次款。找出所有相关日志条目，并判断是否有其他客户受到同一问题影响。
+- 客户 Sarah Chen 刚刚提交了取消请求。准备一份挽留方案。确定：(1) 他们为什么离开，(2) 什么挽留方案最有吸引力，以及 (3) 在提出方案之前我们应该注意哪些风险因素。
+
+以下是一些较弱的任务：
+
+- 安排下周与 jane@acme.corp 开会。
+- 在支付日志中搜索 purchase_complete 与 customer_id=9182。
+- 查找客户 ID 45892 的取消请求。
+
+每条评测提示词都应配有一个可验证的响应或结果。你的验证器可以简单到把标准答案与采样响应做精确字符串比较，也可以高级到请 Claude 来评判响应。要避免过于严格的验证器，它们会因为格式、标点或合法的其他表述这类无关差异而否掉正确答案。
+
+对每一组提示词—响应对，你还可以（可选地）指明你期望智能体为完成该任务而调用哪些工具，以衡量智能体在评测中是否成功把握了每个工具的用途。不过，正确解题可能有多种有效路径，所以尽量避免过度指定或过度拟合到某些策略。
+
+运行评测
+
+我们建议用直接的 LLM API 调用来程序化地运行评测。使用简单的智能体循环（用 while 循环包住交替进行的 LLM API 调用与工具调用）：每个评测任务一个循环。每个评测智能体应被给予单个任务提示词以及你的工具。
+
+在评测智能体的 system prompt 中，我们建议指示智能体不仅输出结构化响应块（用于验证），还要输出推理与反馈块。指示智能体把这些输出在工具调用与响应块之前，可能通过触发思维链（CoT）行为来提升 LLM 的有效智能。
+
+如果你用 Claude 运行评测，可以开启
+
+[交错思考（interleaved thinking）来「开箱」获得类似功能。这有助于你探查智能体为何调用或不调用某些工具，并突出工具描述与规格中需要改进的具体之处。](https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking#interleaved-thinking)
+
+除顶层准确率之外，我们建议收集其他指标，例如单次工具调用与任务的耗时、工具调用总数、token 总消耗，以及工具错误。跟踪工具调用有助于揭示智能体常用的工作流，并为工具的合并提供一些机会。
+
+![这张图衡量了人写的与 Claude 优化过的 Asana MCP 服务器在测试集上的准确率。](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F3f1f47e80974750cd924bc51e42b6df1ad997fab-1920x1080.png&w=3840&q=75)
+
+*我们的内部 Asana 工具在留出测试集上的表现*
+
+分析结果
+智能体是你发现问题的好帮手，它们能对从自相矛盾的工具描述、低效的工具实现到令人困惑的工具 schema 等一切给出反馈。但请记住：智能体在反馈与响应中**遗漏**的东西，往往比它**包含**的更重要。LLM 并不总是
+
+[说它真正想说的。](https://www.anthropic.com/research/tracing-thoughts-language-model)
+
+观察你的智能体在哪里卡住或困惑。通读评测智能体的推理与反馈（或 CoT）以找出粗糙之处。查看原始记录（包括工具调用与工具响应），以捕捉智能体 CoT 中没有明确描述的任何行为。要读出言外之意；记住你的评测智能体未必知道正确答案与策略。
+
+分析你的工具调用指标。大量冗余的工具调用可能说明该合理调整分页或 token 上限参数；大量因参数无效导致的工具错误，可能说明工具需要更清晰的描述或更好的示例。我们在发布 Claude 的
+
+[网页搜索工具时，发现 Claude 会毫无必要地在工具 query 参数后面追加 2025，从而使搜索结果产生偏差、降低性能（我们通过改进工具描述把 Claude 引回了正确方向）。](https://www.anthropic.com/news/web-search)
+
+### 与智能体协作
+
+你甚至可以让智能体分析你的结果并替你改进工具。只需把评测智能体的记录拼接起来，粘贴进 Claude Code。Claude 擅长分析记录，并一次性重构大量工具 —— 例如在新改动出现时确保工具的实现与描述保持自洽。
+
+事实上，本文中的大部分建议，都来自我们反复用 Claude Code 优化内部工具实现的过程。我们的评测建立在自己的内部工作区之上，镜像了内部工作流的复杂度，包括真实项目、文档与消息。
+
+我们依靠留出测试集来确保没有对「训练」用的评测过拟合。这些测试集表明，我们还能取得超出「专家级」工具实现所达到的性能提升 —— 无论那些工具是我们的研究者手写的，还是 Claude 自己生成的。
+
+下一节我们将分享从这个过程中学到的一些东西。
+
+## 编写高效工具的原则
+
+本节把我们学到的东西提炼成几条编写高效工具的指导原则。
+
+### 为智能体挑选合适的工具
+
+工具更多并不总是带来更好结果。我们观察到的一个常见错误，是工具只是在包装现有的软件功能或 API 端点 —— 而不论这些工具是否适合智能体。这是因为智能体与传统软件有着不同的「可供性（affordances）」—— 也就是说，它们感知自己能用这些工具采取哪些潜在行动的方式不同
+
+LLM 智能体的「上下文」是有限的（即它们一次能处理的信息量有上限），而计算机内存既便宜又充裕。考虑在通讯录里查找一个联系人的任务。传统软件程序可以高效地存储并逐个处理联系人列表，检查完一个再看下一个。
+
+然而，如果 LLM 智能体用的工具返回**所有**联系人、然后必须逐 token 读一遍，它就把有限的上下文空间浪费在无关信息上了（想象你在通讯录里从上到下逐页阅读来找一个联系人 —— 也就是暴力搜索）。更好也更自然的做法（对智能体与人类同样如此）是先跳到相关的那一页（也许按字母顺序找到它）。
+
+我们建议构建少数几个经过深思熟虑、针对特定高影响工作流的工具，与你的评测任务相配，然后再从那里扩展。在通讯录这个例子里，你可以选择实现 `search_contacts` 或 `message_contact` 工具，而不是 `list_contacts` 工具。
+
+工具可以合并功能，在底层处理潜在多个离散操作（或 API 调用）。例如，工具可以用相关元数据来丰富响应，或在一次工具调用中处理经常链式出现的多步任务。
+
+以下是一些示例：
+
+- 与其实现 `list_users`、`list_events` 和 `create_event` 三个工具，不如考虑实现一个 `schedule_event` 工具，它找出可用时间并安排事件。
+- 与其实现 `read_logs` 工具，不如考虑实现 `search_logs` 工具，它只返回相关日志行与一些周边上下文。
+- 与其实现 `get_customer_by_id`、`list_transactions` 和 `list_notes`，不如实现一个 `get_customer_context` 工具，一次性汇编某位客户全部近期且相关的信息。
+
+确保你构建的每个工具都有清晰、独特的用途。工具应当让智能体能够像人类在拿到同样底层资源时会做的那样去拆分并解决任务，同时减少原本会被中间输出消耗掉的上下文。
+
+工具过多或彼此重叠，也会分散智能体追求高效策略的注意力。对你要构建（或不构建）的工具做审慎而有选择性的规划，回报会很可观。
+
+### 为工具加命名空间
+
+你的 AI 智能体可能会接触到几十个 MCP 服务器与数百个不同工具 —— 包括其他开发者做的。当工具在功能上重叠、或用途含糊时，智能体会搞不清该用哪个。
+
+命名空间（把相关工具归到共同前缀下）有助于在大量工具之间划出边界；MCP 客户端有时默认就这么做。例如，按服务加命名空间（如 `asana_search`、`jira_search`）以及按资源加命名空间（如 `asana_projects_search`、`asana_users_search`），能帮助智能体在正确的时候选到正确的工具。
+
+我们发现，在前缀式与后缀式命名空间之间做选择，对我们的工具使用评测有不容忽视的影响。这种影响因 LLM 而异，我们鼓励你根据自己的评测来选择命名方案。
+
+智能体可能调用错误的工具、用错误的参数调用正确的工具、调用过少的工具，或错误地处理工具响应。通过有选择地实现命名能反映任务自然拆分的工具，你同时减少了加载进智能体上下文的工具与工具描述数量，并把智能体的计算从它的上下文卸载回工具调用本身。这降低了智能体犯错的整体风险。
+
+### 从工具返回有意义的上下文
+
+同理，工具实现应当注意只把高信号信息返回给智能体。它们应当优先考虑上下文相关性而非灵活性，并避开低级技术标识符（例如 uuid、256px_image_url、mime_type）。像 name、image_url、file_type 这样的字段，要更有可能直接指导智能体的下游行动与响应。
+
+智能体在处理自然语言名称、术语或标识符时，也明显比处理晦涩标识符更成功。我们发现，仅仅是把任意的字母数字 UUID 解析成语义上更有意义、更可解释的语言（甚至只用从 0 开始的 ID 方案），就能通过减少幻觉显著提升 Claude 在检索任务中的精确度。
+
+在某些情况下，智能体可能需要同时与自然语言标识符和技术标识符输出交互的灵活性，哪怕只是为了触发下游工具调用（例如 `search_user(name='jane')` → `send_message(id=12345)`）。你可以通过在工具中暴露一个简单的 `response_format` 枚举参数来同时支持两者，让智能体控制工具返回「简洁」还是「详细」的响应（见下图）。
+
+你还可以加入更多格式以获得更大灵活性，类似 GraphQL 里你可以精确选择想要收到哪些信息。下面是一个用于控制工具响应详细程度的 ResponseFormat 枚举示例：
+
+<!-- CODE_BLOCK_START id=c1 lang= -->
+```
+enum ResponseFormat {
+   DETAILED = "detailed",
+   CONCISE = "concise"
+}
+```
+<!-- CODE_BLOCK_END id=c1 -->
+
+复制
+
+下面是一个详细工具响应的示例（206 个 token）：
+
+![这段代码片段展示了一个详细工具响应的示例。](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F5ed0d30526bf68624f335d075b8c1541be3bb595-1920x1006.png&w=3840&q=75)
+
+下面是一个简洁工具响应的示例（72 个 token）：
+
+![这段代码片段展示了一个简洁工具响应。](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd4f649a66482efb5a80cf14ea85e84974ede1c49-1920x725.png&w=3840&q=75)
+
+*Slack 消息串与串内回复由唯一的 thread_ts 标识，获取串内回复需要它。thread_ts 以及其他 ID（channel_id、user_id）可以从「详细」工具响应中取得，以便进行需要这些 ID 的后续工具调用。「简洁」工具响应只返回串内容并排除这些 ID。在这个例子里，用「简洁」工具响应只花了约 ⅓ 的 token。*
+
+甚至你的工具响应结构 —— 例如 XML、JSON 或 Markdown —— 也会影响评测表现：没有一刀切的方案。这是因为 LLM 是按下一 token 预测训练的，往往在与训练数据格式匹配的格式上表现更好。最优响应结构会因任务与智能体而差异很大。我们鼓励你根据自己的评测来选择最佳响应结构。
+
+### 让工具响应在 token 效率上最优
+
+优化上下文的质量很重要。但优化工具响应返回给智能体的上下文**数量**同样重要。
+
+对于任何可能消耗大量上下文的工具响应，我们建议实现分页、范围选择、过滤和／或截断的某种组合，并给出合理的默认参数值。对 Claude Code，我们默认把工具响应限制在 25,000 个 token。我们预期智能体的有效上下文长度会随时间增长，但对上下文高效工具的需求会一直存在。
+
+如果你选择截断响应，务必用有帮助的指令来引导智能体。你可以直接鼓励智能体采用更省 token 的策略，例如对知识检索任务做多次小而精准的搜索，而不是一次宽泛的大搜索。同样，如果某次工具调用报错（例如在输入校验期间），你可以对错误响应做提示词工程，清楚传达具体、可操作的改进方向，而不是晦涩的错误码或堆栈回溯。
+
+下面是一个被截断的工具响应示例：
+
+![这张图描绘了一个被截断的工具响应示例。](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fe440d6a69d0ca80e71f3bec5c2d00906ff03ce6d-1920x1162.png&w=3840&q=75)
+
+下面是一个没有帮助的错误响应示例：
+
+![这张图描绘了一个没有帮助的工具响应示例。](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F2445187904704fec8c50af0b950e310ba743fac2-1920x733.png&w=3840&q=75)
+
+下面是一个有帮助的错误响应示例：
+
+![这张图描绘了一个有帮助的错误响应示例。](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F810661bd44a35fb273806ae95160040155978c3e-1920x850.png&w=3840&q=75)
+
+*工具截断与错误响应可以引导智能体走向更省 token 的工具使用行为（使用过滤或分页），或给出格式正确的工具输入示例。*
+
+### 对工具描述做提示词工程
+
+现在来到改进工具最有效的方法之一：对你的工具描述与规格做提示词工程。因为它们会被加载进智能体的上下文，所以它们能共同引导智能体形成有效的工具调用行为。
+
+写工具描述与规格时，想一想你会如何向团队里新入职的同事描述这个工具。考虑你可能不自觉地隐含了哪些上下文 —— 特殊的查询格式、小众术语的定义、底层资源之间的关系 —— 并把它们明确写出来。通过清楚描述（并用严格的数据模型强制执行）预期输入与输出来避免歧义。特别是，输入参数应当命名无歧义：与其用一个叫 user 的参数，不如用叫 user_id 的参数。
+
+有了评测，你就能更有把握地衡量提示词工程的影响。即使是对工具描述的小幅打磨，也能带来显著改善。在我们对工具描述做了精确打磨之后，Claude Sonnet 3.5 在
+
+[SWE-bench Verified 评测上取得了最先进的成绩，错误率大幅下降、任务完成度显著提升。](https://www.anthropic.com/engineering/swe-bench-sonnet)
+
+关于工具定义的更多最佳实践，见我们的
+
+[开发者指南。如果你在为 Claude 构建工具，我们还建议阅读工具是如何被动态加载进 Claude 的](https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/implement-tool-use#best-practices-for-tool-definitions)
+
+[system prompt 的。最后，如果你在为 MCP 服务器写工具，](https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/implement-tool-use#tool-use-system-prompt)
+
+[工具注解有助于披露哪些工具需要开放世界访问权限、或会做出破坏性改动。](https://modelcontextprotocol.io/specification/2025-06-18/server/tools)
+
+## 展望
+
+要为智能体构建有效的工具，我们需要把软件开发实践从可预测的确定性模式，重新调整为非确定性模式。
+
+通过本文描述的这套迭代式、评测驱动的方法，我们识别出了工具成功的稳定模式：有效的工具被有意地、清晰地定义，审慎地使用智能体上下文，能在多样工作流中组合使用，并让智能体凭直觉就能解决真实世界的任务。
+
+未来，我们预期智能体与世界交互的具体机制会持续演进 —— 从 MCP 协议的更新到对底层 LLM 本身的升级。有了这套系统化、评测驱动的工具改进方法，我们就能确保：随着智能体变得更强，它们所用的工具也将随之演进。
+
+## 致谢
+
+由 Ken Aizawa 撰写，并得到研究团队（Barry Zhang、Zachary Witten、Daniel Jiang、Sami Al-Sheikh、Matt Bell、Maggie Vo）、MCP 团队（Theodora Chu、John Welsh、David Soria Parra、Adam Jones）、产品工程（Santiago Seira）、市场（Molly Vorwerck）、设计（Drew Roper）以及应用 AI（Christian Ryan、Alexander Bricken）各位同事的宝贵贡献。
+
+1此处不涉及对底层 LLM 本身的训练。
+
+https://anthropic.skilljar.com/
+
+![带有复杂几何形状与细致表面纹理的互锁拼图块](https://www-cdn.anthropic.com/images/4zrzovbb/website/43abe7e54b56a891e74a8542944dfbd33f07f49c-1000x1000.svg)
+
+### 想了解更多？
+
+探索课程
+
+## 订阅开发者通讯
+
+产品更新、操作指南、社区亮点等。每月送达你的收件箱。
+
+如果你希望收到我们的月度开发者通讯，请提供你的电子邮箱地址。你可以随时退订。
+
+Writing effective tools for AI agents—using AI agents \ Anthropic
+
+```

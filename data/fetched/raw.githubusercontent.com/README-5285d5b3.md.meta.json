@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
+  "final_url": "https://raw.githubusercontent.com/SuperClaude-Org/SuperClaude_Framework/master/README.md",
+  "fetched_at": "2026-09-27T00:09:23+08:00",
+  "http_status": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "bytes": 19554,
+  "sha256": "f477b0310168ab45c9bc9aa507a570814813dcdf3a92ab4992810f9ba53cdc30",
+  "used_branch": "master",
+  "archive_path": "archive/raw.githubusercontent.com/README-5285d5b3.md",
+  "server": null,
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:09:23 GMT",
+  "url_path": "/SuperClaude-Org/SuperClaude_Framework/master/README.md",
+  "fetched_by": "fetch.py"
+}

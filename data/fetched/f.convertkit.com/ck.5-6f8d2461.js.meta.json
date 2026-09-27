@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://f.convertkit.com/ckjs/ck.5.js",
+  "final_url": "https://f.convertkit.com/ckjs/ck.5.js",
+  "fetched_at": "2026-09-27T00:09:21+08:00",
+  "http_status": 200,
+  "content_type": "application/javascript; charset=utf-8",
+  "bytes": 47165,
+  "sha256": "89a6b632ddf34c87174641c8a56b6976805020bfd90885f8633cd6645831f3c2",
+  "used_branch": null,
+  "archive_path": "archive/f.convertkit.com/ck.5-6f8d2461.js",
+  "server": "cloudflare",
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:09:21 GMT",
+  "url_path": "/ckjs/ck.5.js",
+  "fetched_by": "fetch.py"
+}

@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week1",
+  "final_url": "https://raw.githubusercontent.com/mihail911/modern-software-dev-assignments/master/week1/assignment.md",
+  "fetched_at": "2026-09-27T00:09:32+08:00",
+  "http_status": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "bytes": 10070,
+  "sha256": "690229137e566f4bd81ee591c71711ca6a965a089a2a5eb518d6a030d47e0ff8",
+  "used_branch": "master",
+  "archive_path": "archive/raw.githubusercontent.com/assignment-67e0a761.md",
+  "server": null,
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:09:32 GMT",
+  "url_path": "/mihail911/modern-software-dev-assignments/master/week1/assignment.md",
+  "fetched_by": "fetch.py"
+}

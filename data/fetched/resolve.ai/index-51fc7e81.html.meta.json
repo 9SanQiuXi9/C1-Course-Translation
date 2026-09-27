@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://resolve.ai/",
+  "final_url": "https://resolve.ai/",
+  "fetched_at": "2026-09-27T00:12:35+08:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 397717,
+  "sha256": "9b8e964a621c9d4ff63047971433c5ece26834283d318005b032d4c2e89851f7",
+  "used_branch": null,
+  "archive_path": "archive/resolve.ai/index-51fc7e81.html",
+  "server": null,
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:11:21 GMT",
+  "url_path": "/",
+  "fetched_by": "fetch.py"
+}

@@ -1,0 +1,1164 @@
+{
+  "total_docs": 57,
+  "done": 41,
+  "pending": 7,
+  "docs": {
+    "agentic-ai-threats": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:20:24+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 276,
+        "urls_trans": 276,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 71,
+        "headings_trans": 71,
+        "headings_match": true,
+        "orig_chars": 64681,
+        "trans_chars": 42850,
+        "length_ratio": 0.6625,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/agentic-ai-threats.PROMPT.md"
+    },
+    "ai-assisted-code-review-assessment": {
+      "status": "done",
+      "failures": [
+        {
+          "at": "2026-09-27T17:18:36+08:00",
+          "errors": [
+            "代码块数量不一致：原文 0 个，译文 1 个",
+            "URL 丢失：原文有 16 个，译文缺 ['https://beam.apache.org/Therefore', 'https://github.com/google/styleguide/blob/gh-pages/pyguide.md#22-importsImportance', 'https://peps.python.org/pep-0008/.Accessed']"
+          ],
+          "source_file": "D:\\Work\\_t34.md"
+        }
+      ],
+      "saved_at": "2026-09-27T17:18:57+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 16,
+        "urls_trans": 17,
+        "urls_all_present": true,
+        "urls_counts_equal": false,
+        "urls_notes": [
+          "译文多出 URL（未计入失败，需人工确认）：['https://go.dev/doc/comment#func`']"
+        ],
+        "headings_orig": 1,
+        "headings_trans": 1,
+        "headings_match": true,
+        "orig_chars": 44509,
+        "trans_chars": 21557,
+        "length_ratio": 0.4843,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/ai-assisted-code-review-assessment.PROMPT.md"
+    },
+    "ai-code-review-best-practices": {
+      "status": "done",
+      "saved_at": "2026-09-27T16:57:06+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 16,
+        "urls_trans": 16,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 36,
+        "headings_trans": 36,
+        "headings_match": true,
+        "orig_chars": 15575,
+        "trans_chars": 8180,
+        "length_ratio": 0.5252,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/ai-code-review-best-practices.PROMPT.md"
+    },
+    "archive-a16z.com-index-28eae9d8": {
+      "status": "done",
+      "prompt_exported_at": "2026-09-27T15:22:55+08:00",
+      "saved_at": "2026-09-27T16:05:55+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 14,
+        "urls_trans": 14,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 6,
+        "headings_trans": 6,
+        "headings_match": true,
+        "orig_chars": 1600,
+        "trans_chars": 1545,
+        "length_ratio": 0.9656,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/archive-a16z.com-index-28eae9d8.PROMPT.md"
+    },
+    "archive-a16z.com-martin-casado-819a7ad5": {
+      "status": "pending"
+    },
+    "archive-app.kit.com-subscriptions-c7e965bf": {
+      "status": "skipped_no_content",
+      "prompt_exported_at": "2026-09-27T15:22:55+08:00",
+      "no_content_code": "login_page",
+      "no_content_reason": "抓到的是登录页，不是正文"
+    },
+    "archive-cognition.ai-index-5e05e503": {
+      "status": "done",
+      "prompt_exported_at": "2026-09-27T16:30:46+08:00",
+      "saved_at": "2026-09-27T16:31:41+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 9,
+        "urls_trans": 9,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 4,
+        "headings_trans": 4,
+        "headings_match": true,
+        "orig_chars": 6156,
+        "trans_chars": 4837,
+        "length_ratio": 0.7857,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/archive-cognition.ai-index-5e05e503.PROMPT.md"
+    },
+    "archive-f.convertkit.com-ck.5-6f8d2461": {
+      "status": "skipped_no_content",
+      "prompt_exported_at": "2026-09-27T15:22:55+08:00",
+      "no_content_code": "spa_shell",
+      "no_content_reason": "官网 SPA 正文在打包 JS 中，抽取未取到正文（extract.py 缺陷）"
+    },
+    "archive-graphite.dev-index-6ddb92ea": {
+      "status": "done",
+      "prompt_exported_at": "2026-09-27T16:30:46+08:00",
+      "saved_at": "2026-09-27T16:31:08+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 8,
+        "urls_trans": 8,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 11,
+        "headings_trans": 11,
+        "headings_match": true,
+        "orig_chars": 5050,
+        "trans_chars": 3951,
+        "length_ratio": 0.7824,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/archive-graphite.dev-index-6ddb92ea.PROMPT.md"
+    },
+    "archive-raw.githubusercontent.com-README-5285d5b3": {
+      "status": "pending"
+    },
+    "archive-raw.githubusercontent.com-README-704a0e2c": {
+      "status": "done",
+      "prompt_exported_at": "2026-09-27T16:49:48+08:00",
+      "saved_at": "2026-09-27T16:53:08+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 7,
+        "code_blocks_in_translation": 7,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 7,
+        "urls_trans": 7,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 22,
+        "headings_trans": 22,
+        "headings_match": true,
+        "orig_chars": 6947,
+        "trans_chars": 4624,
+        "length_ratio": 0.6656,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/archive-raw.githubusercontent.com-README-704a0e2c.PROMPT.md"
+    },
+    "archive-raw.githubusercontent.com-README-dc2d4ffa": {
+      "status": "done",
+      "saved_at": "2026-09-27T16:33:50+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 5,
+        "code_blocks_in_translation": 5,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 24,
+        "urls_trans": 24,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 14,
+        "headings_trans": 14,
+        "headings_match": true,
+        "orig_chars": 5977,
+        "trans_chars": 4179,
+        "length_ratio": 0.6992,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/archive-raw.githubusercontent.com-README-dc2d4ffa.PROMPT.md"
+    },
+    "archive-raw.githubusercontent.com-README-f5dda901": {
+      "status": "done",
+      "prompt_exported_at": "2026-09-27T16:49:48+08:00",
+      "saved_at": "2026-09-27T16:52:53+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 5,
+        "code_blocks_in_translation": 5,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 35,
+        "urls_trans": 35,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 14,
+        "headings_trans": 14,
+        "headings_match": true,
+        "orig_chars": 6773,
+        "trans_chars": 4609,
+        "length_ratio": 0.6805,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/archive-raw.githubusercontent.com-README-f5dda901.PROMPT.md"
+    },
+    "archive-raw.githubusercontent.com-ace-fca-f63a056c": {
+      "status": "done",
+      "failures": [
+        {
+          "at": "2026-09-27T17:14:18+08:00",
+          "errors": [
+            "URL 丢失：原文有 67 个，译文缺 ['https://github.com/BoundaryML/baml/issues/1252']"
+          ],
+          "source_file": "D:\\Work\\_t31.md"
+        }
+      ],
+      "saved_at": "2026-09-27T17:14:24+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 1,
+        "code_blocks_in_translation": 1,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 67,
+        "urls_trans": 67,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 26,
+        "headings_trans": 26,
+        "headings_match": true,
+        "orig_chars": 23502,
+        "trans_chars": 13092,
+        "length_ratio": 0.5571,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/archive-raw.githubusercontent.com-ace-fca-f63a056c.PROMPT.md"
+    },
+    "archive-raw.githubusercontent.com-assignment-67e0a761": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:10:06+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 2,
+        "code_blocks_in_translation": 2,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 7,
+        "urls_trans": 7,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 14,
+        "headings_trans": 14,
+        "headings_match": true,
+        "orig_chars": 8235,
+        "trans_chars": 4278,
+        "length_ratio": 0.5195,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/archive-raw.githubusercontent.com-assignment-67e0a761.PROMPT.md"
+    },
+    "archive-raw.githubusercontent.com-system_prompt_uafs-3e1f551e": {
+      "status": "done",
+      "prompt_exported_at": "2026-09-27T15:22:55+08:00",
+      "saved_at": "2026-09-27T16:05:55+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 0,
+        "urls_trans": 0,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 1,
+        "headings_trans": 1,
+        "headings_match": true,
+        "orig_chars": 1694,
+        "trans_chars": 547,
+        "length_ratio": 0.3229,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/archive-raw.githubusercontent.com-system_prompt_uafs-3e1f551e.PROMPT.md"
+    },
+    "archive-reactjs.org-error-decoder-2ccbc8e1": {
+      "status": "done",
+      "prompt_exported_at": "2026-09-27T15:22:55+08:00",
+      "failures": [
+        {
+          "at": "2026-09-27T16:05:55+08:00",
+          "errors": [
+            "URL 丢失：原文有 1 个，译文缺 ['https://react.dev/errors/149']"
+          ],
+          "source_file": "D:\\Work\\_zh_r1.md"
+        },
+        {
+          "at": "2026-09-27T16:06:06+08:00",
+          "errors": [
+            "URL 丢失：原文有 1 个，译文缺 ['https://react.dev/errors/149']"
+          ],
+          "source_file": "D:\\Work\\_zh_r1.md"
+        }
+      ],
+      "saved_at": "2026-09-27T16:06:24+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 1,
+        "urls_trans": 1,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 1,
+        "headings_trans": 1,
+        "headings_match": true,
+        "orig_chars": 517,
+        "trans_chars": 212,
+        "length_ratio": 0.4101,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/archive-reactjs.org-error-decoder-2ccbc8e1.PROMPT.md"
+    },
+    "archive-resolve.ai-index-51fc7e81": {
+      "status": "pending"
+    },
+    "archive-resolve.ai-product-deep-dive-0d0780da": {
+      "status": "done",
+      "prompt_exported_at": "2026-09-27T16:46:30+08:00",
+      "saved_at": "2026-09-27T16:46:47+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 8,
+        "urls_trans": 8,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 14,
+        "headings_trans": 14,
+        "headings_match": true,
+        "orig_chars": 7544,
+        "trans_chars": 4622,
+        "length_ratio": 0.6127,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/archive-resolve.ai-product-deep-dive-0d0780da.PROMPT.md"
+    },
+    "archive-semgrep.dev-index-e5277db8": {
+      "status": "pending",
+      "prompt_exported_at": "2026-09-27T21:26:25+08:00"
+    },
+    "archive-vercel.com-index-843a793e": {
+      "status": "done",
+      "prompt_exported_at": "2026-09-27T15:22:55+08:00",
+      "saved_at": "2026-09-27T16:05:55+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 15,
+        "urls_trans": 15,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 5,
+        "headings_trans": 5,
+        "headings_match": true,
+        "orig_chars": 2860,
+        "trans_chars": 2048,
+        "length_ratio": 0.7161,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/archive-vercel.com-index-843a793e.PROMPT.md"
+    },
+    "archive-www.figma.com-Warp---Stanford--Copy--e1c08306": {
+      "status": "skipped_no_content",
+      "prompt_exported_at": "2026-09-27T15:22:55+08:00",
+      "no_content_code": "js_rendered",
+      "no_content_reason": "原站为 Figma 幻灯片，内容由 JS 动态渲染，静态抓取只剩标题"
+    },
+    "archive-www.mihaileric.com-index-76879b6c": {
+      "status": "pending",
+      "prompt_exported_at": "2026-09-27T21:26:25+08:00"
+    },
+    "archive-www.warp.dev-index-8d73894f": {
+      "status": "pending",
+      "prompt_exported_at": "2026-09-27T21:26:25+08:00"
+    },
+    "archive-www.warp.dev-university-345355c4": {
+      "status": "pending"
+    },
+    "benefits-agentic-ai-oncall": {
+      "status": "done",
+      "saved_at": "2026-09-27T16:47:24+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 11,
+        "urls_trans": 11,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 9,
+        "headings_trans": 9,
+        "headings_match": true,
+        "orig_chars": 8668,
+        "trans_chars": 4845,
+        "length_ratio": 0.559,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/benefits-agentic-ai-oncall.PROMPT.md"
+    },
+    "claude-code-best-practices": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:00:20+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 9,
+        "code_blocks_in_translation": 9,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 17,
+        "urls_trans": 17,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 9,
+        "headings_trans": 9,
+        "headings_match": true,
+        "orig_chars": 11343,
+        "trans_chars": 7264,
+        "length_ratio": 0.6404,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/claude-code-best-practices.PROMPT.md"
+    },
+    "code-review-essentials": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:04:58+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 2,
+        "code_blocks_in_translation": 2,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 2,
+        "urls_trans": 2,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 10,
+        "headings_trans": 10,
+        "headings_match": true,
+        "orig_chars": 9188,
+        "trans_chars": 3333,
+        "length_ratio": 0.3628,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/code-review-essentials.PROMPT.md"
+    },
+    "code-reviews-just-do-it": {
+      "status": "done",
+      "saved_at": "2026-09-27T16:33:34+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 6,
+        "urls_trans": 6,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 10,
+        "headings_trans": 10,
+        "headings_match": true,
+        "orig_chars": 6677,
+        "trans_chars": 3867,
+        "length_ratio": 0.5792,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/code-reviews-just-do-it.PROMPT.md"
+    },
+    "context-rot": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:15:49+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 1,
+        "code_blocks_in_translation": 1,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 31,
+        "urls_trans": 31,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 47,
+        "headings_trans": 47,
+        "headings_match": true,
+        "orig_chars": 47476,
+        "trans_chars": 23402,
+        "length_ratio": 0.4929,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/context-rot.PROMPT.md"
+    },
+    "copilot-prompt-injection-rce": {
+      "status": "done",
+      "prompt_exported_at": "2026-09-27T16:46:30+08:00",
+      "saved_at": "2026-09-27T16:47:05+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 15,
+        "urls_trans": 15,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 14,
+        "headings_trans": 14,
+        "headings_match": true,
+        "orig_chars": 7901,
+        "trans_chars": 4389,
+        "length_ratio": 0.5555,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/copilot-prompt-injection-rce.PROMPT.md"
+    },
+    "devin-coding-agents-101": {
+      "status": "done",
+      "saved_at": "2026-09-27T16:53:59+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 1,
+        "urls_trans": 1,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 47,
+        "headings_trans": 47,
+        "headings_match": true,
+        "orig_chars": 16009,
+        "trans_chars": 6025,
+        "length_ratio": 0.3764,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/devin-coding-agents-101.PROMPT.md"
+    },
+    "finding-vulnerabilities-claude-codex": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:12:43+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 3,
+        "code_blocks_in_translation": 3,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 33,
+        "urls_trans": 33,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 19,
+        "headings_trans": 19,
+        "headings_match": true,
+        "orig_chars": 21896,
+        "trans_chars": 11085,
+        "length_ratio": 0.5063,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/finding-vulnerabilities-claude-codex.PROMPT.md"
+    },
+    "good-context-good-code": {
+      "status": "skipped_no_content",
+      "prompt_exported_at": "2026-09-27T15:22:55+08:00",
+      "no_content_code": "unrecoverable_upstream",
+      "no_content_reason": "原站（Ghost 私有模式）正文需付费/订阅/访问码才可见，静态抓取只拿到订阅表单"
+    },
+    "how-anthropic-uses-claude-code": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:17:13+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 0,
+        "urls_trans": 0,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 1,
+        "headings_trans": 1,
+        "headings_match": true,
+        "orig_chars": 39018,
+        "trans_chars": 12207,
+        "length_ratio": 0.3129,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/how-anthropic-uses-claude-code.PROMPT.md"
+    },
+    "how-long-contexts-fail": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:05:15+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 13,
+        "urls_trans": 13,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 7,
+        "headings_trans": 7,
+        "headings_match": true,
+        "orig_chars": 9734,
+        "trans_chars": 4575,
+        "length_ratio": 0.47,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/how-long-contexts-fail.PROMPT.md"
+    },
+    "how-openai-uses-codex": {
+      "status": "skipped_no_content",
+      "prompt_exported_at": "2026-09-27T16:30:46+08:00",
+      "no_content_code": "unrecoverable_upstream",
+      "no_content_reason": "Type3 矢量字形且字体缺失 /ToUnicode 映射（字形名是 /C0 /C1 这类匿名编号），字符码到 Unicode 没有映射关系，抽出的文本是字母替换式乱码，正文客观不可恢复。已按纪律不输出乱码；实测乱码率 0.1594、停用词占比 None。需 OCR 或带文本层的原始版本。"
+    },
+    "how-to-review-code-effectively": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:12:13+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 54,
+        "urls_trans": 54,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 26,
+        "headings_trans": 26,
+        "headings_match": true,
+        "orig_chars": 22675,
+        "trans_chars": 12393,
+        "length_ratio": 0.5465,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/how-to-review-code-effectively.PROMPT.md"
+    },
+    "how-warp-uses-warp": {
+      "status": "skipped_no_content",
+      "prompt_exported_at": "2026-09-27T15:22:55+08:00",
+      "no_content_code": "unrecoverable_upstream",
+      "no_content_reason": "原站为 Notion 页面，正文由客户端 JS 动态渲染，静态抓取只有应用外壳（含 JS 加载器与样式），无正文"
+    },
+    "kubernetes-troubleshooting-ai": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:05:32+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 24,
+        "urls_trans": 24,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 14,
+        "headings_trans": 14,
+        "headings_match": true,
+        "orig_chars": 11568,
+        "trans_chars": 6843,
+        "length_ratio": 0.5915,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/kubernetes-troubleshooting-ai.PROMPT.md"
+    },
+    "lessons-from-ai-code-reviews": {
+      "status": "skipped_no_content",
+      "prompt_exported_at": "2026-09-27T15:22:55+08:00",
+      "no_content_code": "unrecoverable_upstream",
+      "no_content_reason": "本地文件 0 字节：抓取阶段完全没拿到内容（非解析失败，是无内容可取）"
+    },
+    "mcp-food-for-thought": {
+      "status": "done",
+      "prompt_exported_at": "2026-09-27T16:30:46+08:00",
+      "saved_at": "2026-09-27T16:31:58+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 3,
+        "code_blocks_in_translation": 3,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 14,
+        "urls_trans": 14,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 15,
+        "headings_trans": 15,
+        "headings_match": true,
+        "orig_chars": 5255,
+        "trans_chars": 3180,
+        "length_ratio": 0.6051,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/mcp-food-for-thought.PROMPT.md"
+    },
+    "mcp-introduction": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:13:45+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 5,
+        "code_blocks_in_translation": 5,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 23,
+        "urls_trans": 23,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 39,
+        "headings_trans": 39,
+        "headings_match": true,
+        "orig_chars": 28332,
+        "trans_chars": 13149,
+        "length_ratio": 0.4641,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/mcp-introduction.PROMPT.md"
+    },
+    "mcp-registry-preview": {
+      "status": "done",
+      "prompt_exported_at": "2026-09-27T16:30:46+08:00",
+      "failures": [
+        {
+          "at": "2026-09-27T16:37:15+08:00",
+          "errors": [
+            "URL 丢失：原文有 38 个，译文缺 ['https://github.com/modelcontextprotocol/registry/discussions/11']"
+          ],
+          "source_file": "D:\\Work\\_t7.md"
+        },
+        {
+          "at": "2026-09-27T16:37:30+08:00",
+          "errors": [
+            "URL 丢失：原文有 38 个，译文缺 ['https://www.anthropic.com/']"
+          ],
+          "source_file": "D:\\Work\\_t7.md"
+        }
+      ],
+      "saved_at": "2026-09-27T16:37:37+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 38,
+        "urls_trans": 38,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 5,
+        "headings_trans": 5,
+        "headings_match": true,
+        "orig_chars": 6511,
+        "trans_chars": 4047,
+        "length_ratio": 0.6216,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/mcp-registry-preview.PROMPT.md"
+    },
+    "mcp-server-authentication": {
+      "status": "done",
+      "failures": [
+        {
+          "at": "2026-09-27T17:01:00+08:00",
+          "errors": [
+            "代码块内容被改动（逐字节比对不一致）：['c6', 'c8']",
+            "URL 丢失：原文有 31 个，译文缺 ['https://developers.cloudflare.com/agents/llms.txt', 'https://developers.cloudflare.com/llms.txt', 'https://developers.cloudflare.com/agents/llms-full.txt']"
+          ],
+          "source_file": "D:\\Work\\_t19.md"
+        },
+        {
+          "at": "2026-09-27T17:01:21+08:00",
+          "errors": [
+            "URL 丢失：原文有 31 个，译文缺 ['https://developers.cloudflare.com/agents/llms.txt', 'https://developers.cloudflare.com/llms.txt', 'https://developers.cloudflare.com/agents/llms-full.txt']"
+          ],
+          "source_file": "D:\\Work\\_t19.md"
+        }
+      ],
+      "saved_at": "2026-09-27T17:01:50+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 26,
+        "code_blocks_in_translation": 26,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 31,
+        "urls_trans": 31,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 14,
+        "headings_trans": 14,
+        "headings_match": true,
+        "orig_chars": 11958,
+        "trans_chars": 7804,
+        "length_ratio": 0.6526,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/mcp-server-authentication.PROMPT.md"
+    },
+    "multi-agent-systems-ai-native": {
+      "status": "done",
+      "saved_at": "2026-09-27T16:56:24+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 27,
+        "urls_trans": 27,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 13,
+        "headings_trans": 13,
+        "headings_match": true,
+        "orig_chars": 16750,
+        "trans_chars": 9179,
+        "length_ratio": 0.548,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/multi-agent-systems-ai-native.PROMPT.md"
+    },
+    "observability-basics": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:00:39+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 2,
+        "code_blocks_in_translation": 2,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 20,
+        "urls_trans": 20,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 30,
+        "headings_trans": 30,
+        "headings_match": true,
+        "orig_chars": 11389,
+        "trans_chars": 5805,
+        "length_ratio": 0.5097,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/observability-basics.PROMPT.md"
+    },
+    "owasp-top-ten": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:08:15+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 76,
+        "urls_trans": 76,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 32,
+        "headings_trans": 32,
+        "headings_match": true,
+        "orig_chars": 23497,
+        "trans_chars": 19440,
+        "length_ratio": 0.8273,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/owasp-top-ten.PROMPT.md"
+    },
+    "peeking-under-the-hood-of-claude-code": {
+      "status": "skipped_no_content",
+      "prompt_exported_at": "2026-09-27T15:22:55+08:00",
+      "no_content_code": "unrecoverable_upstream",
+      "no_content_reason": "原站（Medium）对自动化访问返回反爬拦截，缓存内只剩一段占位说明，正文从未取得"
+    },
+    "prompt-engineering-guide": {
+      "status": "done",
+      "prompt_exported_at": "2026-09-27T15:10:35+08:00",
+      "saved_at": "2026-09-27T15:23:03+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 1,
+        "urls_trans": 2,
+        "urls_all_present": true,
+        "urls_counts_equal": false,
+        "urls_notes": [
+          "译文多出 URL（未计入失败，需人工确认）：['https://www.promptingguide.ai/techniques']"
+        ],
+        "headings_orig": 1,
+        "headings_trans": 1,
+        "headings_match": true,
+        "orig_chars": 536,
+        "trans_chars": 324,
+        "length_ratio": 0.6045,
+        "length_ratio_ok": true
+      },
+      "trail": "translated/prompt-engineering-guide.PROMPT.md",
+      "failures": [
+        {
+          "at": "2026-09-27T15:12:02+08:00",
+          "errors": [
+            "URL 丢失：原文有 1 个，译文缺 ['https://academy.dair.ai/courses/build-apps-with-claude-code']",
+            "标题行数量不一致：原文 1，译文 0",
+            "长度比异常：0.03（合理区间 0.3~1.5），可能漏译或过度扩写"
+          ],
+          "source_file": "D:\\Work\\_bad.md"
+        }
+      ]
+    },
+    "prompt-engineering-overview": {
+      "status": "done",
+      "failures": [
+        {
+          "at": "2026-09-27T17:22:13+08:00",
+          "errors": [
+            "标题行数量不一致：原文 35，译文 34"
+          ],
+          "source_file": "D:\\Work\\_t36.md"
+        },
+        {
+          "at": "2026-09-27T17:22:43+08:00",
+          "errors": [
+            "标题行数量不一致：原文 35，译文 34"
+          ],
+          "source_file": "D:\\Work\\_t36.md"
+        },
+        {
+          "at": "2026-09-27T17:22:55+08:00",
+          "errors": [
+            "标题行数量不一致：原文 35，译文 34"
+          ],
+          "source_file": "D:\\Work\\_t36.md"
+        },
+        {
+          "at": "2026-09-27T17:23:14+08:00",
+          "errors": [
+            "标题行数量不一致：原文 35，译文 34"
+          ],
+          "source_file": "D:\\Work\\_t36.md"
+        },
+        {
+          "at": "2026-09-27T17:23:34+08:00",
+          "errors": [
+            "标题行数量不一致：原文 35，译文 34"
+          ],
+          "source_file": "D:\\Work\\_t36.md"
+        }
+      ],
+      "saved_at": "2026-09-27T17:23:44+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 764,
+        "urls_trans": 758,
+        "urls_all_present": true,
+        "urls_counts_equal": false,
+        "headings_orig": 35,
+        "headings_trans": 35,
+        "headings_match": true,
+        "orig_chars": 86709,
+        "trans_chars": 61837,
+        "length_ratio": 0.7132,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/prompt-engineering-overview.PROMPT.md"
+    },
+    "sast-vs-dast": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:10:28+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 10,
+        "urls_trans": 10,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 29,
+        "headings_trans": 29,
+        "headings_match": true,
+        "orig_chars": 19089,
+        "trans_chars": 8617,
+        "length_ratio": 0.4514,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/sast-vs-dast.PROMPT.md"
+    },
+    "specs-are-the-new-source-code": {
+      "status": "done",
+      "saved_at": "2026-09-27T16:56:47+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 47,
+        "urls_trans": 47,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 5,
+        "headings_trans": 5,
+        "headings_match": true,
+        "orig_chars": 15528,
+        "trans_chars": 9268,
+        "length_ratio": 0.5969,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/specs-are-the-new-source-code.PROMPT.md"
+    },
+    "sre-introduction": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:07:45+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 11,
+        "urls_trans": 11,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 13,
+        "headings_trans": 13,
+        "headings_match": true,
+        "orig_chars": 21307,
+        "trans_chars": 8130,
+        "length_ratio": 0.3816,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/sre-introduction.PROMPT.md"
+    },
+    "warp-vs-claude-code": {
+      "status": "done",
+      "prompt_exported_at": "2026-09-27T16:30:46+08:00",
+      "saved_at": "2026-09-27T16:31:24+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 0,
+        "code_blocks_in_translation": 0,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 15,
+        "urls_trans": 15,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 1,
+        "headings_trans": 1,
+        "headings_match": true,
+        "orig_chars": 5978,
+        "trans_chars": 3870,
+        "length_ratio": 0.6474,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/warp-vs-claude-code.PROMPT.md"
+    },
+    "writing-effective-tools-for-agents": {
+      "status": "done",
+      "saved_at": "2026-09-27T17:10:55+08:00",
+      "checks": {
+        "non_empty": true,
+        "code_blocks_total": 1,
+        "code_blocks_in_translation": 1,
+        "code_blocks_match": true,
+        "code_blocks_byte_identical": true,
+        "urls_orig": 18,
+        "urls_trans": 18,
+        "urls_all_present": true,
+        "urls_counts_equal": true,
+        "headings_orig": 15,
+        "headings_trans": 15,
+        "headings_match": true,
+        "orig_chars": 21736,
+        "trans_chars": 10110,
+        "length_ratio": 0.4651,
+        "length_ratio_ok": true
+      },
+      "trail": "output/translated/writing-effective-tools-for-agents.PROMPT.md"
+    },
+    "course-site-spa": {
+      "status": "skipped_no_content",
+      "no_content_code": "spa_shell",
+      "no_content_reason": "官网 SPA 正文在打包 JS 中，抽取未取到正文（extract.py 缺陷）"
+    }
+  },
+  "skipped_no_content": 9
+}

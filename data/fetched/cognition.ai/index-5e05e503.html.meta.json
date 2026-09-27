@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://cognition.ai/",
+  "final_url": "https://cognition.ai/",
+  "fetched_at": "2026-09-27T00:09:18+08:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 519612,
+  "sha256": "950d1aaa14a9353b39c05b3ba1c1ab91ad21a4dfd5156905d2114066fd17a379",
+  "used_branch": null,
+  "archive_path": "archive/cognition.ai/index-5e05e503.html",
+  "server": "Vercel",
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:09:17 GMT",
+  "url_path": "/",
+  "fetched_by": "fetch.py"
+}

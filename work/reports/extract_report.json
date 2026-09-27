@@ -1,0 +1,1763 @@
+{
+  "generated_by": "extract.py",
+  "note": "本文件由脚本生成，请勿手改。抽取失败的文件不会产出占位文件。",
+  "inputs": {
+    "manifest": "work/reports/manifest.json",
+    "archive_root": "data/fetched",
+    "materials": "data/materials"
+  },
+  "summary": {
+    "total_files": 71,
+    "ok": 49,
+    "failed": 14,
+    "suspect": 8,
+    "total_chars": 923077,
+    "total_code_blocks": 83,
+    "total_tables": 50,
+    "total_links": 2700,
+    "total_warnings": 54,
+    "placeholders_written": 0,
+    "garbage": {
+      "readable": 29,
+      "partial": 14,
+      "garbage": 28
+    }
+  },
+  "items": [
+    {
+      "id": "agentic-ai-threats",
+      "file": "data/materials/CS146S_offline/pages/agentic-ai-threats.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 72996,
+      "english_words": 9674,
+      "garbage_rate": 0.3484,
+      "garbage_verdict": "部分可读",
+      "code_blocks": 0,
+      "tables": 2,
+      "links": 218,
+      "headings_h1": 1,
+      "headings_h2": 13,
+      "headings_h3": 18,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/agentic-ai-threats.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "ai-code-review-best-practices",
+      "file": "data/materials/CS146S_offline/pages/ai-code-review-best-practices.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 17837,
+      "english_words": 2397,
+      "garbage_rate": 0.0188,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 2,
+      "links": 63,
+      "headings_h1": 1,
+      "headings_h2": 2,
+      "headings_h3": 14,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 5 个非正文区块（正文下降 6.6%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/ai-code-review-best-practices.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "benefits-agentic-ai-oncall",
+      "file": "data/materials/CS146S_offline/pages/benefits-agentic-ai-oncall.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 9805,
+      "english_words": 1373,
+      "garbage_rate": 0.0946,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 22,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 2 个非正文区块（正文下降 1.4%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/benefits-agentic-ai-oncall.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "claude-code-best-practices",
+      "file": "data/materials/CS146S_offline/pages/claude-code-best-practices.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 14500,
+      "english_words": 2168,
+      "garbage_rate": 0.0455,
+      "garbage_verdict": "可读",
+      "code_blocks": 9,
+      "tables": 1,
+      "links": 99,
+      "headings_h1": 1,
+      "headings_h2": 7,
+      "headings_h3": 0,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/claude-code-best-practices.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "code-review-essentials",
+      "file": "data/materials/CS146S_offline/pages/code-review-essentials.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 12273,
+      "english_words": 2006,
+      "garbage_rate": 0.0,
+      "garbage_verdict": "可读",
+      "code_blocks": 2,
+      "tables": 0,
+      "links": 4,
+      "headings_h1": 1,
+      "headings_h2": 8,
+      "headings_h3": 1,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 0.3%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/code-review-essentials.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "code-reviews-just-do-it",
+      "file": "data/materials/CS146S_offline/pages/code-reviews-just-do-it.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 7763,
+      "english_words": 1146,
+      "garbage_rate": 0.0312,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 28,
+      "headings_h1": 1,
+      "headings_h2": 1,
+      "headings_h3": 8,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 4 个非正文区块（正文下降 1.3%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/code-reviews-just-do-it.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "context-rot",
+      "file": "data/materials/CS146S_offline/pages/context-rot.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 56102,
+      "english_words": 7879,
+      "garbage_rate": 0.0654,
+      "garbage_verdict": "可读",
+      "code_blocks": 1,
+      "tables": 0,
+      "links": 66,
+      "headings_h1": 1,
+      "headings_h2": 38,
+      "headings_h3": 8,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 2 个非正文区块（正文下降 0.0%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/context-rot.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "copilot-prompt-injection-rce",
+      "file": "data/materials/CS146S_offline/pages/copilot-prompt-injection-rce.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 9255,
+      "english_words": 1424,
+      "garbage_rate": 0.0759,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 23,
+      "headings_h1": 1,
+      "headings_h2": 10,
+      "headings_h3": 3,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 1.2%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/copilot-prompt-injection-rce.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "devin-coding-agents-101",
+      "file": "data/materials/CS146S_offline/pages/devin-coding-agents-101.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 19183,
+      "english_words": 2948,
+      "garbage_rate": 0.0,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 1,
+      "links": 2,
+      "headings_h1": 1,
+      "headings_h2": 29,
+      "headings_h3": 17,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 11 个非正文区块（正文下降 12.3%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/devin-coding-agents-101.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "finding-vulnerabilities-claude-codex",
+      "file": "data/materials/CS146S_offline/pages/finding-vulnerabilities-claude-codex.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 27148,
+      "english_words": 3955,
+      "garbage_rate": 0.0471,
+      "garbage_verdict": "可读",
+      "code_blocks": 3,
+      "tables": 0,
+      "links": 32,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 10,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 4 个非正文区块（正文下降 8.6%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/finding-vulnerabilities-claude-codex.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "good-context-good-code",
+      "file": "data/materials/CS146S_offline/pages/good-context-good-code.html",
+      "format": "html",
+      "status": "suspect_low_quality",
+      "chars": 314,
+      "english_words": 41,
+      "garbage_rate": 0.375,
+      "garbage_verdict": "乱码",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 3,
+      "headings_h1": 1,
+      "headings_h2": 1,
+      "headings_h3": 0,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 3 个区块后正文下降 59.2%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/good-context-good-code.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "how-long-contexts-fail",
+      "file": "data/materials/CS146S_offline/pages/how-long-contexts-fail.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 11420,
+      "english_words": 1703,
+      "garbage_rate": 0.0137,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 27,
+      "headings_h1": 1,
+      "headings_h2": 1,
+      "headings_h3": 5,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 0.2%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/how-long-contexts-fail.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "how-to-review-code-effectively",
+      "file": "data/materials/CS146S_offline/pages/how-to-review-code-effectively.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 26368,
+      "english_words": 4088,
+      "garbage_rate": 0.1118,
+      "garbage_verdict": "部分可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 68,
+      "headings_h1": 1,
+      "headings_h2": 10,
+      "headings_h3": 15,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/how-to-review-code-effectively.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "how-warp-uses-warp",
+      "file": "data/materials/CS146S_offline/pages/how-warp-uses-warp.html",
+      "format": "html",
+      "status": "suspect_low_quality",
+      "chars": 8,
+      "english_words": 1,
+      "garbage_rate": 1.0,
+      "garbage_verdict": "乱码",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 0.0%）",
+        "H1_ADDED：原内容没有标题，已用识别出的标题补一个 H1。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/how-warp-uses-warp.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "kubernetes-troubleshooting-ai",
+      "file": "data/materials/CS146S_offline/pages/kubernetes-troubleshooting-ai.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 13168,
+      "english_words": 1860,
+      "garbage_rate": 0.0583,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 36,
+      "headings_h1": 1,
+      "headings_h2": 1,
+      "headings_h3": 0,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 2 个非正文区块（正文下降 1.1%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/kubernetes-troubleshooting-ai.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "lessons-from-ai-code-reviews",
+      "file": "data/materials/CS146S_offline/pages/lessons-from-ai-code-reviews.html",
+      "format": "html",
+      "status": "suspect_low_quality",
+      "chars": 12,
+      "english_words": 1,
+      "garbage_rate": 1.0,
+      "garbage_verdict": "乱码",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "H1_ADDED：没有标题且未能识别，已用占位标题保证契约。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/lessons-from-ai-code-reviews.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "mcp-food-for-thought",
+      "file": "data/materials/CS146S_offline/pages/mcp-food-for-thought.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 6847,
+      "english_words": 1026,
+      "garbage_rate": 0.0233,
+      "garbage_verdict": "可读",
+      "code_blocks": 3,
+      "tables": 0,
+      "links": 40,
+      "headings_h1": 1,
+      "headings_h2": 6,
+      "headings_h3": 8,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 13 个非正文区块（正文下降 6.9%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/mcp-food-for-thought.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "mcp-introduction",
+      "file": "data/materials/CS146S_offline/pages/mcp-introduction.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 34972,
+      "english_words": 5122,
+      "garbage_rate": 0.0647,
+      "garbage_verdict": "可读",
+      "code_blocks": 5,
+      "tables": 0,
+      "links": 49,
+      "headings_h1": 1,
+      "headings_h2": 13,
+      "headings_h3": 6,
+      "warnings": [],
+      "failure_reason": null,
+      "text_path": "work/extracted/mcp-introduction.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "mcp-registry-preview",
+      "file": "data/materials/CS146S_offline/pages/mcp-registry-preview.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 7379,
+      "english_words": 1038,
+      "garbage_rate": 0.0938,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 44,
+      "headings_h1": 1,
+      "headings_h2": 2,
+      "headings_h3": 2,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 6.5%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/mcp-registry-preview.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "mcp-server-authentication",
+      "file": "data/materials/CS146S_offline/pages/mcp-server-authentication.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 18018,
+      "english_words": 2614,
+      "garbage_rate": 0.0312,
+      "garbage_verdict": "可读",
+      "code_blocks": 26,
+      "tables": 1,
+      "links": 54,
+      "headings_h1": 1,
+      "headings_h2": 5,
+      "headings_h3": 4,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/mcp-server-authentication.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "multi-agent-systems-ai-native",
+      "file": "data/materials/CS146S_offline/pages/multi-agent-systems-ai-native.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 19059,
+      "english_words": 2676,
+      "garbage_rate": 0.1176,
+      "garbage_verdict": "部分可读",
+      "code_blocks": 0,
+      "tables": 2,
+      "links": 38,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 2 个非正文区块（正文下降 0.7%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/multi-agent-systems-ai-native.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "observability-basics",
+      "file": "data/materials/CS146S_offline/pages/observability-basics.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 14972,
+      "english_words": 2025,
+      "garbage_rate": 0.0962,
+      "garbage_verdict": "可读",
+      "code_blocks": 2,
+      "tables": 1,
+      "links": 45,
+      "headings_h1": 1,
+      "headings_h2": 10,
+      "headings_h3": 17,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 5 个区块后正文下降 94.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/observability-basics.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "owasp-top-ten",
+      "file": "data/materials/CS146S_offline/pages/owasp-top-ten.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 26144,
+      "english_words": 3399,
+      "garbage_rate": 0.2514,
+      "garbage_verdict": "部分可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 204,
+      "headings_h1": 1,
+      "headings_h2": 14,
+      "headings_h3": 16,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/owasp-top-ten.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "peeking-under-the-hood-of-claude-code",
+      "file": "data/materials/CS146S_offline/pages/peeking-under-the-hood-of-claude-code.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 300,
+      "english_words": 45,
+      "garbage_rate": 0.0,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 1,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": null,
+      "text_path": "work/extracted/peeking-under-the-hood-of-claude-code.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "prompt-engineering-guide",
+      "file": "data/materials/CS146S_offline/pages/prompt-engineering-guide.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 621,
+      "english_words": 89,
+      "garbage_rate": 0.0,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 3,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 3 个区块后正文下降 84.3%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/prompt-engineering-guide.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "prompt-engineering-overview",
+      "file": "data/materials/CS146S_offline/pages/prompt-engineering-overview.html",
+      "format": "html",
+      "status": "suspect_low_quality",
+      "chars": 97629,
+      "english_words": 13106,
+      "garbage_rate": 0.4288,
+      "garbage_verdict": "乱码",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 743,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 7,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 12 个区块后正文下降 99.6%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/prompt-engineering-overview.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "sast-vs-dast",
+      "file": "data/materials/CS146S_offline/pages/sast-vs-dast.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 22080,
+      "english_words": 3135,
+      "garbage_rate": 0.0171,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 35,
+      "headings_h1": 1,
+      "headings_h2": 10,
+      "headings_h3": 18,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 4 个非正文区块（正文下降 9.5%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/sast-vs-dast.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "specs-are-the-new-source-code",
+      "file": "data/materials/CS146S_offline/pages/specs-are-the-new-source-code.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 17868,
+      "english_words": 2626,
+      "garbage_rate": 0.1871,
+      "garbage_verdict": "部分可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 40,
+      "headings_h1": 1,
+      "headings_h2": 1,
+      "headings_h3": 0,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 7 个区块后正文下降 99.4%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/specs-are-the-new-source-code.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "sre-introduction",
+      "file": "data/materials/CS146S_offline/pages/sre-introduction.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 25212,
+      "english_words": 3832,
+      "garbage_rate": 0.0217,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 19,
+      "headings_h1": 1,
+      "headings_h2": 3,
+      "headings_h3": 9,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 53 个非正文区块（正文下降 7.1%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/sre-introduction.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "warp-vs-claude-code",
+      "file": "data/materials/CS146S_offline/pages/warp-vs-claude-code.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 6769,
+      "english_words": 958,
+      "garbage_rate": 0.0606,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 34,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/warp-vs-claude-code.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "writing-effective-tools-for-agents",
+      "file": "data/materials/CS146S_offline/pages/writing-effective-tools-for-agents.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 25448,
+      "english_words": 3759,
+      "garbage_rate": 0.0278,
+      "garbage_verdict": "可读",
+      "code_blocks": 1,
+      "tables": 0,
+      "links": 18,
+      "headings_h1": 1,
+      "headings_h2": 5,
+      "headings_h3": 9,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 3 个非正文区块（正文下降 0.4%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/writing-effective-tools-for-agents.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "ai-assisted-code-review-assessment",
+      "file": "data/materials/CS146S_offline/pdfs/ai-assisted-code-review-assessment.pdf",
+      "format": "pdf",
+      "status": "ok",
+      "chars": 51829,
+      "english_words": 7015,
+      "garbage_rate": 0.0309,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 16,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "UNDECODED_CODES：有 1910 个字符码在对应字体的 CMap 里找不到映射，已按纪律留空，未做任何猜测补全。（Type3/字体子集未提供完整 ToUnicode 时会发生）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/ai-assisted-code-review-assessment.md",
+      "kind": "manifest",
+      "pdf_type": "text",
+      "bt_operators": 92,
+      "content_streams": 16,
+      "fonts_total": 34,
+      "fonts_with_basefont": 20,
+      "readable_lines": 108,
+      "total_lines": 258,
+      "readable_line_ratio": 0.4186,
+      "undecoded_codes": 1910
+    },
+    {
+      "id": "how-anthropic-uses-claude-code",
+      "file": "data/materials/CS146S_offline/pdfs/how-anthropic-uses-claude-code.pdf",
+      "format": "pdf",
+      "status": "ok",
+      "chars": 48221,
+      "english_words": 6294,
+      "garbage_rate": 0.1191,
+      "garbage_verdict": "部分可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "UNDECODED_CODES：有 21721 个字符码在对应字体的 CMap 里找不到映射，已按纪律留空，未做任何猜测补全。（Type3/字体子集未提供完整 ToUnicode 时会发生）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/how-anthropic-uses-claude-code.md",
+      "kind": "manifest",
+      "pdf_type": "text",
+      "bt_operators": 205,
+      "content_streams": 22,
+      "fonts_total": 103,
+      "fonts_with_basefont": 79,
+      "readable_lines": 566,
+      "total_lines": 861,
+      "readable_line_ratio": 0.6574,
+      "undecoded_codes": 21721
+    },
+    {
+      "id": "how-openai-uses-codex",
+      "file": "data/materials/CS146S_offline/pdfs/how-openai-uses-codex.pdf",
+      "format": "pdf",
+      "status": "suspect_low_quality",
+      "chars": 7526,
+      "english_words": 720,
+      "garbage_rate": 0.1594,
+      "garbage_verdict": "部分可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "GARBLED_TEXT_UNRECOVERABLE：抽出的文本里常见英文停用词占比仅 0.1%（正常英文散文约 20-30%），判定为字母替换式乱码，正文【不可恢复】。根因：Type3 矢量字形缺少可控的 /ToUnicode 映射，字符码被错误地套用了 ASCII。已按纪律不输出乱码。",
+        "UNDECODED_CODES：有 5076 个字符码在对应字体的 CMap 里找不到映射，已按纪律留空，未做任何猜测补全。（Type3/字体子集未提供完整 ToUnicode 时会发生）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/how-openai-uses-codex.md",
+      "kind": "manifest",
+      "pdf_type": "type3_vector",
+      "bt_operators": 200,
+      "content_streams": 13,
+      "fonts_total": 17,
+      "fonts_with_basefont": 0,
+      "readable_lines": 33,
+      "total_lines": 104,
+      "readable_line_ratio": 0.3173,
+      "undecoded_codes": 5076
+    },
+    {
+      "id": "course-site-spa",
+      "file": "data/materials/CS146S_offline/site/themodernsoftware.dev/assets/index-CgRb4FxC.js",
+      "format": "spa",
+      "status": "ok",
+      "chars": 73,
+      "english_words": 8,
+      "garbage_rate": 0.0,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "SPA_FLAT_TEXT：正文来自打包 JS 的 137 个 JSX 文本节点，原始信息是扁平文本片段，没有结构信息；下面的周次/FAQ 结构是按顺序尽力重建的，拿不准的地方未强行编造。",
+        "H1_ADDED：原内容没有标题，已用识别出的标题补一个 H1。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/course-site-spa.md",
+      "kind": "manifest"
+    },
+    {
+      "id": "fetched-60",
+      "file": ".",
+      "format": "",
+      "status": "failed",
+      "chars": 0,
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 0,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": "目录里找不到正文 JS（D:\\Work\\C1-课程资料中文翻译\\assets\\index-CgRb4FxC.js）",
+      "text_path": null,
+      "kind": "manifest"
+    },
+    {
+      "id": "fetched-61",
+      "file": ".",
+      "format": "",
+      "status": "failed",
+      "chars": 0,
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 0,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": "目录里找不到正文 JS（D:\\Work\\C1-课程资料中文翻译\\assets\\index-CgRb4FxC.js）",
+      "text_path": null,
+      "kind": "manifest"
+    },
+    {
+      "id": "fetched-62",
+      "file": ".",
+      "format": "",
+      "status": "failed",
+      "chars": 0,
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 0,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": "目录里找不到正文 JS（D:\\Work\\C1-课程资料中文翻译\\assets\\index-CgRb4FxC.js）",
+      "text_path": null,
+      "kind": "manifest"
+    },
+    {
+      "id": "fetched-63",
+      "file": ".",
+      "format": "",
+      "status": "failed",
+      "chars": 0,
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 0,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": "目录里找不到正文 JS（D:\\Work\\C1-课程资料中文翻译\\assets\\index-CgRb4FxC.js）",
+      "text_path": null,
+      "kind": "manifest"
+    },
+    {
+      "id": "fetched-64",
+      "file": ".",
+      "format": "",
+      "status": "failed",
+      "chars": 0,
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 0,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": "目录里找不到正文 JS（D:\\Work\\C1-课程资料中文翻译\\assets\\index-CgRb4FxC.js）",
+      "text_path": null,
+      "kind": "manifest"
+    },
+    {
+      "id": "fetched-65",
+      "file": ".",
+      "format": "",
+      "status": "failed",
+      "chars": 0,
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 0,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": "目录里找不到正文 JS（D:\\Work\\C1-课程资料中文翻译\\assets\\index-CgRb4FxC.js）",
+      "text_path": null,
+      "kind": "manifest"
+    },
+    {
+      "id": "fetched-66",
+      "file": ".",
+      "format": "",
+      "status": "failed",
+      "chars": 0,
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 0,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": "目录里找不到正文 JS（D:\\Work\\C1-课程资料中文翻译\\assets\\index-CgRb4FxC.js）",
+      "text_path": null,
+      "kind": "manifest"
+    },
+    {
+      "id": "fetched-67",
+      "file": ".",
+      "format": "",
+      "status": "failed",
+      "chars": 0,
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 0,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": "目录里找不到正文 JS（D:\\Work\\C1-课程资料中文翻译\\assets\\index-CgRb4FxC.js）",
+      "text_path": null,
+      "kind": "manifest"
+    },
+    {
+      "id": "fetched-68",
+      "file": ".",
+      "format": "",
+      "status": "failed",
+      "chars": 0,
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 0,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": "目录里找不到正文 JS（D:\\Work\\C1-课程资料中文翻译\\assets\\index-CgRb4FxC.js）",
+      "text_path": null,
+      "kind": "manifest"
+    },
+    {
+      "id": "fetched-70",
+      "file": ".",
+      "format": "",
+      "status": "failed",
+      "chars": 0,
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 0,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": "目录里找不到正文 JS（D:\\Work\\C1-课程资料中文翻译\\assets\\index-CgRb4FxC.js）",
+      "text_path": null,
+      "kind": "manifest"
+    },
+    {
+      "id": "fetched-75",
+      "file": ".",
+      "format": "",
+      "status": "failed",
+      "chars": 0,
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 0,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": "目录里找不到正文 JS（D:\\Work\\C1-课程资料中文翻译\\assets\\index-CgRb4FxC.js）",
+      "text_path": null,
+      "kind": "manifest"
+    },
+    {
+      "id": "fetched-89",
+      "file": ".",
+      "format": "",
+      "status": "failed",
+      "chars": 0,
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 0,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": "目录里找不到正文 JS（D:\\Work\\C1-课程资料中文翻译\\assets\\index-CgRb4FxC.js）",
+      "text_path": null,
+      "kind": "manifest"
+    },
+    {
+      "id": "archive-a16z.com-index-28eae9d8",
+      "file": "data/fetched/a16z.com/index-28eae9d8.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 1774,
+      "english_words": 200,
+      "garbage_rate": 0.2632,
+      "garbage_verdict": "部分可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 38,
+      "headings_h1": 1,
+      "headings_h2": 5,
+      "headings_h3": 0,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 91.6%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-a16z.com-index-28eae9d8.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-a16z.com-martin-casado-819a7ad5",
+      "file": "data/fetched/a16z.com/martin-casado-819a7ad5.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 17800,
+      "english_words": 2504,
+      "garbage_rate": 0.0632,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 98,
+      "headings_h1": 1,
+      "headings_h2": 1,
+      "headings_h3": 4,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 3 个非正文区块（正文下降 10.2%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-a16z.com-martin-casado-819a7ad5.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-app.kit.com-subscriptions-c7e965bf",
+      "file": "data/fetched/app.kit.com/subscriptions-c7e965bf.html",
+      "format": "html",
+      "status": "suspect_low_quality",
+      "chars": 14,
+      "english_words": 3,
+      "garbage_rate": 1.0,
+      "garbage_verdict": "乱码",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "H1_ADDED：原内容没有标题，已用识别出的标题补一个 H1。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-app.kit.com-subscriptions-c7e965bf.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-arxiv.org-2405.13565-f286f736",
+      "file": "data/fetched/arxiv.org/2405.13565-f286f736.pdf",
+      "format": "pdf",
+      "status": "failed",
+      "chars": 0,
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 0,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": "与 manifest 条目 ai-assisted-code-review-assessment 的源文件 sha256 完全相同，已跳过以免重复产出（内容不丢）",
+      "text_path": null,
+      "kind": "archive-dup"
+    },
+    {
+      "id": "archive-cdn.openai.com-how-openai-uses-codex-ac3e852c",
+      "file": "data/fetched/cdn.openai.com/how-openai-uses-codex-ac3e852c.pdf",
+      "format": "pdf",
+      "status": "failed",
+      "chars": 0,
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 0,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [],
+      "failure_reason": "与 manifest 条目 how-openai-uses-codex 的源文件 sha256 完全相同，已跳过以免重复产出（内容不丢）",
+      "text_path": null,
+      "kind": "archive-dup"
+    },
+    {
+      "id": "archive-cognition.ai-index-5e05e503",
+      "file": "data/fetched/cognition.ai/index-5e05e503.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 6791,
+      "english_words": 805,
+      "garbage_rate": 0.1644,
+      "garbage_verdict": "部分可读",
+      "code_blocks": 0,
+      "tables": 1,
+      "links": 29,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 2,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 2 个非正文区块（正文下降 0.4%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-cognition.ai-index-5e05e503.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-f.convertkit.com-ck.5-6f8d2461",
+      "file": "data/fetched/f.convertkit.com/ck.5-6f8d2461.js",
+      "format": "spa",
+      "status": "ok",
+      "chars": 73,
+      "english_words": 8,
+      "garbage_rate": 0.0,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "SPA_FLAT_TEXT：正文来自打包 JS 的 0 个 JSX 文本节点，原始信息是扁平文本片段，没有结构信息；下面的周次/FAQ 结构是按顺序尽力重建的，拿不准的地方未强行编造。",
+        "H1_ADDED：原内容没有标题，已用识别出的标题补一个 H1。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-f.convertkit.com-ck.5-6f8d2461.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-graphite.dev-index-6ddb92ea",
+      "file": "data/fetched/graphite.dev/index-6ddb92ea.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 5600,
+      "english_words": 744,
+      "garbage_rate": 0.3067,
+      "garbage_verdict": "部分可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 22,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 1,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 3 个非正文区块（正文下降 30.3%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-graphite.dev-index-6ddb92ea.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-raw.githubusercontent.com-README-5285d5b3",
+      "file": "data/fetched/raw.githubusercontent.com/README-5285d5b3.md",
+      "format": "md",
+      "status": "ok",
+      "chars": 19318,
+      "english_words": 2181,
+      "garbage_rate": 0.0929,
+      "garbage_verdict": "可读",
+      "code_blocks": 6,
+      "tables": 32,
+      "links": 27,
+      "headings_h1": 1,
+      "headings_h2": 24,
+      "headings_h3": 13,
+      "warnings": [],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-raw.githubusercontent.com-README-5285d5b3.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-raw.githubusercontent.com-README-704a0e2c",
+      "file": "data/fetched/raw.githubusercontent.com/README-704a0e2c.md",
+      "format": "md",
+      "status": "ok",
+      "chars": 8926,
+      "english_words": 1096,
+      "garbage_rate": 0.0556,
+      "garbage_verdict": "可读",
+      "code_blocks": 7,
+      "tables": 0,
+      "links": 32,
+      "headings_h1": 1,
+      "headings_h2": 7,
+      "headings_h3": 10,
+      "warnings": [],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-raw.githubusercontent.com-README-704a0e2c.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-raw.githubusercontent.com-README-dc2d4ffa",
+      "file": "data/fetched/raw.githubusercontent.com/README-dc2d4ffa.md",
+      "format": "md",
+      "status": "ok",
+      "chars": 8306,
+      "english_words": 1004,
+      "garbage_rate": 0.0645,
+      "garbage_verdict": "可读",
+      "code_blocks": 5,
+      "tables": 0,
+      "links": 36,
+      "headings_h1": 1,
+      "headings_h2": 8,
+      "headings_h3": 8,
+      "warnings": [],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-raw.githubusercontent.com-README-dc2d4ffa.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-raw.githubusercontent.com-README-f5dda901",
+      "file": "data/fetched/raw.githubusercontent.com/README-f5dda901.md",
+      "format": "md",
+      "status": "ok",
+      "chars": 8692,
+      "english_words": 1110,
+      "garbage_rate": 0.1625,
+      "garbage_verdict": "部分可读",
+      "code_blocks": 5,
+      "tables": 0,
+      "links": 49,
+      "headings_h1": 1,
+      "headings_h2": 2,
+      "headings_h3": 10,
+      "warnings": [],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-raw.githubusercontent.com-README-f5dda901.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-raw.githubusercontent.com-ace-fca-f63a056c",
+      "file": "data/fetched/raw.githubusercontent.com/ace-fca-f63a056c.md",
+      "format": "md",
+      "status": "ok",
+      "chars": 27721,
+      "english_words": 4282,
+      "garbage_rate": 0.087,
+      "garbage_verdict": "可读",
+      "code_blocks": 1,
+      "tables": 0,
+      "links": 51,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 3,
+      "warnings": [],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-raw.githubusercontent.com-ace-fca-f63a056c.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-raw.githubusercontent.com-assignment-67e0a761",
+      "file": "data/fetched/raw.githubusercontent.com/assignment-67e0a761.md",
+      "format": "md",
+      "status": "ok",
+      "chars": 10074,
+      "english_words": 1475,
+      "garbage_rate": 0.0118,
+      "garbage_verdict": "可读",
+      "code_blocks": 2,
+      "tables": 7,
+      "links": 6,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 11,
+      "warnings": [],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-raw.githubusercontent.com-assignment-67e0a761.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-raw.githubusercontent.com-system_prompt_uafs-3e1f551e",
+      "file": "data/fetched/raw.githubusercontent.com/system_prompt_uafs-3e1f551e.prompt",
+      "format": "txt",
+      "status": "ok",
+      "chars": 2031,
+      "english_words": 326,
+      "garbage_rate": 0.0,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "H1_ADDED：原内容没有标题，已用识别出的标题补一个 H1。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-raw.githubusercontent.com-system_prompt_uafs-3e1f551e.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-reactjs.org-error-decoder-2ccbc8e1",
+      "file": "data/fetched/reactjs.org/error-decoder-2ccbc8e1.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 618,
+      "english_words": 96,
+      "garbage_rate": 0.1667,
+      "garbage_verdict": "部分可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 3,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-reactjs.org-error-decoder-2ccbc8e1.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-resolve.ai-index-51fc7e81",
+      "file": "data/fetched/resolve.ai/index-51fc7e81.html",
+      "format": "html",
+      "status": "suspect_low_quality",
+      "chars": 16565,
+      "english_words": 2094,
+      "garbage_rate": 0.4301,
+      "garbage_verdict": "乱码",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 33,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 7,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 4 个非正文区块（正文下降 32.1%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-resolve.ai-index-51fc7e81.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-resolve.ai-product-deep-dive-0d0780da",
+      "file": "data/fetched/resolve.ai/product-deep-dive-0d0780da.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 8556,
+      "english_words": 1229,
+      "garbage_rate": 0.1351,
+      "garbage_verdict": "部分可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 26,
+      "headings_h1": 1,
+      "headings_h2": 2,
+      "headings_h3": 11,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 4 个非正文区块（正文下降 28.4%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-resolve.ai-product-deep-dive-0d0780da.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-semgrep.dev-index-e5277db8",
+      "file": "data/fetched/semgrep.dev/index-e5277db8.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 11217,
+      "english_words": 1505,
+      "garbage_rate": 0.0156,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 42,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 1,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 4 个区块后正文下降 43.2%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-semgrep.dev-index-e5277db8.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-vercel.com-index-843a793e",
+      "file": "data/fetched/vercel.com/index-843a793e.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 3195,
+      "english_words": 439,
+      "garbage_rate": 0.0465,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 5,
+      "headings_h1": 1,
+      "headings_h2": 4,
+      "headings_h3": 0,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 6 个非正文区块（正文下降 39.3%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-vercel.com-index-843a793e.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-www.figma.com-Warp---Stanford--Copy--e1c08306",
+      "file": "data/fetched/www.figma.com/Warp---Stanford--Copy--e1c08306.html",
+      "format": "html",
+      "status": "suspect_low_quality",
+      "chars": 7,
+      "english_words": 1,
+      "garbage_rate": 1.0,
+      "garbage_verdict": "乱码",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 0,
+      "headings_h1": 1,
+      "headings_h2": 0,
+      "headings_h3": 0,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 0.0%）",
+        "H1_ADDED：原内容没有标题，已用识别出的标题补一个 H1。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-www.figma.com-Warp---Stanford--Copy--e1c08306.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-www.mihaileric.com-index-76879b6c",
+      "file": "data/fetched/www.mihaileric.com/index-76879b6c.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 10094,
+      "english_words": 1407,
+      "garbage_rate": 0.1053,
+      "garbage_verdict": "部分可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 71,
+      "headings_h1": 1,
+      "headings_h2": 5,
+      "headings_h3": 0,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 1.1%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-www.mihaileric.com-index-76879b6c.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-www.warp.dev-index-8d73894f",
+      "file": "data/fetched/www.warp.dev/index-8d73894f.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 12006,
+      "english_words": 1645,
+      "garbage_rate": 0.0136,
+      "garbage_verdict": "可读",
+      "code_blocks": 5,
+      "tables": 0,
+      "links": 16,
+      "headings_h1": 1,
+      "headings_h2": 17,
+      "headings_h3": 8,
+      "warnings": [
+        "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 0.0%）"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-www.warp.dev-index-8d73894f.md",
+      "kind": "archive"
+    },
+    {
+      "id": "archive-www.warp.dev-university-345355c4",
+      "file": "data/fetched/www.warp.dev/university-345355c4.html",
+      "format": "html",
+      "status": "ok",
+      "chars": 14580,
+      "english_words": 2117,
+      "garbage_rate": 0.0467,
+      "garbage_verdict": "可读",
+      "code_blocks": 0,
+      "tables": 0,
+      "links": 42,
+      "headings_h1": 1,
+      "headings_h2": 17,
+      "headings_h3": 8,
+      "warnings": [
+        "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+      ],
+      "failure_reason": null,
+      "text_path": "work/extracted/archive-www.warp.dev-university-345355c4.md",
+      "kind": "archive"
+    }
+  ],
+  "warnings": [
+    {
+      "id": "agentic-ai-threats",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    },
+    {
+      "id": "ai-code-review-best-practices",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 5 个非正文区块（正文下降 6.6%）"
+    },
+    {
+      "id": "benefits-agentic-ai-oncall",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 2 个非正文区块（正文下降 1.4%）"
+    },
+    {
+      "id": "claude-code-best-practices",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    },
+    {
+      "id": "code-review-essentials",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 0.3%）"
+    },
+    {
+      "id": "code-reviews-just-do-it",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 4 个非正文区块（正文下降 1.3%）"
+    },
+    {
+      "id": "context-rot",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 2 个非正文区块（正文下降 0.0%）"
+    },
+    {
+      "id": "copilot-prompt-injection-rce",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 1.2%）"
+    },
+    {
+      "id": "devin-coding-agents-101",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 11 个非正文区块（正文下降 12.3%）"
+    },
+    {
+      "id": "finding-vulnerabilities-claude-codex",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 4 个非正文区块（正文下降 8.6%）"
+    },
+    {
+      "id": "good-context-good-code",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 3 个区块后正文下降 59.2%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    },
+    {
+      "id": "how-long-contexts-fail",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 0.2%）"
+    },
+    {
+      "id": "how-to-review-code-effectively",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    },
+    {
+      "id": "how-warp-uses-warp",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 0.0%）"
+    },
+    {
+      "id": "how-warp-uses-warp",
+      "warning": "H1_ADDED：原内容没有标题，已用识别出的标题补一个 H1。"
+    },
+    {
+      "id": "kubernetes-troubleshooting-ai",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 2 个非正文区块（正文下降 1.1%）"
+    },
+    {
+      "id": "lessons-from-ai-code-reviews",
+      "warning": "H1_ADDED：没有标题且未能识别，已用占位标题保证契约。"
+    },
+    {
+      "id": "mcp-food-for-thought",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 13 个非正文区块（正文下降 6.9%）"
+    },
+    {
+      "id": "mcp-registry-preview",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 6.5%）"
+    },
+    {
+      "id": "mcp-server-authentication",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    },
+    {
+      "id": "multi-agent-systems-ai-native",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 2 个非正文区块（正文下降 0.7%）"
+    },
+    {
+      "id": "observability-basics",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 5 个区块后正文下降 94.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    },
+    {
+      "id": "owasp-top-ten",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    },
+    {
+      "id": "prompt-engineering-guide",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 3 个区块后正文下降 84.3%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    },
+    {
+      "id": "prompt-engineering-overview",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 12 个区块后正文下降 99.6%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    },
+    {
+      "id": "sast-vs-dast",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 4 个非正文区块（正文下降 9.5%）"
+    },
+    {
+      "id": "specs-are-the-new-source-code",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 7 个区块后正文下降 99.4%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    },
+    {
+      "id": "sre-introduction",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 53 个非正文区块（正文下降 7.1%）"
+    },
+    {
+      "id": "warp-vs-claude-code",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    },
+    {
+      "id": "writing-effective-tools-for-agents",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 3 个非正文区块（正文下降 0.4%）"
+    },
+    {
+      "id": "ai-assisted-code-review-assessment",
+      "warning": "UNDECODED_CODES：有 1910 个字符码在对应字体的 CMap 里找不到映射，已按纪律留空，未做任何猜测补全。（Type3/字体子集未提供完整 ToUnicode 时会发生）"
+    },
+    {
+      "id": "how-anthropic-uses-claude-code",
+      "warning": "UNDECODED_CODES：有 21721 个字符码在对应字体的 CMap 里找不到映射，已按纪律留空，未做任何猜测补全。（Type3/字体子集未提供完整 ToUnicode 时会发生）"
+    },
+    {
+      "id": "how-openai-uses-codex",
+      "warning": "GARBLED_TEXT_UNRECOVERABLE：抽出的文本里常见英文停用词占比仅 0.1%（正常英文散文约 20-30%），判定为字母替换式乱码，正文【不可恢复】。根因：Type3 矢量字形缺少可控的 /ToUnicode 映射，字符码被错误地套用了 ASCII。已按纪律不输出乱码。"
+    },
+    {
+      "id": "how-openai-uses-codex",
+      "warning": "UNDECODED_CODES：有 5076 个字符码在对应字体的 CMap 里找不到映射，已按纪律留空，未做任何猜测补全。（Type3/字体子集未提供完整 ToUnicode 时会发生）"
+    },
+    {
+      "id": "course-site-spa",
+      "warning": "SPA_FLAT_TEXT：正文来自打包 JS 的 137 个 JSX 文本节点，原始信息是扁平文本片段，没有结构信息；下面的周次/FAQ 结构是按顺序尽力重建的，拿不准的地方未强行编造。"
+    },
+    {
+      "id": "course-site-spa",
+      "warning": "H1_ADDED：原内容没有标题，已用识别出的标题补一个 H1。"
+    },
+    {
+      "id": "archive-a16z.com-index-28eae9d8",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 91.6%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    },
+    {
+      "id": "archive-a16z.com-martin-casado-819a7ad5",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 3 个非正文区块（正文下降 10.2%）"
+    },
+    {
+      "id": "archive-app.kit.com-subscriptions-c7e965bf",
+      "warning": "H1_ADDED：原内容没有标题，已用识别出的标题补一个 H1。"
+    },
+    {
+      "id": "archive-cognition.ai-index-5e05e503",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 2 个非正文区块（正文下降 0.4%）"
+    },
+    {
+      "id": "archive-f.convertkit.com-ck.5-6f8d2461",
+      "warning": "SPA_FLAT_TEXT：正文来自打包 JS 的 0 个 JSX 文本节点，原始信息是扁平文本片段，没有结构信息；下面的周次/FAQ 结构是按顺序尽力重建的，拿不准的地方未强行编造。"
+    },
+    {
+      "id": "archive-f.convertkit.com-ck.5-6f8d2461",
+      "warning": "H1_ADDED：原内容没有标题，已用识别出的标题补一个 H1。"
+    },
+    {
+      "id": "archive-graphite.dev-index-6ddb92ea",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 3 个非正文区块（正文下降 30.3%）"
+    },
+    {
+      "id": "archive-raw.githubusercontent.com-system_prompt_uafs-3e1f551e",
+      "warning": "H1_ADDED：原内容没有标题，已用识别出的标题补一个 H1。"
+    },
+    {
+      "id": "archive-reactjs.org-error-decoder-2ccbc8e1",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    },
+    {
+      "id": "archive-resolve.ai-index-51fc7e81",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 4 个非正文区块（正文下降 32.1%）"
+    },
+    {
+      "id": "archive-resolve.ai-product-deep-dive-0d0780da",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 4 个非正文区块（正文下降 28.4%）"
+    },
+    {
+      "id": "archive-semgrep.dev-index-e5277db8",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 4 个区块后正文下降 43.2%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    },
+    {
+      "id": "archive-vercel.com-index-843a793e",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 6 个非正文区块（正文下降 39.3%）"
+    },
+    {
+      "id": "archive-www.figma.com-Warp---Stanford--Copy--e1c08306",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 0.0%）"
+    },
+    {
+      "id": "archive-www.figma.com-Warp---Stanford--Copy--e1c08306",
+      "warning": "H1_ADDED：原内容没有标题，已用识别出的标题补一个 H1。"
+    },
+    {
+      "id": "archive-www.mihaileric.com-index-76879b6c",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 1.1%）"
+    },
+    {
+      "id": "archive-www.warp.dev-index-8d73894f",
+      "warning": "STRIPPED_BLOCKS：按 class/id 关键词剥离了 1 个非正文区块（正文下降 0.0%）"
+    },
+    {
+      "id": "archive-www.warp.dev-university-345355c4",
+      "warning": "AGGRESSIVE_STRIP_REVERTED：按关键词剥离 1 个区块后正文下降 100.0%（>40%），已全部加回，避免剥掉正文。该页结构特殊，建议人工抽查。"
+    }
+  ],
+  "manifest_backfill": {
+    "updated": 35,
+    "file": "work/reports/manifest.json",
+    "pdf_judgement_fixed": [
+      "ai-assisted-code-review-assessment → text（translatable=true）",
+      "how-anthropic-uses-claude-code → text（translatable=true）",
+      "how-openai-uses-codex → type3_encoding_unrecoverable（translatable=false，乱码率 0.1594）"
+    ]
+  }
+}

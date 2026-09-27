@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://a16z.com/author/martin-casado/",
+  "final_url": "https://a16z.com/author/martin-casado/",
+  "fetched_at": "2026-09-27T00:09:06+08:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 239769,
+  "sha256": "857dc9d7b1e6aa5b60ff329ac2156b1dc3a234d738471cc5f5c51ac5fc35f0fd",
+  "used_branch": null,
+  "archive_path": "archive/a16z.com/martin-casado-819a7ad5.html",
+  "server": "Netlify",
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:09:03 GMT",
+  "url_path": "/author/martin-casado/",
+  "fetched_by": "fetch.py"
+}

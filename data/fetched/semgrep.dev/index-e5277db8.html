@@ -1,0 +1,3016 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WSN4QTD');</script>
+
+      <!-- OneTrust Cookies Consent Notice start for semgrep.dev -->
+      <script async src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="d2630f3a-c780-4ef8-a89b-711ec462d6f5" ></script>
+      <script type="text/javascript">
+      function OptanonWrapper() { }
+      </script>
+      <!-- OneTrust Cookies Consent Notice end for semgrep.dev -->
+
+       <script>
+  var hostname =
+    window.location && window.location.hostname !== "localhost"
+      ? window.location.hostname
+      : "semgrep.dev";
+  window["_fs_host"] = hostname + "/fs";
+  window["_fs_script"] = hostname + "/fs/s/fs.js";
+  window["_fs_org"] = "S99QT";
+  window["_fs_namespace"] = "FS";
+  !(function (m, n, e, t, l, o, g, y) {
+    var s,
+      f,
+      a = (function (h) {
+        return (
+          !(h in m) ||
+          (m.console &&
+            m.console.log &&
+            m.console.log(
+              'FullStory namespace conflict. Please set window["_fs_namespace"].'
+            ),
+          !1)
+        );
+      })(e);
+    function p(b) {
+      var h,
+        d = [];
+      function j() {
+        h &&
+          (d.forEach(function (b) {
+            var d;
+            try {
+              d = b[h[0]] && b[h[0]](h[1]);
+            } catch (h) {
+              return void (b[3] && b[3](h));
+            }
+            d && d.then ? d.then(b[2], b[3]) : b[2] && b[2](d);
+          }),
+          (d.length = 0));
+      }
+      function r(b) {
+        return function (d) {
+          h || ((h = [b, d]), j());
+        };
+      }
+      return (
+        b(r(0), r(1)),
+        {
+          then: function (b, h) {
+            return p(function (r, i) {
+              d.push([b, h, r, i]), j();
+            });
+          },
+        }
+      );
+    }
+    a &&
+      ((g = m[e] =
+        (function () {
+          var b = function (b, d, j, r) {
+            function i(i, c) {
+              h(b, d, j, i, c, r);
+            }
+            r = r || 2;
+            var c,
+              u = /Async$/;
+            return u.test(b)
+              ? ((b = b.replace(u, "")),
+                "function" == typeof Promise ? new Promise(i) : p(i))
+              : h(b, d, j, c, c, r);
+          };
+          function h(h, d, j, r, i, c) {
+            return b._api
+              ? b._api(h, d, j, r, i, c)
+              : (b.q && b.q.push([h, d, j, r, i, c]), null);
+          }
+          return (b.q = []), b;
+        })()),
+      (y = function (b) {
+        function h(h) {
+          "function" == typeof h[4] && h[4](new Error(b));
+        }
+        var d = g.q;
+        if (d) {
+          for (var j = 0; j < d.length; j++) h(d[j]);
+          (d.length = 0), (d.push = h);
+        }
+      }),
+      (function () {
+        ((o = n.createElement(t)).async = !0),
+          (o.crossOrigin = "anonymous"),
+          (o.src = "https://" + l),
+          (o.onerror = function () {
+            y("Error loading " + l);
+          });
+        var b = n.getElementsByTagName(t)[0];
+        b && b.parentNode
+          ? b.parentNode.insertBefore(o, b)
+          : n.head.appendChild(o);
+      })(),
+      (function () {
+        function b() {}
+        function h(b, h, d) {
+          g(b, h, d, 1);
+        }
+        function d(b, d, j) {
+          h("setProperties", { type: b, properties: d }, j);
+        }
+        function j(b, h) {
+          d("user", b, h);
+        }
+        function r(b, h, d) {
+          j(
+            {
+              uid: b,
+            },
+            d
+          ),
+            h && j(h, d);
+        }
+        (g.identify = r),
+          (g.setUserVars = j),
+          (g.identifyAccount = b),
+          (g.clearUserCookie = b),
+          (g.setVars = d),
+          (g.event = function (b, d, j) {
+            h(
+              "trackEvent",
+              {
+                name: b,
+                properties: d,
+              },
+              j
+            );
+          }),
+          (g.anonymize = function () {
+            r(!1);
+          }),
+          (g.shutdown = function () {
+            h("shutdown");
+          }),
+          (g.restart = function () {
+            h("restart");
+          }),
+          (g.log = function (b, d) {
+            h("log", { level: b, msg: d });
+          }),
+          (g.consent = function (b) {
+            h("setIdentity", { consent: !arguments.length || b });
+          });
+      })(),
+      (s = "fetch"),
+      (f = "XMLHttpRequest"),
+      (g._w = {}),
+      (g._w[f] = m[f]),
+      (g._w[s] = m[s]),
+      m[s] &&
+        (m[s] = function () {
+          return g._w[s].apply(this, arguments);
+        }),
+      (g._v = "2.0.0"));
+  })(window, document, window._fs_namespace, "script", window._fs_script);
+
+  FS('setProperties', { type: 'page', properties: { environment: 'marketing-website' } })
+</script>
+
+      <!-- Start VWO Async V3.0 SmartCode -->
+<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+<script type="text/javascript" id="vwoCode">
+window._vwo_code || (function() {
+    var account_id = 1239741,
+        version = 3.0,
+        settings_tolerance = 2000,
+        hide_element = 'body',
+        hide_element_style =
+        'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important';
+    /* DO NOT EDIT BELOW THIS LINE */
+    var t=window,n=document;if(-1<n.URL.indexOf('__vwo_disable__')||t._vwo_code)return;var i=!1,o=n.currentScript,e={sT:settings_tolerance,hES:hide_element_style,hE:hide_element};try{e=Object.assign(JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config')),e)}catch(e){}var code={nonce:o.nonce,settings_tolerance:function(){return e.sT},hide_element:function(){return performance.getEntriesByName('first-contentful-paint')[0]?'':e.hE},hide_element_style:function(){return'{'+e.hES+'}'},getVersion:function(){return version},finish:function(){var e;!i&&(i=!0,e=n.getElementById('_vis_opt_path_hides'))&&e.parentNode.removeChild(e)},finished:function(){return i},addScript:function(e){var t=n.createElement('script');t.src=e,o.nonce&&t.setAttribute('nonce',o.nonce),t.fetchPriority='high',n.head.appendChild(t)},init:function(){t._vwo_settings_timer=setTimeout(function(){code.finish()},this.settings_tolerance());var e=n.createElement('style');e.id='_vis_opt_path_hides',o.nonce&&e.setAttribute('nonce',o.nonce),e.textContent=this.hide_element()+this.hide_element_style(),n.head.appendChild(e),this.addScript('https://dev.visualwebsiteoptimizer.com/tag/'+account_id+'.js')}};t._vwo_code=code;code.init();})();
+</script>
+<!--End VWO Async SmartCode -->
+    
+    
+    <script type="text/javascript">
+  (function() {
+    var didInit = false;
+    function initMunchkin() {
+      if(didInit === false) {
+        didInit = true;
+        Munchkin.init('825-QQZ-896');
+      }
+    }
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//munchkin.marketo.net/munchkin.js';
+    s.onreadystatechange = function() {
+      if (this.readyState == 'complete' || this.readyState == 'loaded') {
+        initMunchkin();
+      }
+    };
+    s.onload = initMunchkin;
+    document.getElementsByTagName('head')[0].appendChild(s);
+  })();
+
+
+  /*!
+  * Author: Jon Bourne, Kurt Koller
+  * Company: Digital Pi, digitalpi.com
+  * Copyright: Digital Pi, LLC
+  * License: Released under MIT License. This notice must be included in all uses of this software.
+  * Revised: 2021-11-10
+  */
+  (function () {
+    'use strict';
+              
+    // sleep time expects milliseconds
+    function sleep (time) {
+      return new Promise(function (resolve) {
+        setTimeout(resolve, time);
+      });
+    };
+    
+    /****************** CONFIGURATION VARIABLES ******************/
+
+    // Use Marketo's SOAP API names of corresponding UTM fields
+    var utmFields = {
+            'utm_medium'    : 'UTM_Medium__c'
+        ,   'utm_source'    : 'UTM_Source__c'
+        ,   'utm_campaign'  : 'UTM_Campaign__c'
+        ,   'utm_content'   : 'UTM_Content__c'
+        ,   'utm_term'      : 'UTM_Term__c'
+        ,   'utm_adgroup'   : 'uTMAdgroup'
+    };
+
+    // Use Marketo's SOAP API names of corresponding _original_ UTM fields
+    var utmOrigFields = {
+            'utm_medium'    : 'originalUTMMedium'
+        ,   'utm_source'    : 'originalUtmSource'
+    };
+
+
+    /**************** DO NOT EDIT BELOW THIS LINE ****************/
+
+    var version         = '211110';
+    var cookieName      = 'dpi_utmVals';
+    var cookieOrigName  = 'dpi_utmOrigVals';
+    var cookieExpiry    = 180; // in days
+    var cookieDomain    = '';
+    
+    var _ = function(msg) {
+        if(location.hash === '#debug') {
+            console.log(msg);
+        }
+    };
+
+    var getQueryVar = function(queryVar) {
+        queryVar = queryVar.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&");
+        var match = location.search.match(new RegExp("[?&]"+queryVar+"=([^&]+)(&|$)"));
+        return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+    };
+
+    // Cookie CRUD functions from plainjs.com
+    var getCookie = function(name) {
+        var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+        return v ? JSON.parse(window.decodeURIComponent(v[2])) : null;
+    };
+    var setCookie = function(name, value, days, domain) {
+        var d = new Date();
+        d.setTime(d.getTime() + 24*60*60*1000*days);
+        var cookieDomain = '';
+        if(typeof domain === 'string' && domain.length > 0) {
+            cookieDomain = ';domain=.'+domain;
+        }
+        document.cookie = name + "=" + window.encodeURIComponent(JSON.stringify(value)) + ";path=/;expires=" + d.toGMTString() + cookieDomain;
+    };
+    var deleteCookie = function(name, domain) {
+        setCookie(name, '', -1, domain);
+    };
+
+    var getCookieDomain = function() {
+        var dpi_testCookie = 'dpi_test';
+        var hostname = location.hostname.split('.');
+        var cookieDomain = '';
+        for(var i = hostname.length - 1; i >= 0; i--) {
+            cookieDomain = (cookieDomain.length > 0) ? hostname[i] + '.' + cookieDomain : hostname[i];
+            setCookie(dpi_testCookie,cookieDomain,1,cookieDomain);
+            if(getCookie(dpi_testCookie)) {
+                deleteCookie(dpi_testCookie, cookieDomain);
+                return cookieDomain;
+            }
+            else {
+                if(i===0) {
+                    return null;
+                }
+            }
+        }
+    };
+
+    var recordNone = function() {
+        _('Checking for ' + cookieOrigName + ' cookie...');
+        if( getCookie(cookieOrigName) ) {
+            _(cookieOrigName + ' cookie already set; no change');
+        }
+        else {
+            var tmp = {};
+            Object.keys(utmOrigFields).forEach(function(k){
+                tmp[utmOrigFields[k]] = 'none';
+            });
+            setCookie(cookieOrigName, tmp , cookieExpiry, cookieDomain );
+            _('Set ' + cookieOrigName + ' cookie with "none"');
+        }
+    };
+
+    var init = function() {
+      
+
+        _('Running init() function');
+        sleep(1000);
+
+        var queryUtmVals = {};
+        var queryOrigUtmVals = {};
+        var qsVar = '';
+        var qsVarCount = 0;
+        var cookies = [ cookieName , cookieOrigName ];
+
+        cookieDomain = getCookieDomain();
+        _('Cookie domain is ' + cookieDomain);
+
+        // Create or update tracking cookies
+        _('Checking for query string...');
+        if(location.search.length) {
+            
+            _('Query string found; searching for UTM parameters and values...');
+            var utm_param;
+            for( utm_param in utmFields ) {
+                qsVar = getQueryVar(utm_param);
+                if(qsVar) {
+                    qsVarCount++;
+                    queryUtmVals[ utmFields[ utm_param ] ] = qsVar;
+                }
+                else {
+                    queryUtmVals[ utmFields[ utm_param ] ] = 'NULL';
+                }
+            }
+            for( utm_param in utmOrigFields ) {
+                qsVar = getQueryVar(utm_param);
+                if(qsVar) {
+                    queryOrigUtmVals[ utmOrigFields[ utm_param ] ] = qsVar;
+                }
+                else {
+                    queryOrigUtmVals[ utmOrigFields[ utm_param ] ] = 'none';
+                }
+            }
+
+            if(qsVarCount > 0) {
+                _('Found ' + qsVarCount + ' UTM values in query string');
+                setCookie(cookieName, queryUtmVals , cookieExpiry, cookieDomain );
+                _('Set ' + cookieName + ' cookie with ' + qsVarCount + ' UTM values');
+
+                _('Checking for ' + cookieOrigName + ' cookie...');
+                if( getCookie(cookieOrigName) ) {
+                    _(cookieOrigName + ' cookie already set; no change');
+                }
+                else {
+                    setCookie(cookieOrigName, queryOrigUtmVals , cookieExpiry, cookieDomain );
+                    _('Set ' + cookieOrigName + ' cookie with ' + Object.keys(queryOrigUtmVals).length + ' UTM values');
+                }
+            }
+            else {
+                _('No UTM values present in query string');
+                recordNone();
+            }
+        }
+        else {
+            _('No query string found');
+            recordNone();
+        }
+
+        // Update form from cookies
+        _('Checking for MktoForms2 API...');
+        if(typeof MktoForms2 === 'object') {
+          
+            _('MktoForms2 API detected');
+
+            MktoForms2.whenReady( function(form) {
+
+                var f = form.getFormElem()[0]; // form element
+
+                _('Marketo form detected (#mktoForm_' + form.getId() + ')');
+
+                cookies.forEach(function(c) {
+                    _('Checking for ' + c + ' cookie...');
+                    if( getCookie(c) ) {
+                        _('Found ' + c + ' cookie with ' + Object.keys(getCookie(c)).length + ' UTM values');
+                        _('Adding UTM values from ' + c + ' cookie to Marketo form #mktoForm_' + form.getId() );
+                        form.addHiddenFields( getCookie(c) );
+                        if(!f.getAttribute('digitalpi-utms-added')) f.setAttribute('digitalpi-utms-added',true);
+                    }
+                    else {
+                        _(c + ' cookie not found');
+                    }
+                });
+
+                form.onSuccess(function(){
+                    _('Marketo form (#mktoForm_' + form.getId() + ') submitted successfully with UTM data; deleting ' + cookieName + ' cookie');
+                    deleteCookie(cookieName, cookieDomain);
+                });
+            });
+        }
+        else {
+            _('MktoForms2 API not detected; exiting');
+            return false;
+        }
+    };
+
+    var global = function() {
+        _('_digitalpi object defined in global scope');
+        window._digitalpi = window._digitalpi || {};
+        
+        _('_digitalpi.trackUTMs() defined in global scope');
+        window._digitalpi.trackUTMs = function() {
+            init();
+        };
+    };
+
+    var c = function() {
+        var b = '%cUTM Tracking for %cMarketo. %c❤%c, @digitalpi. %cVersion: '+version+'. Append #debug to URL to enable console logging.';
+        var p = {
+            1:"WFhYWCAgIFhYWFhYWFhYICAgIFhYWFg=",2:"ICAgIFhYWA==",
+            3:"WFhYWCAgICAgICBYWFhYICAgIFhYWFg=",4:"ICAgIFhYWFhY",
+            5:"WFhYWFhYWFhYWFhYWFhYWFhYWFhYWFg=",6:"ICAgIFg=",
+            7:"WFhYWCAgIFhYICAgWFhYICAgIFhYWFg="
+        };
+        var lap = [5,5,3,7,7,3,1,1,5,5,4,2,6];
+        var la = '';
+        lap.forEach(function(e){
+            la+=atob(p[e])+"\n";
+        });
+        console.log( b, 'font-weight:bold;color:#646669', 'font-weight:bold;color:#5944b0',
+            'font-size:125%;color:#3AA5B6', 'color:#3AA5B6', 'font-weight:normal;color:#C4C6C9'
+            );
+        if(location.hash === '#debug') {
+            console.log(
+                '%c'+la+"%cUTM Tracking for Marketo\n%cAuthor: Jon Bourne, jonbourne.com\nCompany: Digital Pi, digitalpi.com\nVersion: "+version,
+                'color:#3AA5B6', 'font-weight:bold;color:#3AA5B6', 'color:#C4C6C9'
+            );
+        }
+    };
+
+    if(/complete|interactive|loaded/.test(document.readyState)) {
+        _('Document loaded; calling init()');
+        c();
+        init();
+        global();
+    }
+    else {
+        _('Document not loaded; setting DOMContentLoaded event listener to call init()');
+        document.addEventListener('DOMContentLoaded', function() {
+            _('DOMContentLoaded event fired; calling init()');
+            c();
+            init();
+            global();
+        });
+    }
+
+  })();
+</script>
+    <link rel="icon" href="https://semgrep.dev/build/assets/favicon-32x32-CLzO_3Uq.png" type="image/png">
+    <link rel="icon" href="https://semgrep.dev/build/assets/favicon-CIx-xpG_.svg" type="image/svg">
+    
+        <title>Semgrep App Security Platform | AI-assisted SAST, SCA and Secrets Detection</title>
+<meta name="description" content="An extensible developer-friendly application security platform that scans source code to surface true and actionable security issues with AI-assisted SAST, SCA, and Secrets Detection solutions." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Semgrep App Security Platform | AI-assisted SAST, SCA and Secrets Detection" />
+<meta property="og:description" content="An extensible developer-friendly application security platform that scans source code to surface true and actionable security issues with AI-assisted SAST, SCA, and Secrets Detection solutions." />
+<meta property="og:url" content="https://semgrep.dev" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@semgrep" />
+<meta name="twitter:title" content="Semgrep App Security Platform | AI-assisted SAST, SCA and Secrets Detection" />
+<meta name="twitter:description" content="An extensible developer-friendly application security platform that scans source code to surface true and actionable security issues with AI-assisted SAST, SCA, and Secrets Detection solutions." />
+<meta property="og:image" content="https://semgrep.dev/assets/content/global/blog-thumbnail-default.png" />
+<meta property="og:image:width" content="1366" />
+<meta property="og:image:height" content="768" />
+<meta property="og:image:alt" content="Learn more at semgrep.dev" />
+<meta name="twitter:image" content="https://semgrep.dev/assets/content/global/blog-thumbnail-default.png" />
+<meta name="twitter:image:alt" content="Learn more at semgrep.dev" />
+<link href="https://semgrep.dev" rel="home" />
+<link href="https://semgrep.dev" rel="canonical" />
+<link type="text/plain" rel="author" href="https://semgrep.dev/humans.txt" />
+<meta name="google-site-verification" content="FWviPjfuV2oFFPowBbguPH9-FZuygR-UaFw5amX76q8" />
+    
+    <meta name="image" property="og:image" content="">
+    
+    
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/site-BfkbG4Yr.css" /><link rel="modulepreload" href="https://semgrep.dev/build/assets/site-BQy2FW1e.js" /><link rel="modulepreload" href="https://semgrep.dev/build/assets/preload-helper-D0dKGzYL.js" /><link rel="modulepreload" href="https://semgrep.dev/build/assets/nav-DAPxF30x.js" /><link rel="modulepreload" href="https://semgrep.dev/build/assets/globalEventDelegator-DopyJ4YO.js" /><link rel="modulepreload" href="https://semgrep.dev/build/assets/utils-D8Qir7p-.js" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/site-BfkbG4Yr.css" /><script type="module" src="https://semgrep.dev/build/assets/site-BQy2FW1e.js"></script>
+    
+    
+    
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_hero-asqvSaVE.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_hero-asqvSaVE.css" />
+  
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_static-logos-D8EoVgF0.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_static-logos-D8EoVgF0.css" />
+  
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_wide-content-CWuu7pAT.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_wide-content-CWuu7pAT.css" />
+  
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_icon-grid-BZu-LGLr.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_icon-grid-BZu-LGLr.css" />
+  
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_icon-grid-entry-BQq1qXja.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_icon-grid-entry-BQq1qXja.css" />
+  
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_horizontal-switch-panel-DPBVMBqe.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_horizontal-switch-panel-DPBVMBqe.css" />
+  
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_switch-panel-view-DpIloMwv.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_switch-panel-view-DpIloMwv.css" />
+  
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_static-nav-sections-DGJEDEo5.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_static-nav-sections-DGJEDEo5.css" />
+  
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_two-col-info-EYVY7SM5.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_two-col-info-EYVY7SM5.css" />
+  
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_three-col-info-BCHXq6o3.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_three-col-info-BCHXq6o3.css" />
+  
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_mini-cta-PPD-5VQo.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_mini-cta-PPD-5VQo.css" />
+  
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_form-section-UfmAE4cM.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_form-section-UfmAE4cM.css" />
+  
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_marketo-form-TXuptn8K.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_marketo-form-TXuptn8K.css" />
+  
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_full-image-3Q76xnu-.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_full-image-3Q76xnu-.css" />
+  
+    <link rel="preload" as="style" href="https://semgrep.dev/build/assets/_topbar-Coosx3GS.css" /><link rel="stylesheet" href="https://semgrep.dev/build/assets/_topbar-Coosx3GS.css" />
+  
+
+    <!-- ALGOLIA STYLES -->
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.3.0/themes/reset-min.css" integrity="sha256-D+cGTF0LVHjuEf+CDRkHeNw/KTHPg47t1AA/qmzxgtA=" crossorigin="anonymous">
+  </head>
+  <body id="home" class="semgrep-code">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSN4QTD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    
+      
+
+<section class="partial nav mint   ">
+  <div class="sticky-wrapper">
+    
+      
+  
+
+
+<div class="component topbar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 flex-wrapper">
+          <span class="banner">
+            
+              <p>Ready to move off legacy AppSec? The New Shift Program helps you switch from <a href="https://semgrep.dev/shift-from-checkmarx/">Checkmarx</a> or <a href="https://semgrep.dev/shift-from-snyk/">Snyk</a>.</p>
+
+            
+          </span>
+        <nav class="d-none d-lg-inline-block">
+          
+            <a class="nav-item" href="/login/">Sign in</a>
+          
+            <a class="nav-item" href="/resources/customer-success/">Product support</a>
+          
+            <a class="nav-item" href="/contact-us/">Contact us</a>
+          
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <div class="component main-nav bg-white">
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-12 full-screen">
+        <div class="left-container">
+          <a class="logo" href="/">
+            
+              <img src="https://semgrep.dev/build/assets/semgrep-logo-dark-F_zJCZNg.svg" alt="click to navigate to the homepage" />
+            
+          </a>
+          
+            <ul>
+              
+                
+                  <li class="nav-item ">
+                    <a href="/" class="nav-item">
+                      Products
+                      <div class="animated-border"></div>
+                    </a>
+                    
+                      
+                        <img class="arrow" src="https://semgrep.dev/build/assets/down-arrow-DesGgE7y.svg" aria-label="select to open or collapse Products dropdown" role="button" aria-expanded="false">
+                      
+                      <div class="dropdown-wrapper">
+                        <div class="dropdown  multi-col  ">
+                
+                  <div class="nav-column">
+                    
+                      <label class="eyebrow">Products</label>
+                      <ul>
+                        
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/products/semgrep-code">
+                      <img src="/assets/icons/code.svg" alt="code icon">
+                      <div>
+                        
+                        <span>Code</span>
+                        
+                          <p>Find and fix the issues that matter in your code (SAST)</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/products/semgrep-supply-chain">
+                      <img src="/assets/icons/shield.svg" alt="">
+                      <div>
+                        
+                        <span>Supply Chain</span>
+                        
+                          <p>Fix vulnerabilities in open source  dependencies and block malware</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/products/semgrep-secrets">
+                      <img src="/assets/icons/secrets.svg" alt="secrets icon">
+                      <div>
+                        
+                        <span>Secrets</span>
+                        
+                          <p>Find and fix hardcoded secrets with semantic analysis</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/products/semgrep-guardian/">
+                      <img src="/assets/icons/vibe-code-icon.svg" alt="vibe coding icon">
+                      <div>
+                        
+                        <span>Semgrep Guardian</span>
+                        
+                          <p>Scan and fix AI-generated code the moment it's written</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                      </ul>
+                    
+                  </div>
+                
+              
+                
+                  <div class="nav-column">
+                    
+                      <label class="eyebrow">Platform</label>
+                      <ul>
+                        
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/products/semgrep-multimodal">
+                      <img src="/assets/icons/assistant.svg" alt="assistant icon">
+                      <div>
+                        
+                        <span>Multimodal</span>
+                        
+                          <p>Combine AI reasoning with rule-based analysis for detection, triage, and remediation</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/products/semgrep-appsec-platform">
+                      <img src="/assets/icons/cloud.svg" alt="cloud icon">
+                      <div>
+                        
+                        <span>AppSec Platform</span>
+                        
+                          <p>Automate, manage, and enforce security across your organization</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/products/semgrep-agentic-workflows">
+                      <img src="/assets/icons/zap.svg" alt="zap icon">
+                      <div>
+                        
+                        <span>Agentic Workflows</span>
+                        
+                          <p>Build and deploy security pipelines that combine static analysis with AI at scale</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                      </ul>
+                    
+                  </div>
+                
+              
+                
+                  <div class="nav-column">
+                    
+                      <label class="eyebrow">Featured</label>
+                      <ul>
+                        
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="https://semgrep.dev/explore">
+                      
+                      <div>
+                        
+                        <span>Registry</span>
+                        
+                          <p>Find rules written by Semgrep and the community</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="https://semgrep.dev/playground/new">
+                      
+                      <div>
+                        
+                        <span>Playground</span>
+                        
+                          <p>Write and share rules using our online interactive tool</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/products/product-updates">
+                      
+                      <div>
+                        
+                        <span>Product Updates</span>
+                        
+                          <p>Stay up to date on changes to the Semgrep platform, big and small</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                      </ul>
+                    
+                  </div>
+                
+              </div>
+                      </div>
+                    
+                  </li>
+                
+              
+                
+                  <li class="nav-item ">
+                    <a href="/" class="nav-item">
+                      Solutions
+                      <div class="animated-border"></div>
+                    </a>
+                    
+                      
+                        <img class="arrow" src="https://semgrep.dev/build/assets/down-arrow-DesGgE7y.svg" aria-label="select to open or collapse Solutions dropdown" role="button" aria-expanded="false">
+                      
+                      <div class="dropdown-wrapper">
+                        <div class="dropdown  multi-col   is-horizontal ">
+                
+                  <div class="nav-column">
+                    
+                      <label class="eyebrow">Solutions</label>
+                      <ul>
+                        
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="https://semgrep.dev/solutions/open-source-malware-protection/">
+                      <img src="/assets/icons/software-supply-chain-security-icon.svg" alt="security icon">
+                      <div>
+                        
+                        <span>Open-Source Malware Protection</span>
+                        
+                          <p>Protect against software supply chain attacks</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/solutions/static-application-security-testing/">
+                      <img src="/assets/icons/sast-icon.svg" alt="sast icon">
+                      <div>
+                        
+                        <span>Static Application Security Testing</span>
+                        
+                          <p>Increase security while accelerating development</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/solutions/owasp-top-ten/">
+                      <img src="/assets/icons/owasp-t10.svg" alt="owasp icon">
+                      <div>
+                        
+                        <span>OWASP Top 10</span>
+                        
+                          <p>Prevent the most critical web application security risks</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/solutions/secure-guardrails/">
+                      <img src="/assets/icons/shield-1.svg" alt="shield icon">
+                      <div>
+                        
+                        <span>Secure Guardrails</span>
+                        
+                          <p>Protect Your Code with Secure Guardrails</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                      </ul>
+                    
+                  </div>
+                
+              
+                
+                  <div class="nav-column">
+                    
+                      <label class="eyebrow">Industries</label>
+                      <ul>
+                        
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/industry/fintech/">
+                      <img src="/assets/icons/money.svg" alt="money icon">
+                      <div>
+                        
+                        <span>Fintech</span>
+                        
+                          <p>Ship faster, without compromising on security.</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/industry/saas-cloud/">
+                      <img src="/assets/icons/cloud.svg" alt="cloud icon">
+                      <div>
+                        
+                        <span>SaaS & Cloud</span>
+                        
+                          <p>Secure SAST. Innovate Fast.</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                      </ul>
+                    
+                  </div>
+                
+              
+                
+                  <div class="nav-column">
+                    
+                      <label class="eyebrow">Why Semgrep?</label>
+                      <ul>
+                        
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/resources/semgrep-vs-snyk/">
+                      
+                      <div>
+                        
+                        <span>vs. Snyk</span>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/resources/semgrep-vs-checkmarx/">
+                      
+                      <div>
+                        
+                        <span>vs. Checkmarx</span>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/resources/semgrep-vs-github/">
+                      
+                      <div>
+                        
+                        <span>vs. GitHub</span>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/products/community-edition">
+                      
+                      <div>
+                        
+                        <span>Community Edition</span>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/docs/for-developers/overview">
+                      
+                      <div>
+                        
+                        <span>Semgrep for developers</span>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/for/startups/">
+                      
+                      <div>
+                        
+                        <span>Semgrep for Startups</span>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                      </ul>
+                    
+                  </div>
+                
+              </div>
+                      </div>
+                    
+                  </li>
+                
+              
+                
+                  <li class="nav-item ">
+                    <a href="/" class="nav-item">
+                      Resources
+                      <div class="animated-border"></div>
+                    </a>
+                    
+                      
+                        <img class="arrow" src="https://semgrep.dev/build/assets/down-arrow-DesGgE7y.svg" aria-label="select to open or collapse Resources dropdown" role="button" aria-expanded="false">
+                      
+                      <div class="dropdown-wrapper">
+                        <div class="dropdown  multi-col  ">
+                
+                  <div class="nav-column">
+                    
+                      
+                      <ul>
+                        
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="https://docs.semgrep.dev">
+                      <img src="/assets/icons/book.svg" alt="book icon">
+                      <div>
+                        
+                        <span>Docs</span>
+                        
+                          <p>Want the docs? Start here</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/blog/">
+                      <img src="/assets/icons/file-text.svg" alt="">
+                      <div>
+                        
+                        <span>Blog</span>
+                        
+                          <p>Get the latest news about Semgrep</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/resources/calculator/">
+                      <img src="/assets/icons/money.svg" alt="money icon">
+                      <div>
+                        
+                        <span>ROI Calculator</span>
+                        
+                          <p>See how Semgrep can save you time and money</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="https://go.semgrep.dev/slack">
+                      <img src="/assets/icons/calendar.svg" alt="calendar icon">
+                      <div>
+                        
+                        <span>Community Slack</span>
+                        
+                          <p>Join the friendly Slack group to ask questions or share feedback</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                      </ul>
+                    
+                  </div>
+                
+              
+                
+                  <div class="nav-column">
+                    
+                      
+                      <ul>
+                        
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/events/">
+                      <img src="/assets/icons/calendar.svg" alt="calendar icon">
+                      <div>
+                        
+                        <span>Events</span>
+                        
+                          <p>Join us at a Semgrep Event!</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/case-studies/">
+                      <img src="/assets/icons/file-text.svg" alt="">
+                      <div>
+                        
+                        <span>Case Studies</span>
+                        
+                          <p>See why users love Semgrep</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/resources/customer-success/">
+                      <img src="/assets/icons/money.svg" alt="money icon">
+                      <div>
+                        
+                        <span>Customer Success</span>
+                        
+                          <p>Get help from Semgrep’s Customer Success team</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/events/video-library/">
+                      <img src="/assets/icons/zap.svg" alt="zap icon">
+                      <div>
+                        
+                        <span>Video Library</span>
+                        
+                          <p>View our library of on-demand webinars</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                      </ul>
+                    
+                  </div>
+                
+              
+                
+                  <div class="nav-column">
+                    
+                      <label class="eyebrow">Featured</label>
+                      <ul>
+                        
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="https://semgrep.dev/resources/remediation-at-scale/">
+                      
+                      <div>
+                        <label class="green">Report</label>
+                        <span>Remediation at Scale: What High-Performing AppSec Teams Do Differently</span>
+                        
+                          <p>An analysis of code security remediation patterns across tens of thousands of actively developed repositories.</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/resources/semgrep-vs-snyk/">
+                      
+                      <div>
+                        <label class="green">Comparison</label>
+                        <span>Semgrep vs. Snyk</span>
+                        
+                          <p>Learn how Semgrep improves accuracy, saves time, and delivers a superior developer experience.</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-item" href="/blog/2026/getting-ready-for-mythos-with-semgrep/">
+                      
+                      <div>
+                        <label class="green">Blog</label>
+                        <span>Getting ready for Mythos</span>
+                        
+                          <p>Mythos is poised to give attackers an unprecedented advantage, but Semgrep can help you restore the balance in your favor.</p>
+                        
+                      </div>
+                    </a>
+                  </li>
+                
+              
+                      </ul>
+                    
+                  </div>
+                
+              </div>
+                      </div>
+                    
+                  </li>
+                
+              
+                
+                  <li class="nav-item  single-col ">
+                    <a href="" class="nav-item">
+                      Company
+                      <div class="animated-border"></div>
+                    </a>
+                    
+                      
+                        <img class="arrow" src="https://semgrep.dev/build/assets/down-arrow-DesGgE7y.svg" aria-label="select to open or collapse Company dropdown" role="button" aria-expanded="false">
+                      
+                      <div class="dropdown-wrapper">
+                        <div class="dropdown  ">
+                
+                  <div class="nav-column">
+                    
+                      <ul>
+                        <li class="nav-item">
+                          <a class="nav-item" href="/about/">
+                            <img src="/assets/icons/rocket-icon.svg" alt="rocket icon">
+                            <div>
+                              
+                              <span>About</span>
+                              
+                                <p>The Semgrep story & values</p>
+                              
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    
+                  </div>
+                
+              
+                
+                  <div class="nav-column">
+                    
+                      <ul>
+                        <li class="nav-item">
+                          <a class="nav-item" href="/about/careers/">
+                            <img src="/assets/icons/briefcase-icon.svg" alt="briefcase icon">
+                            <div>
+                              
+                              <span>Careers</span>
+                              
+                                <p>Join the team!</p>
+                              
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    
+                  </div>
+                
+              
+                
+                  <div class="nav-column">
+                    
+                      <ul>
+                        <li class="nav-item">
+                          <a class="nav-item" href="/partners/">
+                            <img src="/assets/icons/handshake-icon.svg" alt="">
+                            <div>
+                              
+                              <span>Partners</span>
+                              
+                                <p>Become a Semgrep partner</p>
+                              
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    
+                  </div>
+                
+              </div>
+                      </div>
+                    
+                  </li>
+                
+              
+                
+                  <li class="nav-item  single-col ">
+                    <a href="/pricing/" class="nav-item">
+                      Pricing
+                      <div class="animated-border"></div>
+                    </a>
+                    
+                  </li>
+                
+              
+            </ul>
+          
+        </div>
+
+        
+          <!-- CTA BUTTONS -->
+          <div class="molecule buttons">
+  
+    <a class="molecule button primary    nav-buttons   " href="/contact/demo"  rel="noopener">
+  Book demo
+</a>
+  
+  
+    <a class="molecule button secondary    nav-buttons   " href="/signup"  rel="noopener">
+  Try for free
+</a>
+  
+</div>
+        
+      </nav>
+      <nav class="col-12 mobile">
+        <a class="logo" href="/">
+          
+              <img src="https://semgrep.dev/build/assets/semgrep-logo-dark-F_zJCZNg.svg" alt="click to navigate to the homepage" />
+            
+        </a>
+
+        
+          <div class="right-container">
+            <div class="d-none d-sm-inline-block">
+              <div class="molecule buttons">
+  
+    <a class="molecule button primary    nav-buttons   " href="/contact/demo"  rel="noopener">
+  Book demo
+</a>
+  
+  
+    <a class="molecule button secondary    nav-buttons   " href="/login"  rel="noopener">
+  Try for free
+</a>
+  
+</div>
+            </div>
+            
+            <div class="mobile-button">
+              
+                <img src="https://semgrep.dev/build/assets/menu-Cev7CaPt.svg" class="menu-icon" alt="click to open menu">
+                <img src="https://semgrep.dev/build/assets/close-94g2KY78.svg" class="close-icon" alt="click to close menu">
+              
+            </div>
+          </div>
+        
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div id="mobile-nav">
+  <ul>
+    
+      
+        <li class="nav-item">
+          
+            <button class="nav-item" data-click="expand">
+          
+            Products
+            
+               
+                <img class="arrow" src="https://semgrep.dev/build/assets/down-arrow-DesGgE7y.svg" alt="click to see dropdown options">
+              
+            
+          
+          </button>
+          
+          
+            <ul>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/code.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/products/semgrep-code/">Semgrep Code</a>
+                  <p>Find and fix the issues that matter in your code (SAST)</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/shield.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/products/semgrep-supply-chain/">Semgrep Supply Chain</a>
+                  <p>Fix vulnerabilities in open source  dependencies and block malware</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/secrets.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/products/semgrep-secrets/">Semgrep Secrets</a>
+                  <p>Find and fix hardcoded secrets with semantic analysis</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/vibe-code-icon.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/products/semgrep-guardian/">Semgrep Guardian</a>
+                  <p>Scan and fix AI-generated code the moment it's written</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/assistant.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/products/semgrep-multimodal">Multimodal</a>
+                  <p>Combine AI reasoning with rule-based analysis for detection, triage, and remediation</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/cloud.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/products/semgrep-appsec-platform/">Semgrep AppSec Platform</a>
+                  <p>Automate, manage, and enforce security across your organization</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/zap.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/products/semgrep-workflows/">Semgrep Workflows</a>
+                  <p>Build and deploy security pipelines that combine static analysis with AI at scale</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                
+                <div class="right-col">
+                  <a class="nav-item" href="/products/product-updates/">Product Updates</a>
+                  <p>Stay up to date on changes to the Semgrep platform, big and small</p>
+                </div>
+              </li>
+              
+            </ul>
+          
+        </li>
+      
+    
+      
+        <li class="nav-item">
+          
+            <button class="nav-item" data-click="expand">
+          
+            Solutions
+            
+               
+                <img class="arrow" src="https://semgrep.dev/build/assets/down-arrow-DesGgE7y.svg" alt="click to see dropdown options">
+              
+            
+          
+          </button>
+          
+          
+            <ul>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/software-supply-chain-security-icon.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="https://semgrep.dev/solutions/open-source-malware-protection/">Open-Source Malware Protection</a>
+                  <p>Protect against software supply chain attacks</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/sast-icon.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/solutions/static-application-security-testing/">Static application security testing</a>
+                  <p>Increase security while accelerating development</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/owasp-t10.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/solutions/owasp-top-ten/">OWASP Top 10</a>
+                  <p>Prevent the most critical web application security risks</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/shield-1.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/solutions/secure-guardrails/">Secure Guardrails</a>
+                  <p>Protect Your Code with Secure Guardrails</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/money.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/industry/fintech/">Fintech</a>
+                  <p>Mitigate software supply chain risks</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/cloud.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/industry/saas-cloud/">SaaS & Cloud</a>
+                  <p>Increase security while accelerating development</p>
+                </div>
+              </li>
+              
+            </ul>
+          
+        </li>
+      
+    
+      
+        <li class="nav-item">
+          
+            <button class="nav-item" data-click="expand">
+          
+            Resources
+            
+               
+                <img class="arrow" src="https://semgrep.dev/build/assets/down-arrow-DesGgE7y.svg" alt="click to see dropdown options">
+              
+            
+          
+          </button>
+          
+          
+            <ul>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/book.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="https://docs.semgrep.dev">Docs</a>
+                  <p>Want to read all the docs? Start here</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/file-text.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/blog/">Blog</a>
+                  <p>Get the latest news about Semgrep</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/money.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/resources/calculator/">ROI Calculator</a>
+                  <p>See how Semgrep can save you time and money</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/calendar.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="https://semgrep.slack.com/join/shared_invite/zt-2kyavz0b6-7rgTuOZAV0XiQ2nDynCGrA#/shared-invite/email">Community Slack</a>
+                  <p>Join the friendly Slack group to ask questions or share feedback</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/calendar.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/events/">Events</a>
+                  <p>Join us at a Semgrep Event!</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/file-text.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/case-studies/">Case Studies</a>
+                  <p>See why users love Semgrep</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/zap.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/events/video-library/">Video Library</a>
+                  <p>View our library of on-demand webinars</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/calendar.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/products/community-edition">Community Edition</a>
+                  <p></p>
+                </div>
+              </li>
+              
+            </ul>
+          
+        </li>
+      
+    
+      
+        <li class="nav-item">
+          
+            <button class="nav-item" data-click="expand">
+          
+            Company
+            
+               
+                <img class="arrow" src="https://semgrep.dev/build/assets/down-arrow-DesGgE7y.svg" alt="click to see dropdown options">
+              
+            
+          
+          </button>
+          
+          
+            <ul>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/rocket-icon.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/about/">About</a>
+                  <p>The Semgrep story & values</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/briefcase-icon.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/about/careers/">Careers</a>
+                  <p>Join the team!</p>
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <img src="/assets/icons/handshake-icon.svg">
+                <div class="right-col">
+                  <a class="nav-item" href="/partners/">Partners</a>
+                  <p>Become a Semgrep partner</p>
+                </div>
+              </li>
+              
+            </ul>
+          
+        </li>
+      
+    
+      
+        <li class="nav-item">
+          
+            <a class="nav-item" href="/pricing/">
+          
+            Pricing
+            
+          
+            </a>
+          
+          
+        </li>
+      
+    
+      
+        <li class="nav-item">
+          
+            <a class="nav-item" href="/login/">
+          
+            Sign in
+            
+          
+            </a>
+          
+          
+        </li>
+      
+    
+      
+        <li class="nav-item">
+          
+            <a class="nav-item" href="/resources/customer-success/">
+          
+            Product support
+            
+          
+            </a>
+          
+          
+        </li>
+      
+    
+      
+        <li class="nav-item">
+          
+            <a class="nav-item" href="/contact-us/">
+          
+            Contact us
+            
+          
+            </a>
+          
+          
+        </li>
+      
+    
+    
+      <li class="buttons">
+        <div class="molecule buttons">
+  
+    <a class="molecule button primary    nav-buttons   " href="/contact/demo"  rel="noopener">
+  Book demo
+</a>
+  
+  
+    <a class="molecule button secondary    nav-buttons   " href="/login"  rel="noopener">
+  Try for free
+</a>
+  
+</div>
+      </li>
+    
+  </ul>
+</div>
+  </div>
+</section>
+    
+    
+  
+
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+<section class="mint-component hero padding-horizontal padding-vertical-300  bg-neutral-50   code-class" style="">
+  <div class="container-fluid hero-container">
+    <div class="row  align-items-center  row-gap-5">
+      
+        <div class="left-col col-12  ">
+          
+          <div class="content">
+            <div class="title-content">
+              <h1 class="mint "><p>Code Security<br />
+<strong>for Builders and Agents</strong></p>
+</h1> 
+               
+            </div>
+                
+            <div class="subheader green-checklists"><p>Catch, flag, and fix real vulnerabilities before they ship, powered by security that learns as you build. Unify SAST, SCA, secrets scanning, and malware protection into one platform built for today’s software era.</p>
+</div>
+            
+              <div class="molecule buttons">
+  
+    <a class="molecule button primary colored_bg with-arrow  mint  " href="/contact/demo"  rel="noopener">
+  Book a demo
+</a>
+  
+  
+    <a class="molecule button secondary    mint  " href="https://semgrep.dev/signup"  rel="noopener">
+  Try for free
+</a>
+  
+</div>
+            
+          </div>
+        </div>
+      
+      
+
+      
+        <div class="col-12 d-lg-block">
+          
+            <img loading="lazy" class="display-image " src="/assets/home-hero-2602.svg">
+          
+        </div>
+      
+
+      
+    </div>
+
+    
+
+    
+      
+    
+
+    
+
+    
+  </div>
+  
+</section>
+  
+    
+  
+
+
+
+
+<section class="mint-component static-logos padding-vertical-300 bg-mint-200 ">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center wrapper">
+        <label class="eyebrow large">Loved by leading engineering teams</label>
+        <div class="logo-container logos_box bg-mint-200">
+          
+          
+            <div class="logo">
+              <img loading="lazy" src="/assets/logos/lyft-logo.svg" alt="Lyft Logo"/>
+            </div>
+          
+            <div class="logo">
+              <img loading="lazy" src="/assets/logos/slack-logo.svg" alt="Slack Logo"/>
+            </div>
+          
+            <div class="logo">
+              <img loading="lazy" src="/assets/logos/dropbox-icon-logo.svg" alt=""/>
+            </div>
+          
+            <div class="logo">
+              <img loading="lazy" src="/assets/logos/gitlab-logo.svg" alt="Gitlab Logo"/>
+            </div>
+          
+            <div class="logo">
+              <img loading="lazy" src="/assets/logos/hashicorp-logo.svg" alt="Hashicorp Logo"/>
+            </div>
+          
+            <div class="logo">
+              <img loading="lazy" src="/assets/logos/tob-logo.svg" alt="Trail of Bits Logo"/>
+            </div>
+          
+            <div class="logo">
+              <img loading="lazy" src="/assets/logos/vanta-logo-18hg3.svg" alt=""/>
+            </div>
+          
+            <div class="logo">
+              <img loading="lazy" src="/assets/logos/squarespace-logo.webp" alt="squarespace logo"/>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+    
+  
+
+
+
+
+<section id="" class="mint-component wide-content padding-horizontal  padding-top-300">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="wrapper">
+
+          <header class="align-self- homepage-class">
+            
+              <label class="eyebrow text-">Why Semgrep</label>
+            
+            
+              <h2 class="h3 text-"><p>Built for Builders, Trusted by Security</p>
+</h2>
+            
+
+            
+
+            
+              <div class="subheader text-">
+                <p>Lives where developers work, delivering fixes without breaking flow. Gives security teams visibility, control, and confidence.</p>
+
+              </div>
+            
+          </header>
+
+          
+            
+              
+
+              
+
+              
+
+              
+              
+              
+            
+          
+
+          
+            
+              <div class="image ">
+                <img loading="lazy" src="/assets/illustrations/why-semgrep.svg" alt="Why Semgrep Illustration">
+                
+              </div>
+            
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+    
+  
+
+
+<section class="mint-component icon-grid padding-vertical-300 bg-white  homepage-class  padding-horizontal">
+  <div class="container-fluid">
+    <div class="row flex-container">
+      
+      <div class="col-12">
+        <div class="entries ">
+          
+            
+  
+
+
+<div class="mint-molecule icon-grid-entry">
+  <img loading="lazy" src="/assets/icons/fi-fast.svg" alt="fi fast icon">
+  
+    <h5>Empower invention without friction</h5>
+  
+  
+    <div class="body">
+      <p>Industry-leading SAST, SCA, and secrets scanning in one high signal AppSec platform.</p>
+
+    </div>
+  
+</div>
+          
+            
+
+<div class="mint-molecule icon-grid-entry">
+  <img loading="lazy" src="/assets/icons/fi-customizable.svg" alt="fi customizable icon">
+  
+    <h5>Prevention at the Source</h5>
+  
+  
+    <div class="body">
+      <p>Secure code as it’s written. Built-in guardrails guide safe fixes before code ships.</p>
+
+    </div>
+  
+</div>
+          
+            
+
+<div class="mint-molecule icon-grid-entry">
+  <img loading="lazy" src="/assets/icons/fi-transparent.svg" alt="fi transparent icon">
+  
+    <h5>Make Zero False Positives a Reality</h5>
+  
+  
+    <div class="body">
+      <p>AppSec teams triage 80% fewer false positives across SAST and SCA. Backlogs shrink, and engineering velocity climbs.</p>
+
+    </div>
+  
+</div>
+          
+            
+
+<div class="mint-molecule icon-grid-entry">
+  <img loading="lazy" src="/assets/icons/fi-extensible.svg" alt="fi extensible icon">
+  
+    <h5>Smarter as You Build</h5>
+  
+  
+    <div class="body">
+      <p>AI learns your code context to eliminate false positives and prioritize reachable vulnerabilities – validated by 95% of security reviewers across 6M+ findings.</p>
+
+    </div>
+  
+</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+    
+  
+
+
+<section class="component mint-component horizontal-switch-panel js-toggle-active bg-mint-gradient-100 padding-vertical-200">
+    <div class="container-fluid">
+      <div class="row py-2">
+        <div class="col-12">
+            
+              <h1>End-to-End Open Source Malware Protection</h1>
+            
+          <div class="panel">
+            <div class="tabs" data-bind="tabs">
+              
+                <label data-tab="zero-day-incident-detection">Detect</label>
+              
+                <label data-tab="org-wide-ir-automation">Respond</label>
+              
+                <label data-tab="malware-firewall">Prevent</label>
+              
+            </div>
+            
+              
+  
+
+
+<div class="molecule switch-panel-view" data-panel-view="zero-day-incident-detection">
+  <div class="row row-gap-4">
+    <div class="col-12 col-lg-5 content">
+      <h3 class="h2">Zero-Day Incident Detection</h3>
+      <div class="body">
+        <p>24/7 on-call security monitoring triggers an incident scan within 30 minutes of discovery. Teams get notified by Semgrep and can see the latest malware findings on their dashboard or via API.</p>
+
+      </div>
+      
+        <div class="molecule buttons">
+  
+  
+</div>
+      
+    </div>
+    <div class="col-12 col-lg-6 offset-lg-1">
+      
+        <img loading="lazy" src="/assets/screenshot-2026-09-22-at-1.31.16-pm-1790111324.png" alt="">
+      
+      
+      
+    </div>
+  </div>
+</div>
+            
+              
+
+<div class="molecule switch-panel-view" data-panel-view="org-wide-ir-automation">
+  <div class="row row-gap-4">
+    <div class="col-12 col-lg-5 content">
+      <h3 class="h2">Org-wide IR automation</h3>
+      <div class="body">
+        <p>Enterprise-grade policies, with Slack and JIRA integration, take malware findings and trigger predefined remediation workflows, for end-to-end incident response automation.</p>
+
+      </div>
+      
+        <div class="molecule buttons">
+  
+  
+</div>
+      
+    </div>
+    <div class="col-12 col-lg-6 offset-lg-1">
+      
+        <img loading="lazy" src="/assets/screenshot-2026-09-21-at-1.09.55-pm-1790021539.png" alt="">
+      
+      
+      
+    </div>
+  </div>
+</div>
+            
+              
+
+<div class="molecule switch-panel-view" data-panel-view="malware-firewall">
+  <div class="row row-gap-4">
+    <div class="col-12 col-lg-5 content">
+      <h3 class="h2">Malware Firewall</h3>
+      <div class="body">
+        <p>Semgrep Malware Firewall runs silently on developer machines, intercepting network requests to any public registry and blocking malicious and compromised open-source packages from reaching your environment.</p>
+
+      </div>
+      
+        <div class="molecule buttons">
+  
+  
+</div>
+      
+    </div>
+    <div class="col-12 col-lg-6 offset-lg-1">
+      
+        <img loading="lazy" src="/assets/screenshot-2026-09-21-at-1.10.12-pm-1790021651.png" alt="">
+      
+      
+      
+    </div>
+  </div>
+</div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  
+    
+  
+
+
+<section class="mint-component static-nav-sections padding-vertical-300 ">
+    <div class="container-fluid nav-container">
+        <div class="row">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h2 class="section-title">AI woven across the AppSec lifecycle</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="scroll-list-sentinel" aria-hidden="true"></div>
+    <nav class="list" id="scroll-list">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="list-container">
+                        
+                            <a class="section-nav-item" href="#section-0" data-section="#section-0">Detection</a>
+                        
+                            <a class="section-nav-item" href="#section-1" data-section="#section-1">Noise Filtering</a>
+                        
+                            <a class="section-nav-item" href="#section-2" data-section="#section-2">Remediation</a>
+                        
+                            <a class="section-nav-item" href="#section-3" data-section="#section-3">Prevention</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content-container">
+        <div class="feature-list" data-bs-spy="scroll" data-bs-target="#scroll-list">
+            
+                
+                    
+
+                    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-0" class="mint-component two-col-info padding-horizontal   padding-vertical-300   ">
+  <div class="container-fluid">
+    
+    <div class="row large align-items-center  ">
+        <div class="col-12 col-lg-4 ">
+          <div class="content ">
+            
+              <div class="two-col-header not-above">
+                
+                
+                  <h3><p>Detect What Matters</p>
+</h3>
+                
+                
+                  <h4 class="subheader"><p>Detect complex issues like IDORs, broken authorization, and multi-step logic flaws.</p>
+<p>Combine deterministic static analysis with AI reasoning to understand naming, structure, and developer intent – going beyond pattern matching.</p>
+</h4>
+                
+              </div>
+            
+            
+            
+              <div class="molecule buttons">
+  
+    <a class="molecule button primary underline with-arrow    " href="/blog/2025/ai-powered-detection-with-semgrep"  rel="noopener">
+  Learn More
+</a>
+  
+  
+</div>
+            
+            
+          </div>
+        </div>
+        <div class="col-12 col-lg-7 offset-lg-1">
+          
+            
+              <img loading="lazy" class="image  " src="/assets/illustrations/h-detection.svg" alt="Detection Illustration" />
+             
+          
+        </div>
+    </div>
+  </div>
+</section>
+                
+            
+                
+                    
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-1" class="mint-component two-col-info padding-horizontal reversed  padding-vertical-300   ">
+  <div class="container-fluid">
+    
+    <div class="row large align-items-center  ">
+        <div class="col-12 col-lg-4 offset-lg-1">
+          <div class="content ">
+            
+              <div class="two-col-header not-above">
+                
+                
+                  <h3><p>Noise Filtering</p>
+</h3>
+                
+                
+                  <h4 class="subheader"><p>Prioritize what matters. Eliminate what doesn’t. Automatically triage findings using code context, patterns, and prior decisions.</p>
+<p>Provisionally ignore false positives so AppSec teams focus on real risk. Don’t audit alerts. Automate them away.</p>
+</h4>
+                
+              </div>
+            
+            
+            
+              <div class="molecule buttons">
+  
+    <a class="molecule button primary underline with-arrow    " href="/products/semgrep-code"  rel="noopener">
+  Learn More
+</a>
+  
+  
+</div>
+            
+            
+          </div>
+        </div>
+        <div class="col-12 col-lg-7 ">
+          
+            
+              <img loading="lazy" class="image  " src="/assets/illustrations/h-filtering.svg" alt="Filtering Illustration" />
+             
+          
+        </div>
+    </div>
+  </div>
+</section>
+                
+            
+                
+                    
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-2" class="mint-component two-col-info padding-horizontal   padding-vertical-300   ">
+  <div class="container-fluid">
+    
+    <div class="row large align-items-center  ">
+        <div class="col-12 col-lg-4 ">
+          <div class="content ">
+            
+              <div class="two-col-header not-above">
+                
+                
+                  <h3><p>Remediation</p>
+</h3>
+                
+                
+                  <h4 class="subheader"><p>Turn findings into safe, actionable fixes – fast. Generate tailored remediation and upgrade guidance directly in PRs and IDEs.</p>
+<p>Security stops being a blocker. Developers fix issues safely with confidence, not guesswork.</p>
+</h4>
+                
+              </div>
+            
+            
+            
+              <div class="molecule buttons">
+  
+    <a class="molecule button primary underline with-arrow    " href="/blog/2024/ai-assisted-remediation"  rel="noopener">
+  Learn More
+</a>
+  
+  
+</div>
+            
+            
+          </div>
+        </div>
+        <div class="col-12 col-lg-7 offset-lg-1">
+          
+            
+              <img loading="lazy" class="image  " src="/assets/illustrations/h-remediation.svg" alt="" />
+             
+          
+        </div>
+    </div>
+  </div>
+</section>
+                
+            
+                
+                    
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-3" class="mint-component two-col-info padding-horizontal reversed  padding-vertical-300   ">
+  <div class="container-fluid">
+    
+    <div class="row large align-items-center  ">
+        <div class="col-12 col-lg-4 offset-lg-1">
+          <div class="content ">
+            
+              <div class="two-col-header not-above">
+                
+                
+                  <h3><p>Prevention</p>
+</h3>
+                
+                
+                  <h4 class="subheader"><p>Learn once, prevent forever. Human triage decisions create reusable “memories” that suppress repeat false positives automatically. Signal compounds over time. False positives don’t come back.</p>
+</h4>
+                
+              </div>
+            
+            
+            
+              <div class="molecule buttons">
+  
+    <a class="molecule button primary underline with-arrow    " href="/blog/2025/why-ai-powered-memories-are-the-future-of-semgrep-sast"  rel="noopener">
+  Learn More
+</a>
+  
+  
+</div>
+            
+            
+          </div>
+        </div>
+        <div class="col-12 col-lg-7 ">
+          
+            
+              <img loading="lazy" class="image  " src="/assets/illustrations/h-prevention.svg" alt="" />
+             
+          
+        </div>
+    </div>
+  </div>
+</section>
+                
+            
+        </div>
+    </div>
+</section>
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="" class="mint-component two-col-info padding-horizontal /index/    padding-vertical-300   ">
+  <div class="container-fluid">
+    
+    <div class="row large align-items-center  ">
+        <div class="col-12 col-lg-6 ">
+          <div class="content ">
+            
+              <div class="two-col-header not-above">
+                
+                
+                  <h3><p>Works where you build. Connects where your software runs</p>
+</h3>
+                
+                
+              </div>
+            
+            <p><strong>Supported workflows and integrations:</strong></p>
+<ul>
+<li>CLI, CI/CD, and IDEs (VS Code, JetBrains)</li>
+<li>PR checks in GitHub, GitLab, Bitbucket, Azure</li>
+<li>Jira and ticketing workflow routing</li>
+<li>APIs and webhooks</li>
+<li>MCP integrations for AI tools like Cursor and Replit</li>
+<li>Cloud context via partners including Palo Alto Networks, Sysdig, StackHawk</li>
+</ul>
+
+            
+              <div class="molecule buttons">
+  
+    <a class="molecule button primary underline with-arrow    " href="/products/integrations"  rel="noopener">
+  Learn More
+</a>
+  
+  
+</div>
+            
+            
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 ">
+          
+            
+              <img loading="lazy" class="image  no-height" src="/assets/integrations.svg" alt="" />
+             
+          
+        </div>
+    </div>
+  </div>
+</section>
+  
+    
+  
+
+
+<section class="mint-component three-col-info padding-horizontal  padding-vertical-400">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="wrapper">
+
+          <header class="-class">
+            
+              <label class="eyebrow">Built for every role</label>
+            
+            
+              <h3 class="h3">Code security that unifies teams, accelerates delivery, and reduces real risk</h3>
+            
+          </header>
+
+          <div class="info-wrapper">
+             
+                <div class="info-col">
+                    
+                        <h4>For Developers</h4>
+                    
+
+                    <ul>
+                        
+                            <li>Clear, actionable findings</li>
+                        
+                            <li>Fix issues in PRs, CI, IDEs, or AI tools</li>
+                        
+                            <li>Ship faster with confidence</li>
+                        
+                    </ul>
+                </div>
+             
+                <div class="info-col">
+                    
+                        <h4>For AppSec Teams</h4>
+                    
+
+                    <ul>
+                        
+                            <li>High signal results across SAST, SCA, and secrets scanning</li>
+                        
+                            <li>Scalable guardrails powered by rules and AI</li>
+                        
+                            <li>Less noise, real risk reduction</li>
+                        
+                    </ul>
+                </div>
+             
+                <div class="info-col">
+                    
+                        <h4>For CISOs</h4>
+                    
+
+                    <ul>
+                        
+                            <li>Measurable security outcomes</li>
+                        
+                            <li>Unified visibility across humans and AI</li>
+                        
+                            <li>Proactive security without slowing the business</li>
+                        
+                    </ul>
+                </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+    <section 
+  id="testimonial-component"
+  class="mint-component testimonial-component padding-horizontal padding-vertical-600 bg-mint-200"
+  data-theme=""
+  data-testimonial-component
+>
+  <div class="container-fluid testimonial-wrapper">
+
+    
+      <div class="row">
+        <div class="col-12">
+          <h2 class="testimonial-header "><p>No buzzwords, just<br />
+real world results</p>
+</h2>
+        </div>
+      </div>
+    
+
+    
+      <div class="row row-gap-4 testimonial-stats">
+        
+          <div class="col-12 col-md-4 stat-item">
+            <div class="stat-number">3.5X more true positives</div>
+            <div class="stat-description">vs. using AI alone</div>
+          </div>
+        
+          <div class="col-12 col-md-4 stat-item">
+            <div class="stat-number">96%</div>
+            <div class="stat-description">Agreement with AI triage</div>
+          </div>
+        
+          <div class="col-12 col-md-4 stat-item">
+            <div class="stat-number">60%</div>
+            <div class="stat-description">Backlog reduction on day 1</div>
+          </div>
+        
+      </div>
+    
+
+    
+      <div class="row testimonial-switcher">
+        <div class="col-12 col-lg-4 testimonial-logos" data-testimonial-logos>
+          
+            <div 
+              class="logo-block active" 
+              data-testimonial-logo="1" 
+              tabindex="0" 
+              role="button"
+            >
+              <div class="progress-track">
+                <div class="progress-fill"></div>
+              </div>
+              <img loading="lazy" src="/assets/logos/vanta-logo-new-gray.svg" alt="Logo for Vanta">
+          </div>
+        
+            <div 
+              class="logo-block active" 
+              data-testimonial-logo="2" 
+              tabindex="0" 
+              role="button"
+            >
+              <div class="progress-track">
+                <div class="progress-fill"></div>
+              </div>
+              <img loading="lazy" src="/assets/logos/thinkific-svg-logo.svg" alt="Logo for Thinkific">
+          </div>
+        
+            <div 
+              class="logo-block active" 
+              data-testimonial-logo="3" 
+              tabindex="0" 
+              role="button"
+            >
+              <div class="progress-track">
+                <div class="progress-fill"></div>
+              </div>
+              <img loading="lazy" src="/assets/logos/acrisure_logo.svg.png" alt="Logo for Acrisure">
+          </div>
+        
+      </div>
+
+    <div class="col-12 col-lg-8 testimonial-details" data-testimonial-details>
+      
+        <div 
+          class="testimonial-item" 
+          data-testimonial-item="1"
+        >
+          <blockquote class="testimonial-quote">"Semgrep helped surface valuable context and recommendations to developers, aiding in the quick identification of false positives and remediation of legitimate findings. There were times where it just felt magical."</blockquote>
+          <div class="testimonial-bottom">
+            <div class="testimonial-person">
+              
+                <div class="testimonial-photo">
+                  <img loading="lazy" src="/assets/people/01-allan-reyes.png" alt="Picture of Allan Reyes">
+                </div>
+              
+              <div class="testimonial-meta">
+                <div class="person-name">Allan Reyes</div>
+                <div class="person-role">
+                  Staff Security Engineer
+                </div>
+                <div class="person-company">
+                  Vanta
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-bottom-logo">
+              <img loading="lazy" src="/assets/logos/vanta-logo-new-gray.svg" alt="Logo for Vanta">
+            </div>
+          </div>
+        </div>
+      
+        <div 
+          class="testimonial-item" 
+          data-testimonial-item="2"
+        >
+          <blockquote class="testimonial-quote">“We use Semgrep to provide remediation guidance to our developers directly in PR comments. Semgrep gives them additional context that helps them fix vulnerabilities quicker.”</blockquote>
+          <div class="testimonial-bottom">
+            <div class="testimonial-person">
+              
+                <div class="testimonial-photo">
+                  <img loading="lazy" src="/assets/people/02-aleksandr-krasnov.png" alt="Picture of Aleksandr Krasnov">
+                </div>
+              
+              <div class="testimonial-meta">
+                <div class="person-name">Aleksandr Krasnov</div>
+                <div class="person-role">
+                  Staff Security Engineer
+                </div>
+                <div class="person-company">
+                  Thinkific
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-bottom-logo">
+              <img loading="lazy" src="/assets/logos/thinkific-svg-logo.svg" alt="Logo for Thinkific">
+            </div>
+          </div>
+        </div>
+      
+        <div 
+          class="testimonial-item" 
+          data-testimonial-item="3"
+        >
+          <blockquote class="testimonial-quote">"The ability to have Semgrep remember what I told it and automatically triage for me in the future is game changing. I have to spend a lot of time verifying the validity of vulnerabilities and being able to essentially hit the "save" button on the work I've done and just pass it on to Semgrep has really helped streamline my triage process."</blockquote>
+          <div class="testimonial-bottom">
+            <div class="testimonial-person">
+              
+                <div class="testimonial-photo">
+                  <img loading="lazy" src="/assets/people/03-kevin-twingstrom.png" alt="Picture of Kevin Twingstrom">
+                </div>
+              
+              <div class="testimonial-meta">
+                <div class="person-name">Kevin Twingstrom</div>
+                <div class="person-role">
+                  Lead AppSec Engineer
+                </div>
+                <div class="person-company">
+                  Acrisure
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-bottom-logo">
+              <img loading="lazy" src="/assets/logos/acrisure_logo.svg.png" alt="Logo for Acrisure">
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+
+
+
+    
+      <div class="row testimonial-cta">
+        <div class="col-12">
+          <a class="cta-link" href="https://semgrep.dev/docs/semgrep-assistant/metrics" rel="noopener">
+            Learn about our metrics and methodology <span class="arrow">-></span>
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</section>
+  
+    
+  
+
+
+<div id="form" class="mint-component anchor-link"></div>
+  
+    
+  
+
+
+
+
+
+<section class="mint-component form-section padding-horizontal   bg-mint-200  padding-top-400 centered" style="">
+  <div class="image-wrapper"></div>
+  <div class="container-fluid " style="">
+    <div class="row">
+      <div class="col-12">
+        <div class="form-container align-center">
+          <div class="content">
+            
+            
+              <h3><p>Code security for builders and agents</p>
+</h3>
+            
+            
+          </div>
+          <div class="form">
+            
+  
+
+
+<div class="mint-molecule marketo-form ">
+  
+
+  <script src="//pages.semgrep.com/js/forms2/js/forms2.min.js"></script> 
+  <form id="mktoForm_1544"></form> 
+  <div class="privacy-policy">
+    Your privacy matters to us. By submitting this form, you agree to our <a href="/legal/privacy/" target="_blank">Privacy Policy</a>
+  </div>
+  <script>
+    MktoForms2.loadForm("//pages.semgrep.com", "825-QQZ-896", '1544', (form) => {  
+
+      // Toggling active class on input fields
+      MktoForms2.whenReady((form) => { 
+        const inputs = Array.from(form.getFormElem().find('input'));
+    
+        inputs.forEach(input => 
+            input.addEventListener('input', (e) => {
+                const target = e.target;
+                if (target.value.trim()) {
+                    target.parentElement.classList.add('active');
+                } else {
+                    target.parentElement.classList.remove('active');
+                }
+            })
+        );
+    });
+    
+    
+
+      form.onSuccess(() => {
+        if (''.length > 1) {
+          window.open('', '_blank').focus();
+        } 
+
+        const ele = form.getFormElem()
+        ele[0].innerHTML = ""
+        const responseBody = document.createElement('div')
+        responseBody.classList.add('form-response')
+        const header = document.createElement('h4')
+        const body = document.createElement('div')
+        body.classList.add('body')
+        header.innerText = "Thanks for your interest!"
+        body.innerHTML = "<p>A member of our team will reach out shortly.</p>"
+        responseBody.appendChild(header)
+        responseBody.appendChild(body)
+        ele[0].appendChild(responseBody)
+        return false
+      })
+    });
+  </script>
+
+  
+    <div class="or-line">
+      <hr>
+      <div class="or">
+        or
+      </div>
+      <hr>
+    </div>
+    <div class="alt-button">
+      <a href="">Book a demo</a>
+    </div>
+  
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+  
+    
+  
+
+
+<section class="mint-component full-image  none bg-mint-200 ">
+  <img class="" loading="lazy" src="/assets/guardrails-illo.svg" alt="">
+  
+</section>
+  
+
+    
+        <footer class="mint">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="left-container">
+          <div class="logo-wrapper">
+            <img loading="lazy" src="https://semgrep.dev/build/assets/semgrep-logo-light-C4TAJLKl.svg" alt="return home" />
+            <strong>Code security for builders and agents</strong>
+          </div>
+
+          <div class="review">
+            <img loading="lazy" src="https://semgrep.dev/build/assets/g2-logo-4xSt8VmV.svg" alt="g2 logo" />
+            <img loading="lazy" src="https://semgrep.dev/build/assets/4-half-stars-ZxI_Rf63.svg" alt="four and a half stars" />
+          </div>
+        </div>
+        <nav>
+          
+            <ul>
+              <li class="header">Products</li>
+              
+                <li><a href="/products/semgrep-code/">Semgrep Code</a></li>
+              
+                <li><a href="/products/semgrep-supply-chain/">Semgrep Supply Chain</a></li>
+              
+                <li><a href="/products/semgrep-secrets">Semgrep Secrets</a></li>
+              
+                <li><a href="/products/semgrep-multimodal/">Semgrep Multimodal</a></li>
+              
+                <li><a href="/products/semgrep-appsec-platform/">Semgrep AppSec Platform</a></li>
+              
+                <li><a href="/products/pro-engine/">Semgrep Pro Engine</a></li>
+              
+            </ul>
+          
+            <ul>
+              <li class="header">Solutions</li>
+              
+                <li><a href="/solutions/secure-vibe-coding/">Secure Vibe Coding</a></li>
+              
+                <li><a href="/solutions/open-source-malware-protection/">Open-Source Malware Protection</a></li>
+              
+                <li><a href="/solutions/static-application-security-testing/">Static Application Security Testing</a></li>
+              
+                <li><a href="/solutions/owasp-top-ten/">OWASP Top 10</a></li>
+              
+                <li><a href="/solutions/secure-guardrails/">Secure Guardrails</a></li>
+              
+            </ul>
+          
+            <ul>
+              <li class="header">Resources</li>
+              
+                <li><a href="https://docs.semgrep.dev">Docs</a></li>
+              
+                <li><a href="/pricing/">Pricing</a></li>
+              
+                <li><a href="/blog/">Blog</a></li>
+              
+                <li><a href="/docs/getting-started/quickstart/">Getting started with Semgrep</a></li>
+              
+                <li><a href="/explore/">Registry</a></li>
+              
+                <li><a href="/playground/new/">Playground</a></li>
+              
+                <li><a href="/resources/calculator/">ROI Calculator</a></li>
+              
+                <li><a href="/contact/demo/">Book a demo</a></li>
+              
+                <li><a href="/docs/support/">Help Center</a></li>
+              
+            </ul>
+          
+            <ul>
+              <li class="header">Company</li>
+              
+                <li><a href="/about/">About</a></li>
+              
+                <li><a href="/about/careers/">Careers</a></li>
+              
+                <li><a href="/contact-us/">Contact</a></li>
+              
+                <li><a href="mailto:press@semgrep.com">Press</a></li>
+              
+            </ul>
+          
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="socials-wrapper">
+          <div class="text-wrapper">
+            <h4>Stay up to date</h4>
+            <span>Subscribe to our newsletter</span>
+          </div>
+          
+          <form>
+            <input type="email" placeholder="Enter your email" class="dark">
+            <input type="submit" class="button primary" value="Subscribe">
+          </form>
+          
+          <div class="logos">
+            <a href="https://x.com/semgrep" target="_blank"><img loading="lazy" src="https://semgrep.dev/build/assets/twitter-logo-green-BQpgXluv.svg" alt="connect on twitter"></a>
+            <a href="https://go.semgrep.dev/slack" target="_blank"><img loading="lazy" src="https://semgrep.dev/build/assets/slack-logo-green-DabQef3I.svg" alt="connect on slack"></a>
+            <a href="https://github.com/semgrep/semgrep" target="_blank"><img loading="lazy" src="https://semgrep.dev/build/assets/github-logo-green-DVqynhSi.svg" alt="connect on github"></a>
+            <a href="https://www.youtube.com/c/semgrep" target="_blank"><img loading="lazy" src="https://semgrep.dev/build/assets/youtube-logo-green-Df4B_oJ4.svg" alt="connect on youtube"></a>
+            <a href="https://www.linkedin.com/company/semgrep/" target="_blank"><img loading="lazy" src="https://semgrep.dev/build/assets/linkedIn-logo-green-d3WRV14l.svg" alt="connect on linkedin"></a>
+            <a href="https://bsky.app/profile/semgrep.com" target="_blank"><img loading="lazy" src="https://semgrep.dev/build/assets/bluesky-logo-green-CQBQt-ZY.svg" alt="connect on bluesky"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="legal-wrapper">
+          <span>
+            © 2026 Semgrep, Inc. Semgrep is a registered trademark of Semgrep, Inc.
+          </span>
+
+          <div class="legal-links">
+            <a href="/legal/terms">Website terms</a>
+            &middot;
+            <a href="/legal/privacy">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

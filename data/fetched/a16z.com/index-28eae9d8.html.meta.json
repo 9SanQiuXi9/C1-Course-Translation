@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://a16z.com/",
+  "final_url": "https://a16z.com/",
+  "fetched_at": "2026-09-27T00:09:01+08:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 151516,
+  "sha256": "718dc4beb256de141f7eccebb6229409c9c7f00de4571fdbbc07fe8c8885a47b",
+  "used_branch": null,
+  "archive_path": "archive/a16z.com/index-28eae9d8.html",
+  "server": "Netlify",
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:09:01 GMT",
+  "url_path": "/",
+  "fetched_by": "fetch.py"
+}

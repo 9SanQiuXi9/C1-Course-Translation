@@ -1,0 +1,1768 @@
+{
+  "generated_by": "check_slots.py",
+  "glossary_version": 1,
+  "glossary_hash": "e5950ef8921edd8cade8bfaebda6b9b3e7203a7482d5cfb8a8004da0dc012dcd",
+  "glossary_frozen": true,
+  "corpus": {
+    "docs": 57,
+    "content_lines": 7736,
+    "all_lines": 18767,
+    "excluded_lines": 11031,
+    "english_words_in_content": 88570
+  },
+  "totals": {
+    "terms": 99,
+    "slots_total": 3835,
+    "slots_by_handling": {
+      "translate": 3029,
+      "keep_en": 45,
+      "bilingual": 41,
+      "acronym": 720
+    }
+  },
+  "per_term": [
+    {
+      "en": "agent",
+      "zh": "智能体",
+      "handling": "translate",
+      "slots_total": 340,
+      "slots_per_doc": {
+        "agentic-ai-threats": 129,
+        "devin-coding-agents-101": 47,
+        "archive-www.warp.dev-university-345355c4": 44,
+        "mcp-introduction": 19,
+        "multi-agent-systems-ai-native": 14,
+        "writing-effective-tools-for-agents": 13,
+        "archive-www.warp.dev-index-8d73894f": 11,
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 9,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 6,
+        "how-long-contexts-fail": 6,
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 5,
+        "copilot-prompt-injection-rce": 5,
+        "archive-raw.githubusercontent.com-README-704a0e2c": 4,
+        "context-rot": 4,
+        "warp-vs-claude-code": 4,
+        "ai-code-review-best-practices": 3,
+        "archive-vercel.com-index-843a793e": 3,
+        "benefits-agentic-ai-oncall": 3,
+        "claude-code-best-practices": 2,
+        "how-anthropic-uses-claude-code": 2,
+        "mcp-food-for-thought": 2,
+        "mcp-server-authentication": 2,
+        "kubernetes-troubleshooting-ai": 1,
+        "prompt-engineering-overview": 1,
+        "specs-are-the-new-source-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "mcp",
+      "zh": "MCP",
+      "handling": "acronym",
+      "slots_total": 320,
+      "slots_per_doc": {
+        "mcp-introduction": 154,
+        "mcp-server-authentication": 60,
+        "mcp-registry-preview": 27,
+        "archive-raw.githubusercontent.com-README-f5dda901": 12,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 11,
+        "archive-raw.githubusercontent.com-README-dc2d4ffa": 9,
+        "mcp-food-for-thought": 9,
+        "how-anthropic-uses-claude-code": 7,
+        "writing-effective-tools-for-agents": 7,
+        "archive-www.warp.dev-index-8d73894f": 5,
+        "claude-code-best-practices": 5,
+        "copilot-prompt-injection-rce": 3,
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 2,
+        "archive-www.warp.dev-university-345355c4": 2,
+        "how-long-contexts-fail": 2,
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 1,
+        "archive-semgrep.dev-index-e5277db8": 1,
+        "context-rot": 1,
+        "observability-basics": 1,
+        "specs-are-the-new-source-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "context",
+      "zh": "上下文",
+      "handling": "translate",
+      "slots_total": 285,
+      "slots_per_doc": {
+        "context-rot": 63,
+        "how-long-contexts-fail": 55,
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 21,
+        "prompt-engineering-overview": 17,
+        "writing-effective-tools-for-agents": 17,
+        "how-anthropic-uses-claude-code": 15,
+        "observability-basics": 13,
+        "mcp-introduction": 8,
+        "mcp-server-authentication": 8,
+        "multi-agent-systems-ai-native": 7,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 6,
+        "ai-assisted-code-review-assessment": 5,
+        "archive-semgrep.dev-index-e5277db8": 5,
+        "code-review-essentials": 5,
+        "finding-vulnerabilities-claude-codex": 5,
+        "agentic-ai-threats": 4,
+        "ai-code-review-best-practices": 4,
+        "claude-code-best-practices": 4,
+        "archive-resolve.ai-index-51fc7e81": 3,
+        "how-to-review-code-effectively": 3,
+        "kubernetes-troubleshooting-ai": 3,
+        "archive-raw.githubusercontent.com-README-dc2d4ffa": 2,
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 2,
+        "archive-www.warp.dev-university-345355c4": 2,
+        "mcp-food-for-thought": 2,
+        "archive-raw.githubusercontent.com-README-704a0e2c": 1,
+        "archive-resolve.ai-product-deep-dive-0d0780da": 1,
+        "benefits-agentic-ai-oncall": 1,
+        "mcp-registry-preview": 1,
+        "specs-are-the-new-source-code": 1,
+        "warp-vs-claude-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "tool",
+      "zh": "工具",
+      "handling": "translate",
+      "slots_total": 273,
+      "slots_per_doc": {
+        "agentic-ai-threats": 96,
+        "writing-effective-tools-for-agents": 65,
+        "mcp-introduction": 38,
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 12,
+        "ai-code-review-best-practices": 10,
+        "mcp-food-for-thought": 9,
+        "how-long-contexts-fail": 6,
+        "how-anthropic-uses-claude-code": 5,
+        "sast-vs-dast": 5,
+        "ai-assisted-code-review-assessment": 4,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 4,
+        "multi-agent-systems-ai-native": 3,
+        "devin-coding-agents-101": 2,
+        "finding-vulnerabilities-claude-codex": 2,
+        "mcp-server-authentication": 2,
+        "archive-graphite.dev-index-6ddb92ea": 1,
+        "archive-raw.githubusercontent.com-README-dc2d4ffa": 1,
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 1,
+        "claude-code-best-practices": 1,
+        "code-review-essentials": 1,
+        "copilot-prompt-injection-rce": 1,
+        "observability-basics": 1,
+        "owasp-top-ten": 1,
+        "prompt-engineering-overview": 1,
+        "specs-are-the-new-source-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "model",
+      "zh": "模型",
+      "handling": "translate",
+      "slots_total": 231,
+      "slots_per_doc": {
+        "context-rot": 83,
+        "ai-assisted-code-review-assessment": 31,
+        "mcp-introduction": 23,
+        "prompt-engineering-overview": 18,
+        "how-anthropic-uses-claude-code": 13,
+        "how-long-contexts-fail": 12,
+        "archive-www.warp.dev-university-345355c4": 10,
+        "mcp-server-authentication": 8,
+        "finding-vulnerabilities-claude-codex": 5,
+        "code-review-essentials": 4,
+        "warp-vs-claude-code": 4,
+        "agentic-ai-threats": 3,
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 3,
+        "archive-www.warp.dev-index-8d73894f": 3,
+        "sre-introduction": 2,
+        "ai-code-review-best-practices": 1,
+        "archive-cognition.ai-index-5e05e503": 1,
+        "archive-raw.githubusercontent.com-README-f5dda901": 1,
+        "archive-vercel.com-index-843a793e": 1,
+        "copilot-prompt-injection-rce": 1,
+        "devin-coding-agents-101": 1,
+        "multi-agent-systems-ai-native": 1,
+        "owasp-top-ten": 1,
+        "specs-are-the-new-source-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "prompt",
+      "zh": "提示词",
+      "handling": "translate",
+      "slots_total": 186,
+      "slots_per_doc": {
+        "prompt-engineering-overview": 57,
+        "agentic-ai-threats": 55,
+        "copilot-prompt-injection-rce": 9,
+        "writing-effective-tools-for-agents": 9,
+        "context-rot": 7,
+        "finding-vulnerabilities-claude-codex": 7,
+        "how-long-contexts-fail": 7,
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 6,
+        "how-anthropic-uses-claude-code": 6,
+        "specs-are-the-new-source-code": 5,
+        "devin-coding-agents-101": 4,
+        "mcp-introduction": 4,
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 3,
+        "ai-assisted-code-review-assessment": 2,
+        "archive-www.warp.dev-university-345355c4": 2,
+        "claude-code-best-practices": 1,
+        "multi-agent-systems-ai-native": 1,
+        "prompt-engineering-guide": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "security",
+      "zh": "安全",
+      "handling": "translate",
+      "slots_total": 181,
+      "slots_per_doc": {
+        "finding-vulnerabilities-claude-codex": 29,
+        "sast-vs-dast": 28,
+        "how-anthropic-uses-claude-code": 20,
+        "prompt-engineering-overview": 19,
+        "archive-semgrep.dev-index-e5277db8": 18,
+        "agentic-ai-threats": 16,
+        "ai-code-review-best-practices": 11,
+        "owasp-top-ten": 6,
+        "archive-raw.githubusercontent.com-README-f5dda901": 5,
+        "archive-www.warp.dev-university-345355c4": 4,
+        "archive-resolve.ai-index-51fc7e81": 3,
+        "mcp-introduction": 3,
+        "archive-raw.githubusercontent.com-system_prompt_uafs-3e1f551e": 2,
+        "claude-code-best-practices": 2,
+        "context-rot": 2,
+        "copilot-prompt-injection-rce": 2,
+        "warp-vs-claude-code": 2,
+        "archive-a16z.com-martin-casado-819a7ad5": 1,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 1,
+        "archive-resolve.ai-product-deep-dive-0d0780da": 1,
+        "archive-www.warp.dev-index-8d73894f": 1,
+        "devin-coding-agents-101": 1,
+        "how-to-review-code-effectively": 1,
+        "mcp-registry-preview": 1,
+        "multi-agent-systems-ai-native": 1,
+        "observability-basics": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "server",
+      "zh": "服务器",
+      "handling": "translate",
+      "slots_total": 134,
+      "slots_per_doc": {
+        "mcp-server-authentication": 47,
+        "mcp-introduction": 40,
+        "agentic-ai-threats": 10,
+        "prompt-engineering-overview": 7,
+        "archive-raw.githubusercontent.com-README-f5dda901": 6,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 4,
+        "mcp-registry-preview": 4,
+        "archive-raw.githubusercontent.com-README-dc2d4ffa": 3,
+        "sast-vs-dast": 3,
+        "copilot-prompt-injection-rce": 2,
+        "finding-vulnerabilities-claude-codex": 2,
+        "how-anthropic-uses-claude-code": 2,
+        "writing-effective-tools-for-agents": 2,
+        "archive-www.warp.dev-index-8d73894f": 1,
+        "specs-are-the-new-source-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "code review",
+      "zh": "代码审查",
+      "handling": "translate",
+      "slots_total": 113,
+      "slots_per_doc": {
+        "ai-assisted-code-review-assessment": 37,
+        "ai-code-review-best-practices": 32,
+        "how-to-review-code-effectively": 18,
+        "code-review-essentials": 8,
+        "archive-graphite.dev-index-6ddb92ea": 4,
+        "claude-code-best-practices": 4,
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 2,
+        "archive-www.warp.dev-university-345355c4": 2,
+        "code-reviews-just-do-it": 2,
+        "devin-coding-agents-101": 2,
+        "how-anthropic-uses-claude-code": 2
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "api",
+      "zh": "API",
+      "handling": "acronym",
+      "slots_total": 85,
+      "slots_per_doc": {
+        "mcp-introduction": 24,
+        "prompt-engineering-overview": 12,
+        "how-anthropic-uses-claude-code": 11,
+        "mcp-server-authentication": 5,
+        "sast-vs-dast": 5,
+        "archive-www.warp.dev-index-8d73894f": 4,
+        "writing-effective-tools-for-agents": 4,
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 2,
+        "archive-www.warp.dev-university-345355c4": 2,
+        "devin-coding-agents-101": 2,
+        "mcp-food-for-thought": 2,
+        "mcp-registry-preview": 2,
+        "observability-basics": 2,
+        "agentic-ai-threats": 1,
+        "ai-code-review-best-practices": 1,
+        "archive-raw.githubusercontent.com-system_prompt_uafs-3e1f551e": 1,
+        "archive-semgrep.dev-index-e5277db8": 1,
+        "context-rot": 1,
+        "finding-vulnerabilities-claude-codex": 1,
+        "how-to-review-code-effectively": 1,
+        "multi-agent-systems-ai-native": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "sast",
+      "zh": "SAST",
+      "handling": "acronym",
+      "slots_total": 72,
+      "slots_per_doc": {
+        "sast-vs-dast": 57,
+        "finding-vulnerabilities-claude-codex": 7,
+        "archive-semgrep.dev-index-e5277db8": 6,
+        "agentic-ai-threats": 2
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "sre",
+      "zh": "SRE",
+      "handling": "acronym",
+      "slots_total": 67,
+      "slots_per_doc": {
+        "sre-introduction": 42,
+        "multi-agent-systems-ai-native": 7,
+        "benefits-agentic-ai-oncall": 6,
+        "kubernetes-troubleshooting-ai": 6,
+        "archive-resolve.ai-index-51fc7e81": 4,
+        "prompt-engineering-overview": 2
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "agentic",
+      "zh": "智能体式",
+      "handling": "translate",
+      "slots_total": 66,
+      "slots_per_doc": {
+        "benefits-agentic-ai-oncall": 24,
+        "agentic-ai-threats": 9,
+        "kubernetes-troubleshooting-ai": 8,
+        "multi-agent-systems-ai-native": 8,
+        "how-anthropic-uses-claude-code": 4,
+        "writing-effective-tools-for-agents": 3,
+        "finding-vulnerabilities-claude-codex": 2,
+        "how-long-contexts-fail": 2,
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 1,
+        "archive-www.warp.dev-index-8d73894f": 1,
+        "claude-code-best-practices": 1,
+        "copilot-prompt-injection-rce": 1,
+        "mcp-introduction": 1,
+        "prompt-engineering-overview": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "evaluation",
+      "zh": "评估",
+      "handling": "translate",
+      "slots_total": 57,
+      "slots_per_doc": {
+        "writing-effective-tools-for-agents": 25,
+        "ai-assisted-code-review-assessment": 20,
+        "context-rot": 5,
+        "ai-code-review-best-practices": 1,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 1,
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 1,
+        "benefits-agentic-ai-oncall": 1,
+        "finding-vulnerabilities-claude-codex": 1,
+        "kubernetes-troubleshooting-ai": 1,
+        "multi-agent-systems-ai-native": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "injection",
+      "zh": "注入",
+      "handling": "translate",
+      "slots_total": 57,
+      "slots_per_doc": {
+        "agentic-ai-threats": 31,
+        "finding-vulnerabilities-claude-codex": 12,
+        "copilot-prompt-injection-rce": 9,
+        "sast-vs-dast": 4,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "codebase",
+      "zh": "代码库",
+      "handling": "translate",
+      "slots_total": 56,
+      "slots_per_doc": {
+        "how-anthropic-uses-claude-code": 10,
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 8,
+        "specs-are-the-new-source-code": 7,
+        "ai-assisted-code-review-assessment": 6,
+        "devin-coding-agents-101": 4,
+        "sast-vs-dast": 4,
+        "claude-code-best-practices": 3,
+        "finding-vulnerabilities-claude-codex": 3,
+        "ai-code-review-best-practices": 2,
+        "archive-cognition.ai-index-5e05e503": 2,
+        "archive-www.warp.dev-university-345355c4": 2,
+        "warp-vs-claude-code": 2,
+        "archive-raw.githubusercontent.com-README-704a0e2c": 1,
+        "code-review-essentials": 1,
+        "mcp-introduction": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "workflow",
+      "zh": "工作流",
+      "handling": "translate",
+      "slots_total": 55,
+      "slots_per_doc": {
+        "how-anthropic-uses-claude-code": 21,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 6,
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 6,
+        "prompt-engineering-overview": 4,
+        "ai-assisted-code-review-assessment": 3,
+        "ai-code-review-best-practices": 3,
+        "multi-agent-systems-ai-native": 3,
+        "archive-graphite.dev-index-6ddb92ea": 2,
+        "specs-are-the-new-source-code": 2,
+        "archive-semgrep.dev-index-e5277db8": 1,
+        "archive-www.warp.dev-index-8d73894f": 1,
+        "devin-coding-agents-101": 1,
+        "how-long-contexts-fail": 1,
+        "how-to-review-code-effectively": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "automation",
+      "zh": "自动化",
+      "handling": "translate",
+      "slots_total": 54,
+      "slots_per_doc": {
+        "archive-www.warp.dev-university-345355c4": 12,
+        "archive-resolve.ai-index-51fc7e81": 6,
+        "how-to-review-code-effectively": 6,
+        "prompt-engineering-overview": 6,
+        "ai-assisted-code-review-assessment": 3,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 3,
+        "how-anthropic-uses-claude-code": 3,
+        "mcp-introduction": 3,
+        "ai-code-review-best-practices": 2,
+        "archive-semgrep.dev-index-e5277db8": 2,
+        "benefits-agentic-ai-oncall": 2,
+        "devin-coding-agents-101": 2,
+        "sast-vs-dast": 2,
+        "sre-introduction": 1,
+        "warp-vs-claude-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "dast",
+      "zh": "DAST",
+      "handling": "acronym",
+      "slots_total": 52,
+      "slots_per_doc": {
+        "sast-vs-dast": 50,
+        "agentic-ai-threats": 2
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "llm",
+      "zh": "LLM",
+      "handling": "acronym",
+      "slots_total": 46,
+      "slots_per_doc": {
+        "mcp-introduction": 14,
+        "context-rot": 6,
+        "finding-vulnerabilities-claude-codex": 5,
+        "writing-effective-tools-for-agents": 5,
+        "archive-www.warp.dev-university-345355c4": 4,
+        "multi-agent-systems-ai-native": 4,
+        "ai-assisted-code-review-assessment": 2,
+        "warp-vs-claude-code": 2,
+        "agentic-ai-threats": 1,
+        "archive-raw.githubusercontent.com-README-dc2d4ffa": 1,
+        "how-long-contexts-fail": 1,
+        "specs-are-the-new-source-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "client",
+      "zh": "客户端",
+      "handling": "translate",
+      "slots_total": 46,
+      "slots_per_doc": {
+        "mcp-introduction": 24,
+        "mcp-server-authentication": 12,
+        "archive-raw.githubusercontent.com-README-f5dda901": 3,
+        "archive-raw.githubusercontent.com-README-dc2d4ffa": 2,
+        "finding-vulnerabilities-claude-codex": 2,
+        "mcp-registry-preview": 2,
+        "archive-www.warp.dev-university-345355c4": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "reasoning",
+      "zh": "推理",
+      "handling": "translate",
+      "slots_total": 45,
+      "slots_per_doc": {
+        "context-rot": 12,
+        "prompt-engineering-overview": 8,
+        "how-long-contexts-fail": 4,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 3,
+        "finding-vulnerabilities-claude-codex": 3,
+        "agentic-ai-threats": 2,
+        "archive-raw.githubusercontent.com-system_prompt_uafs-3e1f551e": 2,
+        "archive-semgrep.dev-index-e5277db8": 2,
+        "devin-coding-agents-101": 2,
+        "multi-agent-systems-ai-native": 2,
+        "writing-effective-tools-for-agents": 2,
+        "ai-code-review-best-practices": 1,
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 1,
+        "archive-resolve.ai-product-deep-dive-0d0780da": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "best practices",
+      "zh": "最佳实践",
+      "handling": "translate",
+      "slots_total": 44,
+      "slots_per_doc": {
+        "ai-assisted-code-review-assessment": 19,
+        "ai-code-review-best-practices": 8,
+        "prompt-engineering-overview": 5,
+        "sre-introduction": 3,
+        "archive-raw.githubusercontent.com-README-704a0e2c": 2,
+        "agentic-ai-threats": 1,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 1,
+        "claude-code-best-practices": 1,
+        "how-anthropic-uses-claude-code": 1,
+        "how-to-review-code-effectively": 1,
+        "sast-vs-dast": 1,
+        "writing-effective-tools-for-agents": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "vulnerability",
+      "zh": "漏洞",
+      "handling": "translate",
+      "slots_total": 44,
+      "slots_per_doc": {
+        "finding-vulnerabilities-claude-codex": 19,
+        "agentic-ai-threats": 9,
+        "sast-vs-dast": 8,
+        "archive-raw.githubusercontent.com-system_prompt_uafs-3e1f551e": 6,
+        "copilot-prompt-injection-rce": 2
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "pull request",
+      "zh": "拉取请求",
+      "handling": "bilingual",
+      "slots_total": 41,
+      "slots_per_doc": {
+        "how-to-review-code-effectively": 29,
+        "code-review-essentials": 7,
+        "mcp-server-authentication": 2,
+        "archive-cognition.ai-index-5e05e503": 1,
+        "how-anthropic-uses-claude-code": 1,
+        "specs-are-the-new-source-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "token",
+      "zh": "token",
+      "handling": "keep_en",
+      "slots_total": 40,
+      "slots_per_doc": {
+        "agentic-ai-threats": 11,
+        "writing-effective-tools-for-agents": 9,
+        "context-rot": 8,
+        "archive-raw.githubusercontent.com-README-704a0e2c": 2,
+        "archive-resolve.ai-product-deep-dive-0d0780da": 2,
+        "how-long-contexts-fail": 2,
+        "mcp-introduction": 2,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 1,
+        "claude-code-best-practices": 1,
+        "finding-vulnerabilities-claude-codex": 1,
+        "mcp-food-for-thought": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "deployment",
+      "zh": "部署",
+      "handling": "translate",
+      "slots_total": 37,
+      "slots_per_doc": {
+        "ai-assisted-code-review-assessment": 12,
+        "sast-vs-dast": 5,
+        "multi-agent-systems-ai-native": 3,
+        "prompt-engineering-overview": 3,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 2,
+        "archive-vercel.com-index-843a793e": 2,
+        "how-anthropic-uses-claude-code": 2,
+        "ai-code-review-best-practices": 1,
+        "archive-resolve.ai-product-deep-dive-0d0780da": 1,
+        "claude-code-best-practices": 1,
+        "devin-coding-agents-101": 1,
+        "how-to-review-code-effectively": 1,
+        "kubernetes-troubleshooting-ai": 1,
+        "mcp-introduction": 1,
+        "mcp-server-authentication": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "training",
+      "zh": "训练",
+      "handling": "translate",
+      "slots_total": 36,
+      "slots_per_doc": {
+        "ai-assisted-code-review-assessment": 18,
+        "how-anthropic-uses-claude-code": 4,
+        "writing-effective-tools-for-agents": 3,
+        "archive-www.warp.dev-university-345355c4": 2,
+        "finding-vulnerabilities-claude-codex": 2,
+        "how-long-contexts-fail": 2,
+        "archive-resolve.ai-index-51fc7e81": 1,
+        "benefits-agentic-ai-oncall": 1,
+        "prompt-engineering-overview": 1,
+        "sre-introduction": 1,
+        "warp-vs-claude-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "incident",
+      "zh": "故障事件",
+      "handling": "translate",
+      "slots_total": 35,
+      "slots_per_doc": {
+        "benefits-agentic-ai-oncall": 12,
+        "archive-resolve.ai-product-deep-dive-0d0780da": 6,
+        "archive-resolve.ai-index-51fc7e81": 4,
+        "multi-agent-systems-ai-native": 4,
+        "archive-semgrep.dev-index-e5277db8": 3,
+        "prompt-engineering-overview": 2,
+        "agentic-ai-threats": 1,
+        "how-anthropic-uses-claude-code": 1,
+        "how-to-review-code-effectively": 1,
+        "kubernetes-troubleshooting-ai": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "monitoring",
+      "zh": "监控",
+      "handling": "translate",
+      "slots_total": 33,
+      "slots_per_doc": {
+        "sre-introduction": 9,
+        "prompt-engineering-overview": 6,
+        "ai-assisted-code-review-assessment": 4,
+        "observability-basics": 4,
+        "agentic-ai-threats": 3,
+        "sast-vs-dast": 2,
+        "archive-resolve.ai-index-51fc7e81": 1,
+        "archive-semgrep.dev-index-e5277db8": 1,
+        "how-anthropic-uses-claude-code": 1,
+        "kubernetes-troubleshooting-ai": 1,
+        "multi-agent-systems-ai-native": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "pr",
+      "zh": "PR",
+      "handling": "acronym",
+      "slots_total": 32,
+      "slots_per_doc": {
+        "archive-www.warp.dev-index-8d73894f": 6,
+        "archive-graphite.dev-index-6ddb92ea": 5,
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 4,
+        "claude-code-best-practices": 4,
+        "ai-code-review-best-practices": 2,
+        "archive-semgrep.dev-index-e5277db8": 2,
+        "archive-www.warp.dev-university-345355c4": 2,
+        "devin-coding-agents-101": 2,
+        "specs-are-the-new-source-code": 2,
+        "how-anthropic-uses-claude-code": 1,
+        "how-to-review-code-effectively": 1,
+        "warp-vs-claude-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "orchestration",
+      "zh": "编排",
+      "handling": "translate",
+      "slots_total": 32,
+      "slots_per_doc": {
+        "agentic-ai-threats": 12,
+        "warp-vs-claude-code": 7,
+        "prompt-engineering-overview": 4,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 3,
+        "archive-www.warp.dev-university-345355c4": 2,
+        "archive-raw.githubusercontent.com-README-704a0e2c": 1,
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 1,
+        "archive-vercel.com-index-843a793e": 1,
+        "multi-agent-systems-ai-native": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "observability",
+      "zh": "可观测性",
+      "handling": "translate",
+      "slots_total": 32,
+      "slots_per_doc": {
+        "observability-basics": 15,
+        "archive-www.warp.dev-university-345355c4": 4,
+        "prompt-engineering-overview": 3,
+        "sast-vs-dast": 3,
+        "kubernetes-troubleshooting-ai": 2,
+        "multi-agent-systems-ai-native": 2,
+        "archive-resolve.ai-product-deep-dive-0d0780da": 1,
+        "benefits-agentic-ai-oncall": 1,
+        "warp-vs-claude-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "on-call",
+      "zh": "值班",
+      "handling": "translate",
+      "slots_total": 31,
+      "slots_per_doc": {
+        "archive-resolve.ai-index-51fc7e81": 10,
+        "sre-introduction": 9,
+        "archive-resolve.ai-product-deep-dive-0d0780da": 6,
+        "benefits-agentic-ai-oncall": 4,
+        "archive-semgrep.dev-index-e5277db8": 1,
+        "kubernetes-troubleshooting-ai": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "debugging",
+      "zh": "调试",
+      "handling": "translate",
+      "slots_total": 30,
+      "slots_per_doc": {
+        "how-anthropic-uses-claude-code": 11,
+        "mcp-introduction": 8,
+        "devin-coding-agents-101": 4,
+        "prompt-engineering-overview": 2,
+        "ai-code-review-best-practices": 1,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 1,
+        "archive-reactjs.org-error-decoder-2ccbc8e1": 1,
+        "claude-code-best-practices": 1,
+        "observability-basics": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "prompt injection",
+      "zh": "提示词注入",
+      "handling": "translate",
+      "slots_total": 30,
+      "slots_per_doc": {
+        "agentic-ai-threats": 21,
+        "copilot-prompt-injection-rce": 9
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "tracing",
+      "zh": "链路追踪",
+      "handling": "translate",
+      "slots_total": 30,
+      "slots_per_doc": {
+        "observability-basics": 28,
+        "prompt-engineering-overview": 1,
+        "sast-vs-dast": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "dataset",
+      "zh": "数据集",
+      "handling": "translate",
+      "slots_total": 28,
+      "slots_per_doc": {
+        "ai-assisted-code-review-assessment": 12,
+        "owasp-top-ten": 7,
+        "context-rot": 5,
+        "finding-vulnerabilities-claude-codex": 4
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "repository",
+      "zh": "仓库",
+      "handling": "translate",
+      "slots_total": 26,
+      "slots_per_doc": {
+        "archive-raw.githubusercontent.com-README-f5dda901": 6,
+        "mcp-server-authentication": 5,
+        "ai-assisted-code-review-assessment": 2,
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 2,
+        "how-to-review-code-effectively": 2,
+        "ai-code-review-best-practices": 1,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 1,
+        "archive-raw.githubusercontent.com-README-dc2d4ffa": 1,
+        "context-rot": 1,
+        "devin-coding-agents-101": 1,
+        "how-anthropic-uses-claude-code": 1,
+        "owasp-top-ten": 1,
+        "prompt-engineering-overview": 1,
+        "sast-vs-dast": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "ide",
+      "zh": "IDE",
+      "handling": "acronym",
+      "slots_total": 26,
+      "slots_per_doc": {
+        "ai-assisted-code-review-assessment": 14,
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 3,
+        "prompt-engineering-overview": 3,
+        "claude-code-best-practices": 2,
+        "mcp-introduction": 2,
+        "archive-www.warp.dev-index-8d73894f": 1,
+        "specs-are-the-new-source-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "spec",
+      "zh": "规格",
+      "handling": "translate",
+      "slots_total": 26,
+      "slots_per_doc": {
+        "specs-are-the-new-source-code": 20,
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 2,
+        "archive-www.warp.dev-university-345355c4": 2,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 1,
+        "mcp-introduction": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "privacy",
+      "zh": "隐私",
+      "handling": "translate",
+      "slots_total": 26,
+      "slots_per_doc": {
+        "archive-www.warp.dev-university-345355c4": 4,
+        "archive-semgrep.dev-index-e5277db8": 3,
+        "archive-resolve.ai-index-51fc7e81": 2,
+        "archive-resolve.ai-product-deep-dive-0d0780da": 2,
+        "benefits-agentic-ai-oncall": 2,
+        "context-rot": 2,
+        "kubernetes-troubleshooting-ai": 2,
+        "mcp-introduction": 2,
+        "multi-agent-systems-ai-native": 2,
+        "warp-vs-claude-code": 2,
+        "ai-code-review-best-practices": 1,
+        "how-anthropic-uses-claude-code": 1,
+        "mcp-registry-preview": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "context window",
+      "zh": "上下文窗口",
+      "handling": "translate",
+      "slots_total": 21,
+      "slots_per_doc": {
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 10,
+        "context-rot": 7,
+        "ai-assisted-code-review-assessment": 1,
+        "claude-code-best-practices": 1,
+        "how-anthropic-uses-claude-code": 1,
+        "mcp-food-for-thought": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "prompt engineering",
+      "zh": "提示词工程",
+      "handling": "translate",
+      "slots_total": 20,
+      "slots_per_doc": {
+        "prompt-engineering-overview": 15,
+        "how-anthropic-uses-claude-code": 1,
+        "mcp-introduction": 1,
+        "multi-agent-systems-ai-native": 1,
+        "prompt-engineering-guide": 1,
+        "writing-effective-tools-for-agents": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "machine learning",
+      "zh": "机器学习",
+      "handling": "translate",
+      "slots_total": 18,
+      "slots_per_doc": {
+        "prompt-engineering-overview": 4,
+        "sast-vs-dast": 4,
+        "ai-assisted-code-review-assessment": 3,
+        "how-anthropic-uses-claude-code": 3,
+        "multi-agent-systems-ai-native": 2,
+        "ai-code-review-best-practices": 1,
+        "mcp-introduction": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "pipeline",
+      "zh": "流水线",
+      "handling": "translate",
+      "slots_total": 18,
+      "slots_per_doc": {
+        "sast-vs-dast": 4,
+        "ai-assisted-code-review-assessment": 3,
+        "ai-code-review-best-practices": 3,
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 2,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 1,
+        "archive-www.warp.dev-index-8d73894f": 1,
+        "devin-coding-agents-101": 1,
+        "how-anthropic-uses-claude-code": 1,
+        "mcp-introduction": 1,
+        "observability-basics": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "embedding",
+      "zh": "嵌入",
+      "handling": "translate",
+      "slots_total": 17,
+      "slots_per_doc": {
+        "context-rot": 16,
+        "agentic-ai-threats": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "latency",
+      "zh": "延迟",
+      "handling": "translate",
+      "slots_total": 16,
+      "slots_per_doc": {
+        "ai-assisted-code-review-assessment": 5,
+        "multi-agent-systems-ai-native": 4,
+        "prompt-engineering-overview": 4,
+        "sre-introduction": 2,
+        "context-rot": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "ci/cd",
+      "zh": "CI/CD",
+      "handling": "acronym",
+      "slots_total": 15,
+      "slots_per_doc": {
+        "sast-vs-dast": 5,
+        "claude-code-best-practices": 4,
+        "ai-code-review-best-practices": 1,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 1,
+        "archive-semgrep.dev-index-e5277db8": 1,
+        "archive-www.warp.dev-index-8d73894f": 1,
+        "devin-coding-agents-101": 1,
+        "prompt-engineering-overview": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "exploit",
+      "zh": "漏洞利用",
+      "handling": "translate",
+      "slots_total": 15,
+      "slots_per_doc": {
+        "agentic-ai-threats": 9,
+        "copilot-prompt-injection-rce": 4,
+        "sast-vs-dast": 2
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "retrieval",
+      "zh": "检索",
+      "handling": "translate",
+      "slots_total": 15,
+      "slots_per_doc": {
+        "context-rot": 10,
+        "how-long-contexts-fail": 2,
+        "writing-effective-tools-for-agents": 2,
+        "multi-agent-systems-ai-native": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "root cause",
+      "zh": "根因",
+      "handling": "translate",
+      "slots_total": 13,
+      "slots_per_doc": {
+        "archive-resolve.ai-product-deep-dive-0d0780da": 3,
+        "archive-resolve.ai-index-51fc7e81": 2,
+        "benefits-agentic-ai-oncall": 2,
+        "agentic-ai-threats": 1,
+        "claude-code-best-practices": 1,
+        "devin-coding-agents-101": 1,
+        "kubernetes-troubleshooting-ai": 1,
+        "multi-agent-systems-ai-native": 1,
+        "observability-basics": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "compliance",
+      "zh": "合规",
+      "handling": "translate",
+      "slots_total": 13,
+      "slots_per_doc": {
+        "how-anthropic-uses-claude-code": 5,
+        "prompt-engineering-overview": 4,
+        "archive-www.warp.dev-index-8d73894f": 1,
+        "claude-code-best-practices": 1,
+        "mcp-introduction": 1,
+        "observability-basics": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "span",
+      "zh": "跨度",
+      "handling": "translate",
+      "slots_total": 12,
+      "slots_per_doc": {
+        "observability-basics": 10,
+        "ai-assisted-code-review-assessment": 1,
+        "devin-coding-agents-101": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "commit",
+      "zh": "提交",
+      "handling": "translate",
+      "slots_total": 11,
+      "slots_per_doc": {
+        "devin-coding-agents-101": 3,
+        "how-anthropic-uses-claude-code": 3,
+        "claude-code-best-practices": 2,
+        "archive-graphite.dev-index-6ddb92ea": 1,
+        "copilot-prompt-injection-rce": 1,
+        "kubernetes-troubleshooting-ai": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "inference",
+      "zh": "推理",
+      "handling": "translate",
+      "slots_total": 11,
+      "slots_per_doc": {
+        "how-anthropic-uses-claude-code": 7,
+        "ai-assisted-code-review-assessment": 2,
+        "archive-www.warp.dev-university-345355c4": 2
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "static analysis",
+      "zh": "静态分析",
+      "handling": "translate",
+      "slots_total": 10,
+      "slots_per_doc": {
+        "ai-assisted-code-review-assessment": 7,
+        "archive-semgrep.dev-index-e5277db8": 2,
+        "finding-vulnerabilities-claude-codex": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "alignment",
+      "zh": "对齐",
+      "handling": "translate",
+      "slots_total": 9,
+      "slots_per_doc": {
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 4,
+        "context-rot": 4,
+        "code-review-essentials": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "ai-native",
+      "zh": "AI 原生",
+      "handling": "translate",
+      "slots_total": 8,
+      "slots_per_doc": {
+        "multi-agent-systems-ai-native": 8
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "incident response",
+      "zh": "故障响应",
+      "handling": "translate",
+      "slots_total": 8,
+      "slots_per_doc": {
+        "benefits-agentic-ai-oncall": 2,
+        "multi-agent-systems-ai-native": 2,
+        "agentic-ai-threats": 1,
+        "archive-resolve.ai-product-deep-dive-0d0780da": 1,
+        "archive-semgrep.dev-index-e5277db8": 1,
+        "prompt-engineering-overview": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "context engineering",
+      "zh": "上下文工程",
+      "handling": "translate",
+      "slots_total": 7,
+      "slots_per_doc": {
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 4,
+        "context-rot": 3
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "refactor",
+      "zh": "重构",
+      "handling": "translate",
+      "slots_total": 7,
+      "slots_per_doc": {
+        "archive-www.warp.dev-university-345355c4": 2,
+        "archive-www.warp.dev-index-8d73894f": 1,
+        "devin-coding-agents-101": 1,
+        "how-anthropic-uses-claude-code": 1,
+        "sast-vs-dast": 1,
+        "warp-vs-claude-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "artifact",
+      "zh": "产物",
+      "handling": "translate",
+      "slots_total": 7,
+      "slots_per_doc": {
+        "specs-are-the-new-source-code": 5,
+        "prompt-engineering-overview": 2
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "benchmark",
+      "zh": "基准测试",
+      "handling": "translate",
+      "slots_total": 6,
+      "slots_per_doc": {
+        "context-rot": 4,
+        "archive-cognition.ai-index-5e05e503": 1,
+        "finding-vulnerabilities-claude-codex": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "coding agent",
+      "zh": "编码智能体",
+      "handling": "translate",
+      "slots_total": 5,
+      "slots_per_doc": {
+        "archive-www.warp.dev-index-8d73894f": 3,
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 2
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "zero-shot",
+      "zh": "零样本",
+      "handling": "translate",
+      "slots_total": 5,
+      "slots_per_doc": {
+        "prompt-engineering-overview": 4,
+        "prompt-engineering-guide": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "fine-tuning",
+      "zh": "微调",
+      "handling": "translate",
+      "slots_total": 5,
+      "slots_per_doc": {
+        "ai-assisted-code-review-assessment": 2,
+        "prompt-engineering-overview": 2,
+        "ai-code-review-best-practices": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "test coverage",
+      "zh": "测试覆盖率",
+      "handling": "translate",
+      "slots_total": 4,
+      "slots_per_doc": {
+        "devin-coding-agents-101": 2,
+        "archive-raw.githubusercontent.com-README-5285d5b3": 1,
+        "how-anthropic-uses-claude-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "system prompt",
+      "zh": "系统提示词",
+      "handling": "translate",
+      "slots_total": 4,
+      "slots_per_doc": {
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 2,
+        "agentic-ai-threats": 1,
+        "mcp-introduction": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "human-in-the-loop",
+      "zh": "人在回路",
+      "handling": "translate",
+      "slots_total": 4,
+      "slots_per_doc": {
+        "ai-code-review-best-practices": 2,
+        "archive-resolve.ai-product-deep-dive-0d0780da": 2
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "tool use",
+      "zh": "工具调用",
+      "handling": "translate",
+      "slots_total": 3,
+      "slots_per_doc": {
+        "mcp-introduction": 3
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "hallucination",
+      "zh": "幻觉",
+      "handling": "translate",
+      "slots_total": 3,
+      "slots_per_doc": {
+        "context-rot": 2,
+        "how-long-contexts-fail": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "rag",
+      "zh": "RAG",
+      "handling": "acronym",
+      "slots_total": 3,
+      "slots_per_doc": {
+        "copilot-prompt-injection-rce": 1,
+        "how-long-contexts-fail": 1,
+        "mcp-food-for-thought": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "subagent",
+      "zh": "子智能体",
+      "handling": "translate",
+      "slots_total": 3,
+      "slots_per_doc": {
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 2,
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "non-deterministic",
+      "zh": "非确定性",
+      "handling": "translate",
+      "slots_total": 3,
+      "slots_per_doc": {
+        "writing-effective-tools-for-agents": 3
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "multimodal",
+      "zh": "多模态",
+      "handling": "translate",
+      "slots_total": 3,
+      "slots_per_doc": {
+        "context-rot": 2,
+        "prompt-engineering-overview": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "transformer",
+      "zh": "Transformer",
+      "handling": "keep_en",
+      "slots_total": 3,
+      "slots_per_doc": {
+        "multi-agent-systems-ai-native": 2,
+        "ai-assisted-code-review-assessment": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "template",
+      "zh": "模板",
+      "handling": "translate",
+      "slots_total": 2,
+      "slots_per_doc": {
+        "devin-coding-agents-101": 1,
+        "owasp-top-ten": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "context rot",
+      "zh": "上下文腐化",
+      "handling": "translate",
+      "slots_total": 2,
+      "slots_per_doc": {
+        "context-rot": 1,
+        "finding-vulnerabilities-claude-codex": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "sandbox",
+      "zh": "沙箱",
+      "handling": "translate",
+      "slots_total": 2,
+      "slots_per_doc": {
+        "agentic-ai-threats": 1,
+        "writing-effective-tools-for-agents": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "vibe coding",
+      "zh": "vibe coding",
+      "handling": "keep_en",
+      "slots_total": 2,
+      "slots_per_doc": {
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 2
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "vector database",
+      "zh": "向量数据库",
+      "handling": "translate",
+      "slots_total": 2,
+      "slots_per_doc": {
+        "context-rot": 2
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "postmortem",
+      "zh": "事后复盘",
+      "handling": "translate",
+      "slots_total": 2,
+      "slots_per_doc": {
+        "sre-introduction": 2
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "annotation",
+      "zh": "标注",
+      "handling": "translate",
+      "slots_total": 2,
+      "slots_per_doc": {
+        "archive-raw.githubusercontent.com-assignment-67e0a761": 2
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "eval",
+      "zh": "评估",
+      "handling": "translate",
+      "slots_total": 2,
+      "slots_per_doc": {
+        "ai-assisted-code-review-assessment": 1,
+        "sast-vs-dast": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "chain of thought",
+      "zh": "思维链",
+      "handling": "translate",
+      "slots_total": 1,
+      "slots_per_doc": {
+        "prompt-engineering-overview": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "unit test",
+      "zh": "单元测试",
+      "handling": "translate",
+      "slots_total": 1,
+      "slots_per_doc": {
+        "how-anthropic-uses-claude-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "guardrail",
+      "zh": "护栏",
+      "handling": "translate",
+      "slots_total": 1,
+      "slots_per_doc": {
+        "finding-vulnerabilities-claude-codex": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "scaffolding",
+      "zh": "脚手架",
+      "handling": "translate",
+      "slots_total": 1,
+      "slots_per_doc": {
+        "finding-vulnerabilities-claude-codex": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "grounding",
+      "zh": "接地",
+      "handling": "translate",
+      "slots_total": 1,
+      "slots_per_doc": {
+        "archive-raw.githubusercontent.com-ace-fca-f63a056c": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "threat model",
+      "zh": "威胁模型",
+      "handling": "translate",
+      "slots_total": 1,
+      "slots_per_doc": {
+        "archive-raw.githubusercontent.com-README-f5dda901": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "rollout",
+      "zh": "灰度发布",
+      "handling": "translate",
+      "slots_total": 1,
+      "slots_per_doc": {
+        "ai-assisted-code-review-assessment": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "sla",
+      "zh": "SLA",
+      "handling": "acronym",
+      "slots_total": 1,
+      "slots_per_doc": {
+        "multi-agent-systems-ai-native": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "slo",
+      "zh": "SLO",
+      "handling": "acronym",
+      "slots_total": 1,
+      "slots_per_doc": {
+        "sre-introduction": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "deep learning",
+      "zh": "深度学习",
+      "handling": "translate",
+      "slots_total": 1,
+      "slots_per_doc": {
+        "prompt-engineering-overview": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "technical debt",
+      "zh": "技术债",
+      "handling": "translate",
+      "slots_total": 1,
+      "slots_per_doc": {
+        "ai-code-review-best-practices": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "feature flag",
+      "zh": "功能开关",
+      "handling": "translate",
+      "slots_total": 1,
+      "slots_per_doc": {
+        "devin-coding-agents-101": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "autonomy",
+      "zh": "自主性",
+      "handling": "translate",
+      "slots_total": 1,
+      "slots_per_doc": {
+        "how-anthropic-uses-claude-code": 1
+      },
+      "slots_in_title": 0
+    },
+    {
+      "en": "few-shot",
+      "zh": "少样本",
+      "handling": "translate",
+      "slots_total": 1,
+      "slots_per_doc": {
+        "prompt-engineering-overview": 1
+      },
+      "slots_in_title": 0
+    }
+  ],
+  "per_doc": [
+    {
+      "doc": "agentic-ai-threats",
+      "slots": 433
+    },
+    {
+      "doc": "mcp-introduction",
+      "slots": 380
+    },
+    {
+      "doc": "context-rot",
+      "slots": 252
+    },
+    {
+      "doc": "prompt-engineering-overview",
+      "slots": 225
+    },
+    {
+      "doc": "ai-assisted-code-review-assessment",
+      "slots": 221
+    },
+    {
+      "doc": "sast-vs-dast",
+      "slots": 196
+    },
+    {
+      "doc": "writing-effective-tools-for-agents",
+      "slots": 172
+    },
+    {
+      "doc": "how-anthropic-uses-claude-code",
+      "slots": 170
+    },
+    {
+      "doc": "mcp-server-authentication",
+      "slots": 152
+    },
+    {
+      "doc": "finding-vulnerabilities-claude-codex",
+      "slots": 117
+    },
+    {
+      "doc": "archive-www.warp.dev-university-345355c4",
+      "slots": 107
+    },
+    {
+      "doc": "how-long-contexts-fail",
+      "slots": 104
+    },
+    {
+      "doc": "ai-code-review-best-practices",
+      "slots": 94
+    },
+    {
+      "doc": "devin-coding-agents-101",
+      "slots": 88
+    },
+    {
+      "doc": "multi-agent-systems-ai-native",
+      "slots": 88
+    },
+    {
+      "doc": "archive-raw.githubusercontent.com-ace-fca-f63a056c",
+      "slots": 85
+    },
+    {
+      "doc": "observability-basics",
+      "slots": 79
+    },
+    {
+      "doc": "sre-introduction",
+      "slots": 72
+    },
+    {
+      "doc": "how-to-review-code-effectively",
+      "slots": 65
+    },
+    {
+      "doc": "benefits-agentic-ai-oncall",
+      "slots": 61
+    },
+    {
+      "doc": "archive-raw.githubusercontent.com-README-5285d5b3",
+      "slots": 59
+    },
+    {
+      "doc": "copilot-prompt-injection-rce",
+      "slots": 50
+    },
+    {
+      "doc": "specs-are-the-new-source-code",
+      "slots": 50
+    },
+    {
+      "doc": "archive-semgrep.dev-index-e5277db8",
+      "slots": 50
+    },
+    {
+      "doc": "archive-raw.githubusercontent.com-assignment-67e0a761",
+      "slots": 45
+    },
+    {
+      "doc": "claude-code-best-practices",
+      "slots": 42
+    },
+    {
+      "doc": "archive-www.warp.dev-index-8d73894f",
+      "slots": 41
+    },
+    {
+      "doc": "mcp-registry-preview",
+      "slots": 38
+    },
+    {
+      "doc": "archive-resolve.ai-index-51fc7e81",
+      "slots": 36
+    },
+    {
+      "doc": "archive-raw.githubusercontent.com-README-f5dda901",
+      "slots": 34
+    },
+    {
+      "doc": "kubernetes-troubleshooting-ai",
+      "slots": 29
+    },
+    {
+      "doc": "warp-vs-claude-code",
+      "slots": 29
+    },
+    {
+      "doc": "mcp-food-for-thought",
+      "slots": 27
+    },
+    {
+      "doc": "code-review-essentials",
+      "slots": 27
+    },
+    {
+      "doc": "archive-resolve.ai-product-deep-dive-0d0780da",
+      "slots": 27
+    },
+    {
+      "doc": "archive-raw.githubusercontent.com-README-dc2d4ffa",
+      "slots": 19
+    },
+    {
+      "doc": "owasp-top-ten",
+      "slots": 17
+    },
+    {
+      "doc": "archive-graphite.dev-index-6ddb92ea",
+      "slots": 13
+    },
+    {
+      "doc": "archive-raw.githubusercontent.com-README-704a0e2c",
+      "slots": 11
+    },
+    {
+      "doc": "archive-raw.githubusercontent.com-system_prompt_uafs-3e1f551e",
+      "slots": 11
+    },
+    {
+      "doc": "archive-vercel.com-index-843a793e",
+      "slots": 7
+    },
+    {
+      "doc": "archive-cognition.ai-index-5e05e503",
+      "slots": 5
+    },
+    {
+      "doc": "prompt-engineering-guide",
+      "slots": 3
+    },
+    {
+      "doc": "code-reviews-just-do-it",
+      "slots": 2
+    },
+    {
+      "doc": "archive-a16z.com-martin-casado-819a7ad5",
+      "slots": 1
+    },
+    {
+      "doc": "archive-reactjs.org-error-decoder-2ccbc8e1",
+      "slots": 1
+    }
+  ]
+}

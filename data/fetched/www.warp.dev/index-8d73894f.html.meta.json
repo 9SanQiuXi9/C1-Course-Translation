@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://www.warp.dev/",
+  "final_url": "https://www.warp.dev/",
+  "fetched_at": "2026-09-27T00:16:03+08:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 258680,
+  "sha256": "279da08823ccd7a3ccb3ff018d30964b1497c81d938da6747ccfca02fb26c87f",
+  "used_branch": null,
+  "archive_path": "archive/www.warp.dev/index-8d73894f.html",
+  "server": "Vercel",
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:16:00 GMT",
+  "url_path": "/",
+  "fetched_by": "fetch.py"
+}

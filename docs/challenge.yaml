@@ -1,0 +1,14 @@
+# C1 结构化课程定义（由 freeze-course-content.mjs 生成，v1.0 冻结）
+id: C1
+title: "课程资料获取与翻译"
+difficulty: 入门
+brief: "全量翻译 Stanford Vibe Coding 课程——从获取到翻译到发布，建立完整的信息获取与处理管线。"
+objective:
+  - "建立信息获取管线（定位一手来源、批量抓取归档）"
+  - "组织机翻+术语表+人工校对的翻译流程"
+  - "学会用 AI 批量处理长文本并控制质量"
+  - "以可复用方式发布成果"
+deliverables_pattern: "README.md,*AI日志*,*AAR*,*拿来说明*"
+deadline: 2026-12-31T23:59
+platform_challenge_id: ch-20260717031336-pxzwy0
+source_md: CHALLENGE.md

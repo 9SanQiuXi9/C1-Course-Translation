@@ -1,0 +1,914 @@
+{
+  "version": 1,
+  "frozen": true,
+  "frozen_hash": "e5950ef8921edd8cade8bfaebda6b9b3e7203a7482d5cfb8a8004da0dc012dcd",
+  "policy": {
+    "rules": [
+      "同一术语在任何文件中必须使用同一译法",
+      "术语表冻结后如需修改，必须重新全量校验",
+      "保留英文的术语，中文正文中直接使用英文原形"
+    ]
+  },
+  "terms": [
+    {
+      "en": "agent",
+      "zh": "智能体",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "指 AI 智能体，非法律意义的「代理人」，也避免与「代理服务器」混淆",
+      "occurrences": 319,
+      "source": "curated"
+    },
+    {
+      "en": "mcp",
+      "zh": "MCP",
+      "handling": "acronym",
+      "case_sensitive": false,
+      "note": "Model Context Protocol，课程核心概念；中文正文保留缩写，首次出现给全称",
+      "occurrences": 317,
+      "source": "curated"
+    },
+    {
+      "en": "tool",
+      "zh": "工具",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 274,
+      "source": "curated"
+    },
+    {
+      "en": "context",
+      "zh": "上下文",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "业内通行译法",
+      "occurrences": 270,
+      "source": "curated"
+    },
+    {
+      "en": "model",
+      "zh": "模型",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 224,
+      "source": "curated"
+    },
+    {
+      "en": "prompt",
+      "zh": "提示词",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "不译「提示」，避免与 UI 提示混淆",
+      "occurrences": 192,
+      "source": "curated"
+    },
+    {
+      "en": "security",
+      "zh": "安全",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 169,
+      "source": "curated"
+    },
+    {
+      "en": "server",
+      "zh": "服务器",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 124,
+      "source": "curated"
+    },
+    {
+      "en": "code review",
+      "zh": "代码审查",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "不译「代码评审」，与 GitHub/GitLab 界面一致",
+      "occurrences": 112,
+      "source": "curated"
+    },
+    {
+      "en": "api",
+      "zh": "API",
+      "handling": "acronym",
+      "case_sensitive": false,
+      "note": "Application Programming Interface，保留缩写",
+      "occurrences": 84,
+      "source": "curated"
+    },
+    {
+      "en": "sast",
+      "zh": "SAST",
+      "handling": "acronym",
+      "case_sensitive": false,
+      "note": "Static Application Security Testing，保留缩写",
+      "occurrences": 71,
+      "source": "curated"
+    },
+    {
+      "en": "agentic",
+      "zh": "智能体式",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "形容词，整体译「智能体式」。⚠️ 固定搭配 Agentic AI / agentic workflow / agentic system 一律译「智能体式 AI／智能体式工作流／智能体式系统」；不要用「智能体的 AI」这种别扭说法",
+      "occurrences": 68,
+      "source": "curated"
+    },
+    {
+      "en": "sre",
+      "zh": "SRE",
+      "handling": "acronym",
+      "case_sensitive": false,
+      "note": "Site Reliability Engineering，保留缩写",
+      "occurrences": 59,
+      "source": "curated"
+    },
+    {
+      "en": "codebase",
+      "zh": "代码库",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 55,
+      "source": "curated"
+    },
+    {
+      "en": "evaluation",
+      "zh": "评估",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 54,
+      "source": "curated"
+    },
+    {
+      "en": "injection",
+      "zh": "注入",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "安全语境",
+      "occurrences": 54,
+      "source": "curated"
+    },
+    {
+      "en": "workflow",
+      "zh": "工作流",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 53,
+      "source": "curated"
+    },
+    {
+      "en": "automation",
+      "zh": "自动化",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 53,
+      "source": "curated"
+    },
+    {
+      "en": "dast",
+      "zh": "DAST",
+      "handling": "acronym",
+      "case_sensitive": false,
+      "note": "Dynamic Application Security Testing，保留缩写",
+      "occurrences": 52,
+      "source": "curated"
+    },
+    {
+      "en": "reasoning",
+      "zh": "推理",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "指模型的推理过程/推理环节。⚠️ 只有语境明确指「模型的推理能力」时才用「推理能力」，避免把通用的理性思考过程误译成「推理能力」",
+      "occurrences": 47,
+      "source": "curated"
+    },
+    {
+      "en": "pull request",
+      "zh": "拉取请求",
+      "handling": "bilingual",
+      "case_sensitive": false,
+      "note": "首次出现「拉取请求（Pull Request）」，之后用中文；PR 见 PR 条",
+      "occurrences": 46,
+      "source": "curated"
+    },
+    {
+      "en": "llm",
+      "zh": "LLM",
+      "handling": "acronym",
+      "case_sensitive": false,
+      "note": "Large Language Model，保留缩写",
+      "occurrences": 44,
+      "source": "curated"
+    },
+    {
+      "en": "best practices",
+      "zh": "最佳实践",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "多词短语，非通用词",
+      "occurrences": 43,
+      "source": "curated"
+    },
+    {
+      "en": "vulnerability",
+      "zh": "漏洞",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 42,
+      "source": "curated"
+    },
+    {
+      "en": "client",
+      "zh": "客户端",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 41,
+      "source": "curated"
+    },
+    {
+      "en": "deployment",
+      "zh": "部署",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 33,
+      "source": "curated"
+    },
+    {
+      "en": "incident",
+      "zh": "故障事件",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "SRE 语境，不译「事故」",
+      "occurrences": 33,
+      "source": "curated"
+    },
+    {
+      "en": "pr",
+      "zh": "PR",
+      "handling": "acronym",
+      "case_sensitive": false,
+      "note": "Pull Request 的缩写，与 pull request 条并存",
+      "occurrences": 32,
+      "source": "curated"
+    },
+    {
+      "en": "training",
+      "zh": "训练",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 32,
+      "source": "curated"
+    },
+    {
+      "en": "orchestration",
+      "zh": "编排",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "多智能体编排",
+      "occurrences": 31,
+      "source": "curated"
+    },
+    {
+      "en": "monitoring",
+      "zh": "监控",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 31,
+      "source": "curated"
+    },
+    {
+      "en": "observability",
+      "zh": "可观测性",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 30,
+      "source": "curated"
+    },
+    {
+      "en": "debugging",
+      "zh": "调试",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 30,
+      "source": "curated"
+    },
+    {
+      "en": "prompt injection",
+      "zh": "提示词注入",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "安全议题，不译「提示注入」",
+      "occurrences": 30,
+      "source": "curated"
+    },
+    {
+      "en": "tracing",
+      "zh": "链路追踪",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "可观测性三支柱之一",
+      "occurrences": 30,
+      "source": "curated"
+    },
+    {
+      "en": "on-call",
+      "zh": "值班",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "SRE 语境",
+      "occurrences": 29,
+      "source": "curated"
+    },
+    {
+      "en": "token",
+      "zh": "token",
+      "handling": "keep_en",
+      "case_sensitive": false,
+      "note": "计费/上下文计量单位，中文无通用对译，保留英文",
+      "occurrences": 28,
+      "source": "curated"
+    },
+    {
+      "en": "repository",
+      "zh": "仓库",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "代码仓库",
+      "occurrences": 27,
+      "source": "curated"
+    },
+    {
+      "en": "dataset",
+      "zh": "数据集",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 26,
+      "source": "curated"
+    },
+    {
+      "en": "ide",
+      "zh": "IDE",
+      "handling": "acronym",
+      "case_sensitive": false,
+      "note": "Integrated Development Environment，保留缩写",
+      "occurrences": 25,
+      "source": "curated"
+    },
+    {
+      "en": "context window",
+      "zh": "上下文窗口",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "指模型单次可处理的 token 上限",
+      "occurrences": 21,
+      "source": "curated"
+    },
+    {
+      "en": "spec",
+      "zh": "规格",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "不译「规范」；specs-are-the-new-source-code 语境指规格文档",
+      "occurrences": 21,
+      "source": "curated"
+    },
+    {
+      "en": "span",
+      "zh": "跨度",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "分布式追踪的最小单元；也可保留 span",
+      "occurrences": 21,
+      "source": "curated"
+    },
+    {
+      "en": "prompt engineering",
+      "zh": "提示词工程",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "行业已通用",
+      "occurrences": 20,
+      "source": "curated"
+    },
+    {
+      "en": "machine learning",
+      "zh": "机器学习",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 18,
+      "source": "curated"
+    },
+    {
+      "en": "privacy",
+      "zh": "隐私",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 16,
+      "source": "curated"
+    },
+    {
+      "en": "ci/cd",
+      "zh": "CI/CD",
+      "handling": "acronym",
+      "case_sensitive": false,
+      "note": "持续集成/持续交付，保留缩写",
+      "occurrences": 15,
+      "source": "curated"
+    },
+    {
+      "en": "exploit",
+      "zh": "漏洞利用",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "名词指利用手段；⚠️ 动词义（利用某个漏洞）也用「漏洞利用」保持术语一致，不要写成「利用」",
+      "occurrences": 15,
+      "source": "curated"
+    },
+    {
+      "en": "pipeline",
+      "zh": "流水线",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "不译「管道」",
+      "occurrences": 14,
+      "source": "curated"
+    },
+    {
+      "en": "retrieval",
+      "zh": "检索",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 14,
+      "source": "curated"
+    },
+    {
+      "en": "root cause",
+      "zh": "根因",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "故障分析语境",
+      "occurrences": 13,
+      "source": "curated"
+    },
+    {
+      "en": "compliance",
+      "zh": "合规",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 12,
+      "source": "curated"
+    },
+    {
+      "en": "commit",
+      "zh": "提交",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "仅指版本控制义的「提交」（名词/动词）。⚠️ 三种例外不要套用：① 复合词 pre-commit、commit message 等工具名/固定名保留英文；② commit to doing sth 意为「投入/下决心做」，与版本控制无关；③ commit 出现在代码示例或 URL 中不译",
+      "occurrences": 11,
+      "source": "curated"
+    },
+    {
+      "en": "embedding",
+      "zh": "嵌入",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "向量嵌入",
+      "occurrences": 10,
+      "source": "curated"
+    },
+    {
+      "en": "latency",
+      "zh": "延迟",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 9,
+      "source": "curated"
+    },
+    {
+      "en": "alignment",
+      "zh": "对齐",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "AI 对齐",
+      "occurrences": 9,
+      "source": "curated"
+    },
+    {
+      "en": "static analysis",
+      "zh": "静态分析",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 9,
+      "source": "curated"
+    },
+    {
+      "en": "inference",
+      "zh": "推理",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "指模型前向计算；注意与 reasoning（推理能力）区分，见 reasoning 条",
+      "occurrences": 8,
+      "source": "curated"
+    },
+    {
+      "en": "ai-native",
+      "zh": "AI 原生",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "保留 AI 前缀，native 译「原生」",
+      "occurrences": 8,
+      "source": "curated"
+    },
+    {
+      "en": "incident response",
+      "zh": "故障响应",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 8,
+      "source": "curated"
+    },
+    {
+      "en": "context engineering",
+      "zh": "上下文工程",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "与 prompt engineering 区分：前者管喂什么，后者管怎么说",
+      "occurrences": 7,
+      "source": "curated"
+    },
+    {
+      "en": "refactor",
+      "zh": "重构",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 7,
+      "source": "curated"
+    },
+    {
+      "en": "artifact",
+      "zh": "产物",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "指流程产出的文件/交付物，不译「工件」",
+      "occurrences": 7,
+      "source": "curated"
+    },
+    {
+      "en": "benchmark",
+      "zh": "基准测试",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 6,
+      "source": "curated"
+    },
+    {
+      "en": "template",
+      "zh": "模板",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 5,
+      "source": "curated"
+    },
+    {
+      "en": "coding agent",
+      "zh": "编码智能体",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "与 agent 同词根",
+      "occurrences": 5,
+      "source": "curated"
+    },
+    {
+      "en": "zero-shot",
+      "zh": "零样本",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 5,
+      "source": "curated"
+    },
+    {
+      "en": "tool use",
+      "zh": "工具调用",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "不译「工具使用」",
+      "occurrences": 4,
+      "source": "curated"
+    },
+    {
+      "en": "test coverage",
+      "zh": "测试覆盖率",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 4,
+      "source": "curated"
+    },
+    {
+      "en": "system prompt",
+      "zh": "系统提示词",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "与 prompt 保持同词根",
+      "occurrences": 4,
+      "source": "curated"
+    },
+    {
+      "en": "hallucination",
+      "zh": "幻觉",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "模型编造事实",
+      "occurrences": 3,
+      "source": "curated"
+    },
+    {
+      "en": "fine-tuning",
+      "zh": "微调",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 3,
+      "source": "curated"
+    },
+    {
+      "en": "rag",
+      "zh": "RAG",
+      "handling": "acronym",
+      "case_sensitive": false,
+      "note": "Retrieval-Augmented Generation，保留缩写",
+      "occurrences": 3,
+      "source": "curated"
+    },
+    {
+      "en": "subagent",
+      "zh": "子智能体",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "与 agent 保持同词根，避免「子代理」",
+      "occurrences": 3,
+      "source": "curated"
+    },
+    {
+      "en": "chain of thought",
+      "zh": "思维链",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "CoT，保留中文",
+      "occurrences": 3,
+      "source": "curated"
+    },
+    {
+      "en": "context rot",
+      "zh": "上下文腐化",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "Chroma 研究提出的现象：长上下文质量退化",
+      "occurrences": 3,
+      "source": "curated"
+    },
+    {
+      "en": "non-deterministic",
+      "zh": "非确定性",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "指模型输出不可复现",
+      "occurrences": 3,
+      "source": "curated"
+    },
+    {
+      "en": "multimodal",
+      "zh": "多模态",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 3,
+      "source": "curated"
+    },
+    {
+      "en": "sandbox",
+      "zh": "沙箱",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 2,
+      "source": "curated"
+    },
+    {
+      "en": "vibe coding",
+      "zh": "vibe coding",
+      "handling": "keep_en",
+      "case_sensitive": false,
+      "note": "课程专有说法，中文无稳定对译，保留英文原形",
+      "occurrences": 2,
+      "source": "curated"
+    },
+    {
+      "en": "vector database",
+      "zh": "向量数据库",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 2,
+      "source": "curated"
+    },
+    {
+      "en": "human-in-the-loop",
+      "zh": "人在回路",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "行业通行译法",
+      "occurrences": 2,
+      "source": "curated"
+    },
+    {
+      "en": "postmortem",
+      "zh": "事后复盘",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "SRE 语境",
+      "occurrences": 2,
+      "source": "curated"
+    },
+    {
+      "en": "annotation",
+      "zh": "标注",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 2,
+      "source": "curated"
+    },
+    {
+      "en": "unit test",
+      "zh": "单元测试",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 2,
+      "source": "curated"
+    },
+    {
+      "en": "guardrail",
+      "zh": "护栏",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "AI 安全护栏",
+      "occurrences": 1,
+      "source": "curated"
+    },
+    {
+      "en": "scaffolding",
+      "zh": "脚手架",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "指围绕模型的工程支撑代码",
+      "occurrences": 1,
+      "source": "curated"
+    },
+    {
+      "en": "eval",
+      "zh": "评估",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "evaluation 的简称，统一译为「评估」",
+      "occurrences": 1,
+      "source": "curated"
+    },
+    {
+      "en": "transformer",
+      "zh": "Transformer",
+      "handling": "keep_en",
+      "case_sensitive": false,
+      "note": "架构名，业界普遍保留英文",
+      "occurrences": 1,
+      "source": "curated"
+    },
+    {
+      "en": "grounding",
+      "zh": "接地",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "指用外部事实约束模型输出；也可译「事实锚定」",
+      "occurrences": 1,
+      "source": "curated"
+    },
+    {
+      "en": "threat model",
+      "zh": "威胁模型",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 1,
+      "source": "curated"
+    },
+    {
+      "en": "rollout",
+      "zh": "灰度发布",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "渐进式发布；语料仅 1 次，注意上下文",
+      "occurrences": 1,
+      "source": "curated"
+    },
+    {
+      "en": "sla",
+      "zh": "SLA",
+      "handling": "acronym",
+      "case_sensitive": false,
+      "note": "Service Level Agreement，保留缩写；语料未出现",
+      "occurrences": 1,
+      "source": "curated"
+    },
+    {
+      "en": "slo",
+      "zh": "SLO",
+      "handling": "acronym",
+      "case_sensitive": false,
+      "note": "Service Level Objective，保留缩写；语料未出现",
+      "occurrences": 1,
+      "source": "curated"
+    },
+    {
+      "en": "deep learning",
+      "zh": "深度学习",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 1,
+      "source": "curated"
+    },
+    {
+      "en": "technical debt",
+      "zh": "技术债",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 1,
+      "source": "curated"
+    },
+    {
+      "en": "feature flag",
+      "zh": "功能开关",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 1,
+      "source": "curated"
+    },
+    {
+      "en": "autonomy",
+      "zh": "自主性",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 1,
+      "source": "curated"
+    },
+    {
+      "en": "few-shot",
+      "zh": "少样本",
+      "handling": "translate",
+      "case_sensitive": false,
+      "note": "",
+      "occurrences": 1,
+      "source": "curated"
+    }
+  ],
+  "proper_names": [
+    "Model Context Protocol",
+    "Context Protocol",
+    "Pull Request",
+    "Chain of Thought",
+    "Vibe Coding",
+    "Agentic Development Environment",
+    "Site Reliability Engineering"
+  ]
+}

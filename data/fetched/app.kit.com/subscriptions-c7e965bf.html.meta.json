@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://app.kit.com/forms/8349659/subscriptions",
+  "final_url": "https://app.kit.com/forms/8349659/subscriptions",
+  "fetched_at": "2026-09-27T00:09:08+08:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 24600,
+  "sha256": "ad711d111320b72a1bda243d2cbbfd85a5e55a4fe9548a26f75fa3bc2895685d",
+  "used_branch": null,
+  "archive_path": "archive/app.kit.com/subscriptions-c7e965bf.html",
+  "server": "cloudflare",
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:09:08 GMT",
+  "url_path": "/forms/8349659/subscriptions",
+  "fetched_by": "fetch.py"
+}

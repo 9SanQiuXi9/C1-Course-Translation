@@ -1,0 +1,58 @@
+{
+  "generated_by": "check_quality.py",
+  "scope": {
+    "src_docs": 57,
+    "translated": 41,
+    "not_translated": 16
+  },
+  "l1_completeness": {
+    "docs": "41/41",
+    "title_lines": "41/41",
+    "code_blocks": "41/41",
+    "code_blocks_bytes": "41/41",
+    "tables": "41/41",
+    "links": "41/41",
+    "length_ratio_median": 0.5591,
+    "informational": {
+      "body_lines": "41/41",
+      "head_tail": "38/41",
+      "note": "行数与段首段尾仅作信息项：汉语行数天然少于英语，段落切分差异会造成错位，均不适合做门槛"
+    }
+  },
+  "l2_terminology": {
+    "slots": "3251/3976",
+    "hit_rate": 0.8177,
+    "by_handling": {
+      "translate": {
+        "slots": 3076,
+        "hits": 2447,
+        "hit_rate": 0.7955
+      },
+      "acronym": {
+        "slots": 798,
+        "hits": 718,
+        "hit_rate": 0.8997
+      },
+      "keep_en": {
+        "slots": 47,
+        "hits": 33,
+        "hit_rate": 0.7021
+      },
+      "bilingual": {
+        "slots": 55,
+        "hits": 53,
+        "hit_rate": 0.9636
+      }
+    },
+    "frozen_ok": true
+  },
+  "l3_selftest": {
+    "cases": "8/8",
+    "all_pass": true
+  },
+  "headline": {
+    "docs_verified": "41/41",
+    "term_slots": "3251/3976",
+    "selftest_cases": "8/8"
+  }
+}

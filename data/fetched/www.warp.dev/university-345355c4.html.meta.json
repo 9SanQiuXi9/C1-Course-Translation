@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://www.warp.dev/university?slug=university",
+  "final_url": "https://www.warp.dev/university?slug=university",
+  "fetched_at": "2026-09-27T00:16:04+08:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 156500,
+  "sha256": "504ff783207277b46485be7628d8782b3034e8deaeb64a626616e7a0b1d22c08",
+  "used_branch": null,
+  "archive_path": "archive/www.warp.dev/university-345355c4.html",
+  "server": "Vercel",
+  "last_modified": "Fri, 25 Sep 2026 15:53:12 GMT",
+  "server_date": "Sat, 26 Sep 2026 16:16:04 GMT",
+  "url_path": "/university",
+  "fetched_by": "fetch.py"
+}

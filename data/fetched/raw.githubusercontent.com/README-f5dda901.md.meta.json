@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://github.com/modelcontextprotocol/servers",
+  "final_url": "https://raw.githubusercontent.com/modelcontextprotocol/servers/master/README.md",
+  "fetched_at": "2026-09-27T00:09:52+08:00",
+  "http_status": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "bytes": 8707,
+  "sha256": "c112784223279665bda02d79105eff6f268c629f18c4590a50e9305b72bf1f9e",
+  "used_branch": "master",
+  "archive_path": "archive/raw.githubusercontent.com/README-f5dda901.md",
+  "server": null,
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:09:52 GMT",
+  "url_path": "/modelcontextprotocol/servers/master/README.md",
+  "fetched_by": "fetch.py"
+}

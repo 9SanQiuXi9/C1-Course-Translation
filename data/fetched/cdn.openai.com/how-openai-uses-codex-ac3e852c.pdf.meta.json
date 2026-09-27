@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://cdn.openai.com/pdf/6a2631dc-783e-479b-b1a4-af0cfbd38630/how-openai-uses-codex.pdf",
+  "final_url": "https://cdn.openai.com/pdf/6a2631dc-783e-479b-b1a4-af0cfbd38630/how-openai-uses-codex.pdf",
+  "fetched_at": "2026-09-27T00:09:16+08:00",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "bytes": 8040907,
+  "sha256": "95b5272e2635211bd621ee605a7f6846d030f6d5cab791206c9ba73b86b7da62",
+  "used_branch": null,
+  "archive_path": "archive/cdn.openai.com/how-openai-uses-codex-ac3e852c.pdf",
+  "server": null,
+  "last_modified": "Thu, 31 Jul 2025 19:44:41 GMT",
+  "server_date": "Sat, 26 Sep 2026 16:09:10 GMT",
+  "url_path": "/pdf/6a2631dc-783e-479b-b1a4-af0cfbd38630/how-openai-uses-codex.pdf",
+  "fetched_by": "fetch.py"
+}

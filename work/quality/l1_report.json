@@ -1,0 +1,1722 @@
+{
+  "layer": "L1 结构完整性",
+  "scope": {
+    "src_docs": 57,
+    "translated": 41,
+    "not_translated": [
+      "archive-a16z.com-martin-casado-819a7ad5",
+      "archive-app.kit.com-subscriptions-c7e965bf",
+      "archive-f.convertkit.com-ck.5-6f8d2461",
+      "archive-raw.githubusercontent.com-README-5285d5b3",
+      "archive-resolve.ai-index-51fc7e81",
+      "archive-semgrep.dev-index-e5277db8",
+      "archive-www.figma.com-Warp---Stanford--Copy--e1c08306",
+      "archive-www.mihaileric.com-index-76879b6c",
+      "archive-www.warp.dev-index-8d73894f",
+      "archive-www.warp.dev-university-345355c4",
+      "course-site-spa",
+      "good-context-good-code",
+      "how-openai-uses-codex",
+      "how-warp-uses-warp",
+      "lessons-from-ai-code-reviews",
+      "peeking-under-the-hood-of-claude-code"
+    ],
+    "extra": []
+  },
+  "thresholds": {
+    "max_rel_diff": 0.02,
+    "min_abs_slack": 1,
+    "tables_max_rel_diff": 0.0,
+    "tables_min_abs_slack": 0,
+    "ratio_ok_range": [
+      0.3,
+      1.5
+    ],
+    "head_tail_ratio_min": 0.25
+  },
+  "per_doc": [
+    {
+      "doc": "agentic-ai-threats",
+      "title_lines": {
+        "src": 71,
+        "dst": 71,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 13,
+        "dst": 13,
+        "ok": true
+      },
+      "links": {
+        "src": 276,
+        "dst": 276,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 754,
+        "dst": 752,
+        "ratio": 0.9973,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.6625,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 1.0,
+        "tail": 0.3333,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "ai-assisted-code-review-assessment",
+      "title_lines": {
+        "src": 1,
+        "dst": 1,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 16,
+        "dst": 17,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 259,
+        "dst": 268,
+        "ratio": 1.0347,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.4843,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.4872,
+        "tail": 0.3333,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "ai-code-review-best-practices",
+      "title_lines": {
+        "src": 36,
+        "dst": 36,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 13,
+        "dst": 13,
+        "ok": true
+      },
+      "links": {
+        "src": 16,
+        "dst": 16,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 222,
+        "dst": 222,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.5252,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.7667,
+        "tail": 0.7037,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "archive-a16z.com-index-28eae9d8",
+      "title_lines": {
+        "src": 6,
+        "dst": 6,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 14,
+        "dst": 14,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 60,
+        "dst": 64,
+        "ratio": 1.0667,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.9656,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 1.0,
+        "tail": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "archive-cognition.ai-index-5e05e503",
+      "title_lines": {
+        "src": 4,
+        "dst": 4,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 6,
+        "dst": 6,
+        "ok": true
+      },
+      "links": {
+        "src": 9,
+        "dst": 9,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 99,
+        "dst": 99,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.7857,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 1.0,
+        "tail": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "archive-graphite.dev-index-6ddb92ea",
+      "title_lines": {
+        "src": 11,
+        "dst": 11,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 8,
+        "dst": 8,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 99,
+        "dst": 99,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.7824,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.7667,
+        "tail": 0.3333,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "archive-raw.githubusercontent.com-README-704a0e2c",
+      "title_lines": {
+        "src": 22,
+        "dst": 22,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 7,
+        "dst": 7,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 7,
+        "dst": 7,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 96,
+        "dst": 96,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.6656,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 1.0,
+        "tail": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "archive-raw.githubusercontent.com-README-dc2d4ffa",
+      "title_lines": {
+        "src": 14,
+        "dst": 14,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 5,
+        "dst": 5,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 24,
+        "dst": 24,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 75,
+        "dst": 75,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.6992,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 1.0,
+        "tail": 0.4729,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "archive-raw.githubusercontent.com-README-f5dda901",
+      "title_lines": {
+        "src": 14,
+        "dst": 14,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 5,
+        "dst": 5,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 35,
+        "dst": 35,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 72,
+        "dst": 72,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.6805,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 1.0,
+        "tail": 0.4408,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "archive-raw.githubusercontent.com-ace-fca-f63a056c",
+      "title_lines": {
+        "src": 26,
+        "dst": 26,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 1,
+        "dst": 1,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 67,
+        "dst": 67,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 220,
+        "dst": 220,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.5571,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.3824,
+        "tail": 0.4615,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "archive-raw.githubusercontent.com-assignment-67e0a761",
+      "title_lines": {
+        "src": 14,
+        "dst": 14,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 2,
+        "dst": 2,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 7,
+        "dst": 7,
+        "ok": true
+      },
+      "links": {
+        "src": 7,
+        "dst": 7,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 84,
+        "dst": 84,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.5195,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.6304,
+        "tail": 0.5788,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "archive-raw.githubusercontent.com-system_prompt_uafs-3e1f551e",
+      "title_lines": {
+        "src": 1,
+        "dst": 1,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 19,
+        "dst": 5,
+        "ratio": 0.2632,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.3229,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.2143,
+        "tail": 0.3185,
+        "ok": false,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "archive-reactjs.org-error-decoder-2ccbc8e1",
+      "title_lines": {
+        "src": 1,
+        "dst": 1,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 1,
+        "dst": 1,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 9,
+        "dst": 8,
+        "ratio": 0.8889,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.4101,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.5,
+        "tail": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "archive-resolve.ai-product-deep-dive-0d0780da",
+      "title_lines": {
+        "src": 14,
+        "dst": 14,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 8,
+        "dst": 8,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 81,
+        "dst": 81,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.6127,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 1.0,
+        "tail": 0.6327,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "archive-vercel.com-index-843a793e",
+      "title_lines": {
+        "src": 5,
+        "dst": 5,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 15,
+        "dst": 15,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 61,
+        "dst": 61,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.7161,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.3913,
+        "tail": 0.6286,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "benefits-agentic-ai-oncall",
+      "title_lines": {
+        "src": 9,
+        "dst": 9,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 11,
+        "dst": 11,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 92,
+        "dst": 92,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.5591,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.4565,
+        "tail": 0.3443,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "claude-code-best-practices",
+      "title_lines": {
+        "src": 9,
+        "dst": 9,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 9,
+        "dst": 9,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 11,
+        "dst": 11,
+        "ok": true
+      },
+      "links": {
+        "src": 17,
+        "dst": 17,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 218,
+        "dst": 217,
+        "ratio": 0.9954,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.6565,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.6765,
+        "tail": 0.3,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "code-review-essentials",
+      "title_lines": {
+        "src": 10,
+        "dst": 10,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 2,
+        "dst": 2,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 2,
+        "dst": 2,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 198,
+        "dst": 82,
+        "ratio": 0.4141,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.3708,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 1.0,
+        "tail": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "code-reviews-just-do-it",
+      "title_lines": {
+        "src": 10,
+        "dst": 10,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 6,
+        "dst": 6,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 68,
+        "dst": 68,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.5792,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.5,
+        "tail": 0.7826,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "context-rot",
+      "title_lines": {
+        "src": 47,
+        "dst": 47,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 1,
+        "dst": 1,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 31,
+        "dst": 31,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 521,
+        "dst": 520,
+        "ratio": 0.9981,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.4936,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 1.0,
+        "tail": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "copilot-prompt-injection-rce",
+      "title_lines": {
+        "src": 14,
+        "dst": 14,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 15,
+        "dst": 15,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 90,
+        "dst": 90,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.5559,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.6812,
+        "tail": 0.8667,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "devin-coding-agents-101",
+      "title_lines": {
+        "src": 47,
+        "dst": 47,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 5,
+        "dst": 5,
+        "ok": true
+      },
+      "links": {
+        "src": 1,
+        "dst": 1,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 114,
+        "dst": 114,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.3767,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.4007,
+        "tail": 0.3554,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "finding-vulnerabilities-claude-codex",
+      "title_lines": {
+        "src": 19,
+        "dst": 19,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 3,
+        "dst": 3,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 33,
+        "dst": 33,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 281,
+        "dst": 281,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.5102,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.7273,
+        "tail": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "how-anthropic-uses-claude-code",
+      "title_lines": {
+        "src": 1,
+        "dst": 1,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 946,
+        "dst": 469,
+        "ratio": 0.4958,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.3129,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.4416,
+        "tail": 10.4107,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "how-long-contexts-fail",
+      "title_lines": {
+        "src": 7,
+        "dst": 7,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 13,
+        "dst": 13,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 84,
+        "dst": 83,
+        "ratio": 0.9881,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.47,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 1.0,
+        "tail": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "how-to-review-code-effectively",
+      "title_lines": {
+        "src": 26,
+        "dst": 26,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 1,
+        "dst": 1,
+        "ok": true
+      },
+      "links": {
+        "src": 54,
+        "dst": 54,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 165,
+        "dst": 164,
+        "ratio": 0.9939,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.5465,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.7353,
+        "tail": 0.2222,
+        "ok": false,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "kubernetes-troubleshooting-ai",
+      "title_lines": {
+        "src": 14,
+        "dst": 14,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 24,
+        "dst": 24,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 125,
+        "dst": 125,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.5915,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.4348,
+        "tail": 0.3443,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "mcp-food-for-thought",
+      "title_lines": {
+        "src": 15,
+        "dst": 15,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 3,
+        "dst": 3,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 14,
+        "dst": 14,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 85,
+        "dst": 85,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.6187,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.8182,
+        "tail": 0.6667,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "mcp-introduction",
+      "title_lines": {
+        "src": 39,
+        "dst": 39,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 5,
+        "dst": 5,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 23,
+        "dst": 23,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 229,
+        "dst": 229,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.4702,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 1.0,
+        "tail": 0.3077,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "mcp-registry-preview",
+      "title_lines": {
+        "src": 5,
+        "dst": 5,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 38,
+        "dst": 38,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 67,
+        "dst": 67,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.6216,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.7,
+        "tail": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "mcp-server-authentication",
+      "title_lines": {
+        "src": 14,
+        "dst": 14,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 26,
+        "dst": 26,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 5,
+        "dst": 5,
+        "ok": true
+      },
+      "links": {
+        "src": 31,
+        "dst": 31,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 213,
+        "dst": 213,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.6929,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.5909,
+        "tail": 0.5882,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "multi-agent-systems-ai-native",
+      "title_lines": {
+        "src": 13,
+        "dst": 13,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 9,
+        "dst": 9,
+        "ok": true
+      },
+      "links": {
+        "src": 27,
+        "dst": 27,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 145,
+        "dst": 145,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.548,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.4348,
+        "tail": 0.3443,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "observability-basics",
+      "title_lines": {
+        "src": 30,
+        "dst": 30,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 2,
+        "dst": 2,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 7,
+        "dst": 7,
+        "ok": true
+      },
+      "links": {
+        "src": 20,
+        "dst": 20,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 207,
+        "dst": 207,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.5147,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 1.0,
+        "tail": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "owasp-top-ten",
+      "title_lines": {
+        "src": 32,
+        "dst": 32,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 76,
+        "dst": 76,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 204,
+        "dst": 203,
+        "ratio": 0.9951,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.8273,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.4086,
+        "tail": 0.6071,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "prompt-engineering-guide",
+      "title_lines": {
+        "src": 1,
+        "dst": 1,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 1,
+        "dst": 2,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 9,
+        "dst": 8,
+        "ratio": 0.8889,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.6045,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.0943,
+        "tail": 1.2857,
+        "ok": false,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "prompt-engineering-overview",
+      "title_lines": {
+        "src": 35,
+        "dst": 35,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 764,
+        "dst": 758,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 1795,
+        "dst": 1607,
+        "ratio": 0.8953,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.7132,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.3429,
+        "tail": 0.4048,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "sast-vs-dast",
+      "title_lines": {
+        "src": 29,
+        "dst": 29,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 10,
+        "dst": 10,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 191,
+        "dst": 191,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.4514,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.4921,
+        "tail": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "specs-are-the-new-source-code",
+      "title_lines": {
+        "src": 5,
+        "dst": 5,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 47,
+        "dst": 47,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 166,
+        "dst": 166,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.5969,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 1.0,
+        "tail": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "sre-introduction",
+      "title_lines": {
+        "src": 13,
+        "dst": 13,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 11,
+        "dst": 11,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 96,
+        "dst": 95,
+        "ratio": 0.9896,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.3816,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.3333,
+        "tail": 0.7547,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "warp-vs-claude-code",
+      "title_lines": {
+        "src": 1,
+        "dst": 1,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 0,
+        "dst": 0,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 15,
+        "dst": 15,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 89,
+        "dst": 89,
+        "ratio": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.6474,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 0.3774,
+        "tail": 0.6,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    },
+    {
+      "doc": "writing-effective-tools-for-agents",
+      "title_lines": {
+        "src": 15,
+        "dst": 15,
+        "ok": true
+      },
+      "code_blocks": {
+        "src": 1,
+        "dst": 1,
+        "ok": true,
+        "bytes_identical": true
+      },
+      "table_lines": {
+        "src": 0,
+        "dst": 0,
+        "ok": true
+      },
+      "links": {
+        "src": 18,
+        "dst": 18,
+        "ok": true
+      },
+      "body_lines": {
+        "src": 144,
+        "dst": 143,
+        "ratio": 0.9931,
+        "ok": true,
+        "informational": true
+      },
+      "length_ratio": 0.4666,
+      "length_ratio_ok": true,
+      "head_tail": {
+        "head": 1.0,
+        "tail": 1.0,
+        "ok": true,
+        "informational": true
+      },
+      "status": "ok"
+    }
+  ],
+  "totals": {
+    "title_lines_ok": "41/41",
+    "code_blocks_ok": "41/41",
+    "code_blocks_bytes_ok": "41/41",
+    "tables_ok": "41/41",
+    "links_ok": "41/41",
+    "body_lines_ok": "41/41",
+    "length_ratio_ok": "41/41",
+    "head_tail_ok": "38/41",
+    "length_ratio_median": 0.5591,
+    "length_ratio_outliers": [],
+    "body_lines_ratio_outliers": [
+      {
+        "doc": "archive-raw.githubusercontent.com-system_prompt_uafs-3e1f551e",
+        "body_lines_src": 19,
+        "body_lines_dst": 5,
+        "body_lines_ratio": 0.2632
+      }
+    ]
+  },
+  "failures": {
+    "title_lines": [],
+    "code_blocks": [],
+    "code_blocks_bytes": [],
+    "tables": [],
+    "links": [],
+    "length_ratio": []
+  },
+  "informational": {
+    "body_lines_low_ratio": [
+      {
+        "doc": "archive-raw.githubusercontent.com-system_prompt_uafs-3e1f551e",
+        "body_lines_src": 19,
+        "body_lines_dst": 5,
+        "body_lines_ratio": 0.2632
+      }
+    ],
+    "head_tail_anomalies": [
+      "archive-raw.githubusercontent.com-system_prompt_uafs-3e1f551e",
+      "how-to-review-code-effectively",
+      "prompt-engineering-guide"
+    ]
+  }
+}

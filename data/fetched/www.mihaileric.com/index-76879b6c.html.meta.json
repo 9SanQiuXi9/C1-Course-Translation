@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://www.mihaileric.com/",
+  "final_url": "https://www.mihaileric.com/",
+  "fetched_at": "2026-09-27T00:15:59+08:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 80729,
+  "sha256": "de7142eefb78e78f2caebb87e94248430fab33c2660e026ae94d1b7c80a377d0",
+  "used_branch": null,
+  "archive_path": "archive/www.mihaileric.com/index-76879b6c.html",
+  "server": "GitHub.com",
+  "last_modified": "Tue, 01 Sep 2026 14:27:37 GMT",
+  "server_date": "Sat, 26 Sep 2026 16:15:59 GMT",
+  "url_path": "/",
+  "fetched_by": "fetch.py"
+}

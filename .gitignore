@@ -1,0 +1,30 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---- 临时与备份 ----
+*.bak
+*.bak2
+*.tmp
+*.orig
+*~
+
+# ---- 翻译流程的临时件 ----
+# 待发送的 prompt 是过程产物，随时可重新生成（translate_queue.py next）
+output/prompts_to_send/
+
+# 命中率报告的中间件（--verify 会重写）
+work/reports/verify_report.json
+
+# run_all.py 每步的完整输出留档（可随时重跑生成，且会逐次累积）
+work/logs/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store

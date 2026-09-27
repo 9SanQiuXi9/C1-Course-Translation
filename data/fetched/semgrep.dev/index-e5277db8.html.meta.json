@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://semgrep.dev/",
+  "final_url": "https://semgrep.dev/",
+  "fetched_at": "2026-09-27T00:12:56+08:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 100847,
+  "sha256": "a10343b269f6933ba18b3e96c7b9084881a3d7d895c0710e2e5d6fdbea96a713",
+  "used_branch": null,
+  "archive_path": "archive/semgrep.dev/index-e5277db8.html",
+  "server": "Netlify",
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:12:56 GMT",
+  "url_path": "/",
+  "fetched_by": "fetch.py"
+}

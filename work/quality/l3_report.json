@@ -1,0 +1,40 @@
+{
+  "layer": "L3 校验器反例自测",
+  "cases_total": 8,
+  "cases_detected": 8,
+  "all_pass": true,
+  "cases": [
+    {
+      "name": "代码块被翻译",
+      "detected": true
+    },
+    {
+      "name": "代码块被删除",
+      "detected": true
+    },
+    {
+      "name": "URL 被改写",
+      "detected": true
+    },
+    {
+      "name": "标题行被删",
+      "detected": true
+    },
+    {
+      "name": "术语用了错误译法",
+      "detected": true
+    },
+    {
+      "name": "整段漏译",
+      "detected": true
+    },
+    {
+      "name": "表格行被合并",
+      "detected": true
+    },
+    {
+      "name": "译文为空",
+      "detected": true
+    }
+  ]
+}

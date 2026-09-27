@@ -1,0 +1,16 @@
+{
+  "origin_url": "https://github.com/modelcontextprotocol/typescript-sdk/tree/main?tab=readme-ov-file#server",
+  "final_url": "https://raw.githubusercontent.com/modelcontextprotocol/typescript-sdk/main/README.md",
+  "fetched_at": "2026-09-27T00:09:53+08:00",
+  "http_status": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "bytes": 8305,
+  "sha256": "ecda9a1a30f74de6f843078d5b61bb3b4b63459987ab6c1ec55748f8154d43ae",
+  "used_branch": "main",
+  "archive_path": "archive/raw.githubusercontent.com/README-dc2d4ffa.md",
+  "server": null,
+  "last_modified": null,
+  "server_date": "Sat, 26 Sep 2026 16:09:53 GMT",
+  "url_path": "/modelcontextprotocol/typescript-sdk/main/README.md",
+  "fetched_by": "fetch.py"
+}
